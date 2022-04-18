@@ -1,31 +1,19 @@
-import React from 'react'
-import { PrismicRichText } from '@prismicio/react'
+import { classNames } from "@lib/utilities";
+import styles from "./text.module.scss";
+import { PrismicRichText } from "@prismicio/react";
+import ContentContainer from "@components/ContentContainer";
 
-const Text = ({ slice }) => (
-  <section>
-    <span className="title">
-      {
-        slice.primary.title ?
-        <PrismicRichText field={slice.primary.title}/>
-        : <h2>Template slice, update me!</h2>
-      }
-    </span>
-    {
-      slice.primary.description ?
-      <PrismicRichText field={slice.primary.description}/>
-      : <p>start by editing this slice from inside Slice Machine!</p>
-    }
-    <style jsx>{`
-        section {
-          max-width: 600px;
-          margin: 4em auto;
-          text-align: center;
-        }
-        .title {
-          color: #8592e0;
-        }
-    `}</style>
-  </section>
-)
+const Text = ({ slice }) => {
+  const { primary } = slice;
+  return (
+    <section className={classNames([styles.text], primary.ui && styles[primary.uid])}>
+      <ContentContainer>
+        <div className={classNames([styles.wrapper])}>
+          <PrismicRichText field={primary?.Text} />
+        </div>
+      </ContentContainer>
+    </section>
+  );
+};
 
-export default Text
+export default Text;
