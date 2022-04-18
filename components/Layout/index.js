@@ -15,10 +15,8 @@ export default function Layout({ children, preview }) {
 
   return (
     <>
-      {/* {childProps && <Banner bannerData={childProps[0].bannerData} />} */}
-      <Banner />
-      {/* {childProps && <Header navData={childProps[0].navData} />} */}
-      <Header />
+      {childProps && <Banner bannerData={childProps[0].bannerData} />}
+      {childProps && <Header navData={childProps[0].navData} />}
       {children}
       {/* {childProps && <Footer footerData={childProps[0].footerData} />} */}
       <Footer />

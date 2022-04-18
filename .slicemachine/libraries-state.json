@@ -723,98 +723,19 @@
               "version": "sktwi1xtmkfgx8626",
               "description": "TextAsset",
               "primary": {
-                "title": {
-                  "type": "StructuredText",
+                "theme": {
+                  "type": "Select",
                   "config": {
-                    "label": "Title",
-                    "placeholder": "Enter title...",
-                    "allowTargetBlank": false,
-                    "single": "heading3"
+                    "label": "Theme",
+                    "placeholder": "Select a theme....",
+                    "options": [
+                      "dark",
+                      "light",
+                      "blue"
+                    ],
+                    "default_value": "dark"
                   }
                 },
-                "label": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "Label",
-                    "placeholder": "Enter label...",
-                    "allowTargetBlank": false,
-                    "single": "heading2"
-                  }
-                },
-                "text": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "Text",
-                    "placeholder": "Enter text...",
-                    "allowTargetBlank": true,
-                    "multi": "paragraph,strong,em,hyperlink"
-                  }
-                },
-                "image": {
-                  "type": "Image",
-                  "config": {
-                    "label": "Image",
-                    "constraint": {},
-                    "thumbnails": []
-                  }
-                }
-              },
-              "items": {},
-              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
-            },
-            {
-              "id": "textAssetLight",
-              "name": "Light theme",
-              "docURL": "...",
-              "version": "sktwi1xtmkfgx8626",
-              "description": "TextAsset",
-              "primary": {
-                "title": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "Title",
-                    "placeholder": "Enter title...",
-                    "allowTargetBlank": false,
-                    "single": "heading3"
-                  }
-                },
-                "label": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "Label",
-                    "placeholder": "Enter label...",
-                    "allowTargetBlank": false,
-                    "single": "heading2"
-                  }
-                },
-                "text": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "Text",
-                    "placeholder": "Enter text...",
-                    "allowTargetBlank": true,
-                    "multi": "paragraph,strong,em,hyperlink"
-                  }
-                },
-                "image": {
-                  "type": "Image",
-                  "config": {
-                    "label": "Image",
-                    "constraint": {},
-                    "thumbnails": []
-                  }
-                }
-              },
-              "items": {},
-              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
-            },
-            {
-              "id": "textAssetBlue",
-              "name": "Blue theme",
-              "docURL": "...",
-              "version": "sktwi1xtmkfgx8626",
-              "description": "TextAsset",
-              "primary": {
                 "title": {
                   "type": "StructuredText",
                   "config": {
@@ -859,28 +780,29 @@
         "mocks": {
           "default": {
             "variation": "default",
-            "name": "Default",
+            "name": "Default theme",
             "slice_type": "text_asset",
             "items": [],
             "primary": {
+              "theme": "dark",
               "title": [
                 {
                   "type": "heading3",
-                  "text": "Optimize B2B markets",
+                  "text": "Morph e-business deliverables",
                   "spans": []
                 }
               ],
               "label": [
                 {
                   "type": "heading2",
-                  "text": "Enable visionary technologies",
+                  "text": "Iterate cutting-edge e-commerce",
                   "spans": []
                 }
               ],
               "text": [
                 {
                   "type": "paragraph",
-                  "text": "Anim est sit magna ipsum tempor irure laborum. Sit dolore labore aliquip aliqua ipsum. Anim laboris est ipsum est elit deserunt deserunt.",
+                  "text": "Veniam ut quis ipsum magna anim qui culpa enim esse sunt ullamco et. Enim non do fugiat culpa proident amet.",
                   "spans": []
                 }
               ],
@@ -891,34 +813,34 @@
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=900&h=500&fit=crop"
+                "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
               }
             }
           },
           "textAssetLight": {
             "variation": "textAssetLight",
-            "name": "TextAssetLight",
+            "name": "Light theme",
             "slice_type": "text_asset",
             "items": [],
             "primary": {
               "title": [
                 {
                   "type": "heading3",
-                  "text": "Engineer next-generation convergence",
+                  "text": "Harness back-end convergence",
                   "spans": []
                 }
               ],
               "label": [
                 {
                   "type": "heading2",
-                  "text": "Innovate front-end niches",
+                  "text": "Leverage user-centric methodologies",
                   "spans": []
                 }
               ],
               "text": [
                 {
                   "type": "paragraph",
-                  "text": "Dolore ullamco minim ea aliqua voluptate minim incididunt excepteur sint qui nostrud. Cupidatat nisi laboris ea fugiat.",
+                  "text": "Velit ut enim irure sunt sit veniam consequat dolor adipisicing aliqua magna laborum dolor nisi.",
                   "spans": []
                 }
               ],
@@ -929,34 +851,34 @@
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&h=500&fit=crop"
+                "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e?w=900&h=500&fit=crop"
               }
             }
           },
           "textAssetBlue": {
             "variation": "textAssetBlue",
-            "name": "TextAssetBlue",
+            "name": "Blue theme",
             "slice_type": "text_asset",
             "items": [],
             "primary": {
               "title": [
                 {
                   "type": "heading3",
-                  "text": "Grow sexy initiatives",
+                  "text": "Utilize efficient infrastructures",
                   "spans": []
                 }
               ],
               "label": [
                 {
                   "type": "heading2",
-                  "text": "Whiteboard turn-key interfaces",
+                  "text": "Envisioneer user-centric paradigms",
                   "spans": []
                 }
               ],
               "text": [
                 {
                   "type": "paragraph",
-                  "text": "Occaecat labore officia sunt deserunt ut. Consectetur incididunt nisi quis fugiat dolore incididunt culpa magna reprehenderit nulla exercitation non Lorem adipisicing. Ad sit Lorem quis irure reprehenderit.",
+                  "text": "Sit aliquip sunt anim magna consequat do esse eiusmod ex magna qui officia.",
                   "spans": []
                 }
               ],
@@ -967,7 +889,7 @@
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=900&h=500&fit=crop"
+                "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?w=900&h=500&fit=crop"
               }
             }
           }
@@ -979,16 +901,6 @@
         "screenshotPaths": {
           "default": {
             "path": "/Users/nathan/Sites/oblhoops/.slicemachine/assets/slices/TextAsset/default/preview.png",
-            "width": 800,
-            "height": 64
-          },
-          "textAssetLight": {
-            "path": "/Users/nathan/Sites/oblhoops/.slicemachine/assets/slices/TextAsset/textAssetLight/preview.png",
-            "width": 800,
-            "height": 64
-          },
-          "textAssetBlue": {
-            "path": "/Users/nathan/Sites/oblhoops/.slicemachine/assets/slices/TextAsset/textAssetBlue/preview.png",
             "width": 800,
             "height": 64
           }

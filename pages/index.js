@@ -6,7 +6,6 @@ import { getLayout } from "@components/Layout/PageLayout";
 // import { homepageGraphQuery } from "@queries/index";
 
 export default function Homepage({ pageData, defaultMetaData }) {
-  console.log(pageData);
   return (
     <>
       <CustomHead defaultMetaData={defaultMetaData} pageMetaData={pageData.data} />

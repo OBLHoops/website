@@ -2,16 +2,15 @@ import Link from "next/link";
 import styles from "./banner.module.scss";
 
 export default function Banner({ bannerData }) {
-  // if (bannerData) {
-  return (
-    <div className={styles.banner}>
-      <div className={styles.container}>
-        {/* <p>{bannerData.data.text}</p> */}
-        <p>banner</p>
+  if (bannerData) {
+    return (
+      <div className={styles.banner}>
+        <div className={styles.container}>
+          <p>{bannerData.data.text}</p>
+        </div>
       </div>
-    </div>
-  );
-  // }
+    );
+  }
 
-  // return null;
+  return null;
 }
