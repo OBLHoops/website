@@ -1,0 +1,15 @@
+@use "@styles/breakpoint";
+@use "@styles/mixins";
+
+.container {
+  @include mixins.container();
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 1.25rem;
+  > div {
+    grid-column: 1/-1;
+    @media (min-width: breakpoint.$lg) {
+      grid-column: 2/12;
+    }
+  }
+}

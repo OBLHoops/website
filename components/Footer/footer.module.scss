@@ -1,0 +1,10 @@
+@use "@styles/mixins";
+@use "@styles/breakpoint";
+
+.footer {
+}
+
+.container {
+  padding: var(--spacing-section) 0 calc(var(--spacing-section) / 4);
+  @include mixins.container();
+}

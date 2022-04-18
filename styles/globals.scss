@@ -1,0 +1,180 @@
+@use "./mixins";
+@use "./breakpoint";
+@import "./reset";
+@import "./typography";
+@import "./webfonts";
+
+:root {
+  // Colors
+  --blue: #0000ff;
+  --yellow: #fff100;
+  --white: #fff;
+  --gray-light: #e2e2e2;
+  --gray-dark: #616161;
+  --black: #000;
+
+  --spacing-section: min(30vh, 6rem);
+
+  // Fonts
+  --font-body: "Roboto", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --font-headline: "Knockout 69", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --font-headline-condensed: "Knockout 67", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --font-headline-black: "Knockout 73", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --font-handwritten: "Upperhand", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --font-regular: 400;
+  --font-medium: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --font-size-smallest: 0.75rem;
+  --font-size-smaller: 0.8125rem;
+  --font-size-normal: 1rem;
+  --font-size-larger: 1.25rem;
+  --font-size-largest: 1.5rem;
+  // 320 > 1280 https://fluid-typography.netlify.app/
+  --font-size-h1: clamp(6rem, 5vw + 5rem, 9rem);
+  --font-size-h2: clamp(3.5rem, 2.5vw + 3rem, 5rem);
+  --font-size-h3: clamp(1.5rem, 1.8vw + 1.1rem, 3rem);
+  --font-size-h4: 2rem;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: var(--white);
+  background-color: var(--black);
+  font-family: var(--font-body);
+  font-weight: var(--font-regular);
+  -webkit-tap-highlight-color: transparent;
+  font-feature-settings: "ss04";
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+  This will hide the focus indicator if the element receives focus via the mouse,
+  but it will still show up on keyboard focus.
+*/
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+[data-js-focus-visible] :focus:not([data-focus-visible-added]) {
+  outline: none;
+}
+
+.focus-visible {
+  outline-offset: 0.25rem;
+  outline: 0.25rem;
+  outline-style: auto;
+}
+
+// a11y requirements
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+// reset button styles
+button,
+input[type="submit"] {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+}
+
+.line-break {
+  display: block;
+}
+
+.data {
+  display: block;
+  font-family: var(--font-headline);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-semibold);
+}
+
+a {
+  &:link,
+  &:visited {
+    transition: color 240ms ease-out 80ms;
+  }
+  &:hover,
+  &:focus {
+    transition: color 180ms ease-in;
+  }
+}
+
+// Swiper
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  bottom: 15px;
+}
+.swiper-pagination-bullet {
+  border: 2px solid var(--whale-blue);
+}
+
+.swiper-button-prev.swiper-button-prev,
+.swiper-button-next.swiper-button-next {
+  z-index: 100;
+  width: 40px;
+  height: 40px;
+  top: unset;
+  bottom: 0;
+  &::after {
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    background-repeat: no-repeat;
+  }
+}
+
+.swiper-button-prev.swiper-button-prev {
+  @media (min-width: breakpoint.$sm) {
+    left: 30%;
+  }
+  &::after {
+    background-image: url("/images/LeftArrow.svg");
+    background-position: center;
+    background-size: 100%;
+  }
+}
+
+.swiper-button-next.swiper-button-next {
+  @media (min-width: breakpoint.$sm) {
+    right: 30%;
+  }
+  &::after {
+    background-image: url("/images/RightArrow.svg");
+    background-position: center;
+    background-size: 100%;
+  }
+}

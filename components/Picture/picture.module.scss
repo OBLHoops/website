@@ -1,0 +1,27 @@
+@use "../../styles/breakpoint";
+
+.picture {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  &.cached {
+    transition: none;
+    opacity: 1;
+  }
+  &.loaded.cached {
+    transition: none;
+    opacity: 1;
+  }
+  &.loading {
+    opacity: 0;
+  }
+  &.loaded.loading {
+    transition: opacity 300ms ease-out;
+    opacity: 1;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}

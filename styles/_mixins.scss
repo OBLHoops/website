@@ -1,0 +1,63 @@
+@use "@styles/breakpoint";
+
+@mixin container($padding: 5, $maxWidth: breakpoint.$xxl) {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: $maxWidth;
+  padding-left: calc($padding * 1rem * 0.33);
+  padding-right: calc($padding * 1rem * 0.33);
+  @media only screen and (max-width: breakpoint.$md) and (orientation: landscape) {
+    --safe-area-inset-left: env(safe-area-inset-left);
+    padding-left: calc(calc($padding * 1rem * 0.5) + var(--safe-area-inset-left));
+    --safe-area-inset-right: env(safe-area-inset-right);
+    padding-right: calc(calc($padding * 1rem * 0.5) + var(--safe-area-inset-right));
+  }
+  @media (min-width: breakpoint.$md) {
+    padding-left: calc($padding * 1rem * 0.75);
+    padding-right: calc($padding * 1rem * 0.75);
+  }
+  @media (min-width: breakpoint.$lg) {
+    padding-left: calc($padding * 1rem);
+    padding-right: calc($padding * 1rem);
+  }
+}
+
+@mixin button() {
+  &:link,
+  &:visited {
+    background-color: transparent;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    font-family: var(--font-body);
+    font-weight: var(--font-medium);
+    padding: calc(0.6rem - 1px) 1.75rem;
+    font-weight: var(--font-medium);
+    line-height: 1;
+    text-decoration: none;
+    display: inline-block;
+    transform: translateY(-2px);
+  }
+  &:hover,
+  &:focus,
+  &.active {
+  }
+  &.outline {
+    padding: 0.7rem 1.75rem 0.5rem;
+    border-color: var(--whale-blue);
+  }
+  &.fill {
+    color: var(--black);
+    padding: 0.7rem 1.75rem 0.5rem;
+    border-color: var(--coral);
+    background-color: var(--coral);
+  }
+  &.icon {
+    color: var(--life-green);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.125rem;
+    padding-left: 0;
+  }
+}

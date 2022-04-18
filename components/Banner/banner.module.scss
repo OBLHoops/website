@@ -1,0 +1,31 @@
+@use "@styles/breakpoint";
+@use "@styles/mixins";
+
+.banner {
+  position: relative;
+  z-index: 2000;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--yellow);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  @media (min-width: breakpoint.$sm) {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  p {
+    font-size: var(--font-size-smaller);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--black);
+    margin: 0;
+  }
+}
+
+.container {
+  @include mixins.container();
+  display: flex;
+  justify-content: center;
+  position: relative;
+}

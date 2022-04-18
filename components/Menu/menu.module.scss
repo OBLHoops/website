@@ -1,0 +1,80 @@
+@use "@styles/mixins";
+@use "@styles/breakpoint";
+
+.menu {
+  /*
+  [1]: All items a forced onto a single line, causing the overflow when necessary.
+  [2]: Automatic overflow means a scroll bar won’t be present if it isn’t needed
+  [3]: Make it smooth scrolling on iOS devices before
+  [4]: Hide the ugly scrollbars in Edge until the scrollable area is hovered
+  [5]: Hide the scroll bar in WebKit browsers
+  */
+  white-space: nowrap; /* [1] */
+  overflow-y: auto; /* [2] */
+  -webkit-overflow-scrolling: touch; /* [3] */
+  -ms-overflow-style: -ms-autohiding-scrollbar; /* [4] */
+
+  /* [5] */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--black);
+  z-index: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 80px;
+  bottom: 0;
+  > div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.items {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+
+  &:last-of-type {
+    .link {
+      font-size: var(--font-size-normal);
+    }
+    li {
+      margin: 1.75rem 0;
+    }
+    li:first-of-type {
+      margin-top: 0;
+    }
+    li:last-of-type {
+      margin-bottom: 3rem;
+    }
+  }
+
+  li {
+    margin: 3rem 0;
+  }
+
+  .link {
+    color: var(--white);
+    line-height: 1;
+    font-size: 2.125rem;
+    font-weight: var(--font-medium);
+    margin: 0 0.5rem;
+    padding: 0 1rem;
+    &.outline {
+      @include mixins.button();
+    }
+    &.fill {
+      @include mixins.button();
+    }
+  }
+}
