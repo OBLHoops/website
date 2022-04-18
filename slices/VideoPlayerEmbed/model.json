@@ -1,0 +1,26 @@
+{
+  "id": "video_player_embed",
+  "type": "SharedSlice",
+  "name": "VideoPlayerEmbed",
+  "description": "VideoPlayerEmbed",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "VideoPlayerEmbed",
+      "primary": {
+        "videoEmbedLink": {
+          "type": "Embed",
+          "config": {
+            "label": "Video Embed Link",
+            "placeholder": "Enter video embed link..."
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

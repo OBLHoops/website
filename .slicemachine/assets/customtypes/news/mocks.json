@@ -1,6 +1,81 @@
 {
-  "id": "cd67ffb8-2d9e-4da8-94a0-03bb90863c26",
-  "uid": "facere-iste-doloribus",
+  "id": "d048acdc-df71-474c-aa97-5fda8de5d246",
+  "uid": "perferendis-reiciendis-et",
   "type": "news",
-  "data": {}
+  "data": {
+    "title": "deliver real-time infrastructures",
+    "pinnedNewsPost": {
+      "link_type": "Web",
+      "url": "http://twitter.com"
+    },
+    "metaTitle": "recontextualize vertical communities",
+    "metaDescription": "facilitate rich communities",
+    "socialCard": [
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "optimize web-enabled e-business",
+        "socialCardDescription": "disintermediate distributed content"
+      },
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "implement end-to-end ROI",
+        "socialCardDescription": "evolve enterprise synergies"
+      },
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "harness cross-platform infrastructures",
+        "socialCardDescription": "innovate end-to-end ROI"
+      },
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "matrix bleeding-edge models",
+        "socialCardDescription": "whiteboard strategic content"
+      },
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "scale next-generation experiences",
+        "socialCardDescription": "matrix interactive architectures"
+      }
+    ]
+  }
 }

@@ -1,0 +1,14 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "social",
+    "items": [],
+    "primary": {
+      "socialContentLink": {
+        "link_type": "Web",
+        "url": "http://google.com"
+      }
+    }
+  }
+]

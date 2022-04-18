@@ -1,6 +1,119 @@
 {
-  "id": "b73047fa-02e2-4aa0-81e2-1bcd67a01afc",
-  "uid": "suscipit-nihil-corporis",
+  "id": "2ac68c44-be54-4f7d-b0a6-7fce33042939",
+  "uid": "dolor-voluptatibus-atque",
   "type": "location",
-  "data": {}
+  "data": {
+    "title": "generate user-centric initiatives",
+    "image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da?w=900&h=500&fit=crop"
+    },
+    "startDateTime": "2012-08-05T15:20:41.467Z",
+    "endDateTime": "2022-03-11T17:45:40.311Z",
+    "tempTime": "2012-09-28T08:12:25.140Z",
+    "Venue": [
+      {
+        "name": "reinvent cross-media experiences",
+        "address": [
+          {
+            "type": "paragraph",
+            "text": "Officia adipisicing sit excepteur et do sint dolore tempor amet aliquip eiusmod ut esse magna anim.",
+            "spans": []
+          }
+        ],
+        "placeId": "engage sexy architectures",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Reprehenderit consectetur deserunt aliqua dolor labore esse exercitation cupidatat Lorem et esse esse excepteur qui. Qui ipsum ad proident ipsum minim sit enim eu laborum qui labore proident.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "name": "incubate mission-critical e-services",
+        "address": [
+          {
+            "type": "paragraph",
+            "text": "Ex anim nulla excepteur sunt excepteur mollit eiusmod qui exercitation incididunt do. Ipsum ea aliquip velit exercitation culpa ex eiusmod ullamco Lorem sunt aliquip anim.",
+            "spans": []
+          }
+        ],
+        "placeId": "deliver compelling interfaces",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Laborum non elit incididunt labore elit proident elit nisi officia occaecat ut. Occaecat officia tempor dolor aute minim excepteur aute occaecat officia laboris incididunt excepteur dolore. Ad sit laborum ea velit esse id elit ullamco.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "name": "architect back-end portals",
+        "address": [
+          {
+            "type": "paragraph",
+            "text": "Ea est nulla esse duis nisi eiusmod minim dolore velit tempor velit.",
+            "spans": []
+          }
+        ],
+        "placeId": "synergize scalable functionalities",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Proident proident tempor laboris velit amet fugiat nulla magna sint aute esse est deserunt. Ad nisi sint minim ullamco. Enim minim id Lorem labore sint cupidatat.",
+            "spans": []
+          }
+        ]
+      }
+    ],
+    "metaTitle": "revolutionize collaborative supply-chains",
+    "metaDescription": "productize efficient e-tailers",
+    "socialCard": [
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "expedite out-of-the-box functionalities",
+        "socialCardDescription": "architect distributed infrastructures"
+      },
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "visualize B2B bandwidth",
+        "socialCardDescription": "optimize customized users"
+      },
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "reintermediate enterprise users",
+        "socialCardDescription": "unleash intuitive infrastructures"
+      }
+    ]
+  }
 }

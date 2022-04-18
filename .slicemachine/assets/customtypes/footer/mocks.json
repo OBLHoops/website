@@ -1,6 +1,129 @@
 {
-  "id": "d569ecc4-3480-4ecc-b2b8-47c9e11f782c",
-  "uid": "ducimus-sint-aut",
+  "id": "cfa870b5-8cb8-457b-885e-d7e0095b4ba9",
+  "uid": "occaecati-ratione-voluptatum",
   "type": "footer",
-  "data": {}
+  "data": {
+    "copyright": "morph frictionless portals",
+    "links": [
+      {
+        "label": "implement viral e-tailers",
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "label": "synergize cross-media portals",
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "label": "grow 24/365 systems",
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      }
+    ],
+    "socialLinks": [
+      {
+        "platformName": "expedite impactful schemas",
+        "platformLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "platformIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055?w=900&h=500&fit=crop"
+        }
+      },
+      {
+        "platformName": "synergize cross-platform portals",
+        "platformLink": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        },
+        "platformIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
+        }
+      },
+      {
+        "platformName": "monetize sticky web services",
+        "platformLink": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        },
+        "platformIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=900&h=500&fit=crop"
+        }
+      },
+      {
+        "platformName": "productize efficient synergies",
+        "platformLink": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        },
+        "platformIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=900&h=500&fit=crop"
+        }
+      },
+      {
+        "platformName": "engage next-generation infrastructures",
+        "platformLink": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        },
+        "platformIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055?w=900&h=500&fit=crop"
+        }
+      },
+      {
+        "platformName": "engineer virtual infomediaries",
+        "platformLink": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        },
+        "platformIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=900&h=500&fit=crop"
+        }
+      }
+    ]
+  }
 }

@@ -11,6 +11,67 @@
           "placeholder": ""
         },
         "type": "UID"
+      },
+      "copyright": {
+        "type": "Text",
+        "config": {
+          "label": "Copyright",
+          "placeholder": ""
+        }
+      },
+      "links": {
+        "type": "Group",
+        "config": {
+          "label": "Links",
+          "fields": {
+            "label": {
+              "type": "Text",
+              "config": {
+                "label": "Label",
+                "placeholder": "Enter label..."
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "Enter link...",
+                "select": null
+              }
+            }
+          }
+        }
+      },
+      "socialLinks": {
+        "type": "Group",
+        "config": {
+          "label": "Social Links",
+          "fields": {
+            "platformName": {
+              "type": "Text",
+              "config": {
+                "label": "Platform Name",
+                "placeholder": "Enter platform name..."
+              }
+            },
+            "platformLink": {
+              "type": "Link",
+              "config": {
+                "label": "Platform Link",
+                "placeholder": "Enter platform link...",
+                "select": null
+              }
+            },
+            "platformIcon": {
+              "type": "Image",
+              "config": {
+                "label": "Platform Icon",
+                "constraint": {},
+                "thumbnails": []
+              }
+            }
+          }
+        }
       }
     }
   }

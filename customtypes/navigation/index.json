@@ -11,6 +11,44 @@
           "placeholder": ""
         },
         "type": "UID"
+      },
+      "links": {
+        "type": "Group",
+        "config": {
+          "label": "Links",
+          "fields": {
+            "label": {
+              "type": "Text",
+              "config": {
+                "label": "Label",
+                "placeholder": "Enter label..."
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "Enter link...",
+                "select": null
+              }
+            }
+          }
+        }
+      },
+      "buttonLabel": {
+        "type": "Text",
+        "config": {
+          "label": "Button label",
+          "placeholder": "Enter label..."
+        }
+      },
+      "buttonLink": {
+        "type": "Link",
+        "config": {
+          "label": "Button link",
+          "placeholder": "Enter link...",
+          "select": null
+        }
       }
     }
   }

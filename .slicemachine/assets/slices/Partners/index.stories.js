@@ -1,0 +1,9 @@
+import MyComponent from '../../../../slices/Partners';
+
+export default {
+  title: 'slices/Partners'
+}
+
+
+export const _Default = () => <MyComponent slice={{"variation":"default","name":"Default","slice_type":"partners","items":[{"logo":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=900&h=500&fit=crop"}},{"logo":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1589321578146-4c1ba445cc88?w=900&h=500&fit=crop"}},{"logo":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=500&fit=crop"}}],"primary":{"title":[{"type":"heading2","text":"Streamline e-business e-services","spans":[]}],"description":[{"type":"paragraph","text":"Officia irure nulla eu labore sunt fugiat id veniam duis et id eiusmod minim. Adipisicing pariatur esse reprehenderit ut ut culpa elit Lorem ut proident voluptate. Fugiat in commodo mollit velit veniam consectetur consectetur mollit velit adipisicing veniam consectetur do veniam labore.","spans":[]}]},"id":"_Default"}} />
+_Default.storyName = 'Default'

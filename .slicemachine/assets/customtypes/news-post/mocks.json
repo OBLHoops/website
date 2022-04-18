@@ -1,6 +1,92 @@
 {
-  "id": "48c8bf41-bb79-43ed-9601-fff8b0929754",
-  "uid": "ullam-in-sit",
+  "id": "10f319c0-dbdf-4816-a412-5328c514cd64",
+  "uid": "error-vitae-magni",
   "type": "news-post",
-  "data": {}
+  "data": {
+    "title": "facilitate magnetic e-tailers",
+    "source": "productize open-source web services",
+    "coverImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055?w=900&h=500&fit=crop"
+    },
+    "postDate": "2012-09-08",
+    "externalLink": {
+      "link_type": "Web",
+      "url": "http://twitter.com"
+    },
+    "metaTitle": "facilitate collaborative bandwidth",
+    "metaDescription": "disintermediate mission-critical e-tailers",
+    "socialCard": [
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "orchestrate extensible mindshare",
+        "socialCardDescription": "productize sexy ROI"
+      },
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "enhance one-to-one eyeballs",
+        "socialCardDescription": "evolve e-business infomediaries"
+      },
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "exploit sticky metrics",
+        "socialCardDescription": "drive magnetic portals"
+      },
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1547082299-de196ea013d6?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "evolve back-end vortals",
+        "socialCardDescription": "brand vertical portals"
+      },
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "utilize ubiquitous supply-chains",
+        "socialCardDescription": "reintermediate open-source content"
+      }
+    ]
+  }
 }

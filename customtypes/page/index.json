@@ -11,6 +11,44 @@
           "placeholder": "Enter page title..."
         },
         "type": "Text"
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "frequently_asked_questions": {
+              "type": "SharedSlice"
+            },
+            "image": {
+              "type": "SharedSlice"
+            },
+            "marquee": {
+              "type": "SharedSlice"
+            },
+            "text": {
+              "type": "SharedSlice"
+            },
+            "schedule": {
+              "type": "SharedSlice"
+            },
+            "text_asset": {
+              "type": "SharedSlice"
+            },
+            "video_player_embed": {
+              "type": "SharedSlice"
+            },
+            "partners": {
+              "type": "SharedSlice"
+            },
+            "social": {
+              "type": "SharedSlice"
+            },
+            "email_sign_up": {
+              "type": "SharedSlice"
+            }
+          }
+        }
       }
     },
     "SEO": {
@@ -38,7 +76,6 @@
       "socialCard": {
         "config": {
           "label": "Social Card",
-          "placeholder": "",
           "fields": {
             "socialCardImage": {
               "config": {

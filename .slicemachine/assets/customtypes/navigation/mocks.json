@@ -1,6 +1,23 @@
 {
-  "id": "31aada27-934f-4c81-94da-39a35c3baa87",
-  "uid": "voluptate-eius-eligendi",
+  "id": "6c21f6ba-caa4-4394-a907-b1b8de42e5ff",
+  "uid": "eum-hic-necessitatibus",
   "type": "navigation",
-  "data": {}
+  "data": {
+    "links": [
+      {
+        "label": "incentivize best-of-breed communities",
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      },
+      {
+        "label": "expedite transparent e-services",
+        "link": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      }
+    ]
+  }
 }

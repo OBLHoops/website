@@ -11,6 +11,41 @@
           "placeholder": "Enter page title..."
         },
         "type": "Text"
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "text": {
+              "type": "SharedSlice"
+            },
+            "text_asset": {
+              "type": "SharedSlice"
+            },
+            "schedule": {
+              "type": "SharedSlice"
+            },
+            "social": {
+              "type": "SharedSlice"
+            },
+            "marquee": {
+              "type": "SharedSlice"
+            },
+            "image": {
+              "type": "SharedSlice"
+            },
+            "partners": {
+              "type": "SharedSlice"
+            },
+            "video_player_embed": {
+              "type": "SharedSlice"
+            },
+            "email_sign_up": {
+              "type": "SharedSlice"
+            }
+          }
+        }
       }
     },
     "SEO": {
@@ -38,7 +73,6 @@
       "socialCard": {
         "config": {
           "label": "Social Card",
-          "placeholder": "",
           "fields": {
             "socialCardImage": {
               "config": {

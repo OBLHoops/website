@@ -1,6 +1,38 @@
 {
-  "id": "c556d058-0df7-444f-acaa-62f94a9f0d20",
-  "uid": "enim-fugiat-et",
+  "id": "a8709b7d-4a26-4d51-98e8-d8e94f5e88fa",
+  "uid": "dolorum-enim-et",
   "type": "page",
-  "data": {}
+  "data": {
+    "title": "revolutionize enterprise bandwidth",
+    "metaTitle": "engineer dot-com solutions",
+    "metaDescription": "embrace impactful schemas",
+    "socialCard": [
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1547082299-de196ea013d6?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "leverage leading-edge communities",
+        "socialCardDescription": "benchmark compelling methodologies"
+      },
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "productize innovative synergies",
+        "socialCardDescription": "monetize real-time action-items"
+      }
+    ]
+  }
 }

@@ -7,10 +7,72 @@
     "Main": {
       "title": {
         "config": {
-          "label": "Title",
-          "placeholder": "Enter location name..."
+          "label": "Name",
+          "placeholder": "Enter city, state..."
         },
         "type": "Text"
+      },
+      "image": {
+        "type": "Image",
+        "config": {
+          "label": "Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "startDateTime": {
+        "type": "Timestamp",
+        "config": {
+          "label": "Start Date Time",
+          "placeholder": ""
+        }
+      },
+      "endDateTime": {
+        "type": "Timestamp",
+        "config": {
+          "label": "End Date Time",
+          "placeholder": ""
+        }
+      },
+      "Venue": {
+        "type": "Group",
+        "config": {
+          "label": "Venue",
+          "fields": {
+            "name": {
+              "type": "Text",
+              "config": {
+                "label": "Name",
+                "placeholder": "Enter venue name..."
+              }
+            },
+            "address": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Address",
+                "placeholder": "Enter venue address...",
+                "allowTargetBlank": false,
+                "multi": "paragraph"
+              }
+            },
+            "placeId": {
+              "type": "Text",
+              "config": {
+                "label": "Place Id",
+                "placeholder": "Enter venue Google PlaceID..."
+              }
+            },
+            "description": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Description",
+                "placeholder": "Enter venue description...",
+                "allowTargetBlank": false,
+                "single": "paragraph,strong,em"
+              }
+            }
+          }
+        }
       }
     },
     "SEO": {
@@ -38,7 +100,6 @@
       "socialCard": {
         "config": {
           "label": "Social Card",
-          "placeholder": "",
           "fields": {
             "socialCardImage": {
               "config": {

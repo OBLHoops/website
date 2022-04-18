@@ -11,6 +11,53 @@
           "placeholder": "Enter news post title..."
         },
         "type": "Text"
+      },
+      "source": {
+        "type": "Text",
+        "config": {
+          "label": "Source",
+          "placeholder": ""
+        }
+      },
+      "coverImage": {
+        "type": "Image",
+        "config": {
+          "label": "Cover Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "postDate": {
+        "type": "Date",
+        "config": {
+          "label": "Post Date",
+          "placeholder": ""
+        }
+      },
+      "externalLink": {
+        "type": "Link",
+        "config": {
+          "label": "External Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "image": {
+              "type": "SharedSlice"
+            },
+            "text": {
+              "type": "SharedSlice"
+            },
+            "video_player_embed": {
+              "type": "SharedSlice"
+            }
+          }
+        }
       }
     },
     "SEO": {
@@ -38,7 +85,6 @@
       "socialCard": {
         "config": {
           "label": "Social Card",
-          "placeholder": "",
           "fields": {
             "socialCardImage": {
               "config": {

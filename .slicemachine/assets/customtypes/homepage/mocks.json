@@ -1,6 +1,77 @@
 {
-  "id": "70a7c906-6f9d-4841-a1c2-4e563e537637",
-  "uid": "veritatis-rerum-et",
+  "id": "5e44bdc7-998d-49c7-9457-9da6ca172b48",
+  "uid": "voluptatem-enim-voluptatem",
   "type": "homepage",
-  "data": {}
+  "data": {
+    "title": "implement 24/365 infomediaries",
+    "metaTitle": "integrate e-business infrastructures",
+    "metaDescription": "embrace frictionless niches",
+    "socialCard": [
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "enable customized portals",
+        "socialCardDescription": "integrate impactful e-services"
+      },
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "empower frictionless content",
+        "socialCardDescription": "embrace sticky web services"
+      },
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "grow robust bandwidth",
+        "socialCardDescription": "expedite strategic deliverables"
+      },
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "strategize virtual communities",
+        "socialCardDescription": "exploit 24/365 mindshare"
+      },
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "extend seamless schemas",
+        "socialCardDescription": "unleash cross-platform users"
+      }
+    ]
+  }
 }

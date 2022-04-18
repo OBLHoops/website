@@ -1,0 +1,27 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "marquee",
+    "items": [
+      {
+        "item": "revolutionize cross-media e-services"
+      },
+      {
+        "item": "visualize global web services"
+      },
+      {
+        "item": "deploy proactive web services"
+      },
+      {
+        "item": "seize B2C channels"
+      },
+      {
+        "item": "syndicate cutting-edge ROI"
+      }
+    ],
+    "primary": {
+      "theme": "yellow"
+    }
+  }
+]

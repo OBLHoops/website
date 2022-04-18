@@ -1,0 +1,29 @@
+{
+  "id": "social",
+  "type": "SharedSlice",
+  "name": "Social",
+  "description": "Social",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Social",
+      "primary": {
+        "socialContentLink": {
+          "type": "Link",
+          "config": {
+            "label": "Social Content Link",
+            "select": "document",
+            "customtypes": [
+              "social"
+            ]
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

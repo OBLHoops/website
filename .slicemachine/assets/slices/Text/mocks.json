@@ -1,0 +1,17 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "text",
+    "items": [],
+    "primary": {
+      "Text": [
+        {
+          "type": "paragraph",
+          "text": "Reprehenderit dolore minim incididunt.",
+          "spans": []
+        }
+      ]
+    }
+  }
+]
