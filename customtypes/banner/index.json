@@ -1,0 +1,32 @@
+{
+  "id": "Banner",
+  "label": "Banner",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        },
+        "type": "UID"
+      },
+      "text": {
+        "config": {
+          "label": "Text",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "link": {
+        "config": {
+          "label": "Link",
+          "placeholder": "",
+          "allowTargetBlank": false
+        },
+        "type": "Link"
+      }
+    }
+  }
+}

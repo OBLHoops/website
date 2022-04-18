@@ -1,0 +1,62 @@
+{
+  "id": "metadata",
+  "label": "Metadata",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        },
+        "type": "UID"
+      },
+      "metaTitle": {
+        "config": {
+          "label": "Meta Title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "metaDescription": {
+        "config": {
+          "label": "Meta Description",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "socialCard": {
+        "config": {
+          "label": "Social Card",
+          "placeholder": "",
+          "fields": {
+            "socialCardImage": {
+              "config": {
+                "label": "Social Card Image",
+                "constraint": {},
+                "thumbnails": []
+              },
+              "type": "Image"
+            },
+            "socialCardTitle": {
+              "config": {
+                "label": "Social Card Title",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "socialCardDescription": {
+              "config": {
+                "label": "Social Card Description",
+                "placeholder": ""
+              },
+              "type": "Text"
+            }
+          }
+        },
+        "type": "Group"
+      }
+    }
+  }
+}

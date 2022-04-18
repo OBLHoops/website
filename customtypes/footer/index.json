@@ -1,0 +1,17 @@
+{
+  "id": "footer",
+  "label": "Footer",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        },
+        "type": "UID"
+      }
+    }
+  }
+}
