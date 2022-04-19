@@ -1,0 +1,43 @@
+@use "@styles/mixins";
+@use "@styles/breakpoint";
+
+.marquee {
+  --marquee-background: var(--yellow);
+  --marquee-item-even: var(--black);
+  --marquee-item-odd: var(--blue);
+  width: 100%;
+  padding: 0.5rem 0;
+  background-color: var(--marquee-background);
+  > div {
+    overflow: hidden;
+  }
+  &.theme-black {
+    --marquee-background: var(--black);
+    --marquee-item-even: var(--white);
+    --marquee-item-odd: var(--yellow);
+  }
+  &.theme-blue {
+    --marquee-background: var(--blue);
+    --marquee-item-even: var(--white);
+    --marquee-item-odd: var(--yellow);
+  }
+}
+
+.item {
+  &.even {
+    color: var(--marquee-item-even);
+  }
+  &.odd {
+    color: var(--marquee-item-odd);
+  }
+}
+
+.text {
+  font-family: var(--font-headline-condensed);
+  text-transform: uppercase;
+  font-size: var(--font-size-largest);
+  padding: 0 0.25ch;
+  @media (min-width: breakpoint.$md) {
+    font-size: var(--font-size-h2);
+  }
+}
