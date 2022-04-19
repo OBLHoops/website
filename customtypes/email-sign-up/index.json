@@ -1,0 +1,55 @@
+{
+  "id": "email-sign-up",
+  "label": "Email Sign Up",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "theme": {
+        "type": "Select",
+        "config": {
+          "label": "Theme",
+          "placeholder": "Select a theme...",
+          "options": [
+            "blue",
+            "black",
+            "yellow"
+          ],
+          "default_value": "blue"
+        }
+      },
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Title",
+          "placeholder": "Enter title...",
+          "allowTargetBlank": false,
+          "single": "heading2"
+        }
+      },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Description",
+          "placeholder": "Enter description...",
+          "allowTargetBlank": false,
+          "single": "paragraph"
+        }
+      },
+      "callToAction": {
+        "type": "Text",
+        "config": {
+          "label": "Call To Action",
+          "placeholder": "Enter call to action..."
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
+      }
+    }
+  }
+}

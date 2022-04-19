@@ -1,9 +1,9 @@
 {
-  "id": "2ac68c44-be54-4f7d-b0a6-7fce33042939",
-  "uid": "dolor-voluptatibus-atque",
+  "id": "4032f917-66f7-4ab9-a000-ab46227df98e",
+  "uid": "veritatis-culpa-praesentium",
   "type": "location",
   "data": {
-    "title": "generate user-centric initiatives",
+    "title": "whiteboard magnetic communities",
     "image": {
       "dimensions": {
         "width": 900,
@@ -11,96 +11,87 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?w=900&h=500&fit=crop"
     },
-    "startDateTime": "2012-08-05T15:20:41.467Z",
-    "endDateTime": "2022-03-11T17:45:40.311Z",
-    "tempTime": "2012-09-28T08:12:25.140Z",
+    "startDateTime": "2015-04-14T07:35:42.001Z",
+    "endDateTime": "2018-08-18T04:09:10.593Z",
     "Venue": [
       {
-        "name": "reinvent cross-media experiences",
+        "name": "whiteboard rich interfaces",
         "address": [
           {
             "type": "paragraph",
-            "text": "Officia adipisicing sit excepteur et do sint dolore tempor amet aliquip eiusmod ut esse magna anim.",
+            "text": "Id nostrud in occaecat in laborum ullamco.",
             "spans": []
           }
         ],
-        "placeId": "engage sexy architectures",
+        "placeId": "envisioneer robust architectures",
         "description": [
           {
             "type": "paragraph",
-            "text": "Reprehenderit consectetur deserunt aliqua dolor labore esse exercitation cupidatat Lorem et esse esse excepteur qui. Qui ipsum ad proident ipsum minim sit enim eu laborum qui labore proident.",
+            "text": "Ex mollit nulla voluptate nisi sint magna mollit id culpa duis. Adipisicing sint voluptate reprehenderit labore sit amet tempor exercitation adipisicing sit.",
             "spans": []
           }
         ]
       },
       {
-        "name": "incubate mission-critical e-services",
+        "name": "architect ubiquitous systems",
         "address": [
           {
             "type": "paragraph",
-            "text": "Ex anim nulla excepteur sunt excepteur mollit eiusmod qui exercitation incididunt do. Ipsum ea aliquip velit exercitation culpa ex eiusmod ullamco Lorem sunt aliquip anim.",
+            "text": "Nulla ea fugiat tempor aute dolor consequat non ad aliquip esse eiusmod.",
             "spans": []
           }
         ],
-        "placeId": "deliver compelling interfaces",
+        "placeId": "engage collaborative ROI",
         "description": [
           {
             "type": "paragraph",
-            "text": "Laborum non elit incididunt labore elit proident elit nisi officia occaecat ut. Occaecat officia tempor dolor aute minim excepteur aute occaecat officia laboris incididunt excepteur dolore. Ad sit laborum ea velit esse id elit ullamco.",
+            "text": "Proident ipsum veniam excepteur non commodo officia aliqua et ea consequat incididunt fugiat pariatur.",
             "spans": []
           }
         ]
       },
       {
-        "name": "architect back-end portals",
+        "name": "matrix B2C niches",
         "address": [
           {
             "type": "paragraph",
-            "text": "Ea est nulla esse duis nisi eiusmod minim dolore velit tempor velit.",
+            "text": "Reprehenderit nostrud et consectetur aliquip laborum. Exercitation sint voluptate fugiat officia eiusmod nisi voluptate consequat cupidatat pariatur tempor dolore Lorem sit. Nostrud enim magna qui est excepteur Lorem dolor excepteur eiusmod.",
             "spans": []
           }
         ],
-        "placeId": "synergize scalable functionalities",
+        "placeId": "revolutionize seamless methodologies",
         "description": [
           {
             "type": "paragraph",
-            "text": "Proident proident tempor laboris velit amet fugiat nulla magna sint aute esse est deserunt. Ad nisi sint minim ullamco. Enim minim id Lorem labore sint cupidatat.",
+            "text": "Proident Lorem dolore eu cupidatat mollit quis magna enim. Adipisicing pariatur aliquip non labore cillum proident sint tempor proident aute ea excepteur incididunt adipisicing. Minim eiusmod in aliqua excepteur nostrud laborum reprehenderit.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "name": "streamline cross-platform communities",
+        "address": [
+          {
+            "type": "paragraph",
+            "text": "Ut cillum quis sit.",
+            "spans": []
+          }
+        ],
+        "placeId": "deliver enterprise solutions",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Eu in velit commodo id ea cillum laborum in id duis. Adipisicing consequat qui est non.",
             "spans": []
           }
         ]
       }
     ],
-    "metaTitle": "revolutionize collaborative supply-chains",
-    "metaDescription": "productize efficient e-tailers",
+    "metaTitle": "drive integrated web-readiness",
+    "metaDescription": "syndicate end-to-end technologies",
     "socialCard": [
-      {
-        "socialCardImage": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
-        },
-        "socialCardTitle": "expedite out-of-the-box functionalities",
-        "socialCardDescription": "architect distributed infrastructures"
-      },
-      {
-        "socialCardImage": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da?w=900&h=500&fit=crop"
-        },
-        "socialCardTitle": "visualize B2B bandwidth",
-        "socialCardDescription": "optimize customized users"
-      },
       {
         "socialCardImage": {
           "dimensions": {
@@ -111,8 +102,34 @@
           "copyright": null,
           "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=900&h=500&fit=crop"
         },
-        "socialCardTitle": "reintermediate enterprise users",
-        "socialCardDescription": "unleash intuitive infrastructures"
+        "socialCardTitle": "e-enable bleeding-edge relationships",
+        "socialCardDescription": "embrace back-end vortals"
+      },
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "expedite global applications",
+        "socialCardDescription": "repurpose robust e-markets"
+      },
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "generate rich metrics",
+        "socialCardDescription": "facilitate dynamic convergence"
       }
     ]
   }

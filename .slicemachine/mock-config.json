@@ -26,6 +26,24 @@
     "banner": {},
     "social": {
       "socialLinks": {}
+    },
+    "faq": {},
+    "marquee": {
+      "items": {}
+    },
+    "email-sign-up": {
+      "title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      },
+      "description": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
     }
   },
   "slices": {
@@ -44,18 +62,16 @@
     "TextAsset": {
       "default": {
         "primary": {
-          "title": {
+          "text": {
             "config": {
-              "patternType": "HEADING",
+              "patternType": "PARAGRAPH",
               "blocks": 1
             }
-          },
-          "label": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          },
+          }
+        }
+      },
+      "withIntroText": {
+        "primary": {
           "text": {
             "config": {
               "patternType": "PARAGRAPH",
@@ -86,7 +102,8 @@
     },
     "Marquee": {
       "default": {
-        "primary": {}
+        "primary": {},
+        "items": {}
       }
     },
     "Social": {
@@ -157,16 +174,15 @@
     },
     "EmailSignUp": {
       "default": {
+        "primary": {}
+      }
+    },
+    "LatestNews": {
+      "default": {
         "primary": {
           "title": {
             "config": {
               "patternType": "HEADING",
-              "blocks": 1
-            }
-          },
-          "description": {
-            "config": {
-              "patternType": "PARAGRAPH",
               "blocks": 1
             }
           }

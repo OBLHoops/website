@@ -1,0 +1,19 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "latest_news",
+    "items": [],
+    "primary": {
+      "label": "transition e-business e-business",
+      "title": [
+        {
+          "type": "heading3",
+          "text": "Scale revolutionary convergence",
+          "spans": []
+        }
+      ],
+      "callToAction": "productize sexy eyeballs"
+    }
+  }
+]

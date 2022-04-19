@@ -11,29 +11,14 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "EmailSignUp",
       "primary": {
-        "title": {
-          "type": "StructuredText",
+        "emailSignUpLink": {
+          "type": "Link",
           "config": {
-            "label": "Title",
-            "placeholder": "Enter title...",
-            "allowTargetBlank": false,
-            "single": "heading2"
-          }
-        },
-        "description": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Description",
-            "placeholder": "Enter description...",
-            "allowTargetBlank": false,
-            "single": "paragraph"
-          }
-        },
-        "submitLabel": {
-          "type": "Text",
-          "config": {
-            "label": "Submit Label",
-            "placeholder": "Enter submit label..."
+            "label": "Select an email sign up",
+            "select": "document",
+            "customtypes": [
+              "email-sign-up"
+            ]
           }
         }
       },

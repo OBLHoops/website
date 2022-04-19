@@ -5,5 +5,5 @@ export default {
 }
 
 
-export const _Default = () => <MyComponent slice={{"variation":"default","name":"Default","slice_type":"marquee","items":[{"item":"revolutionize cross-media e-services"},{"item":"visualize global web services"},{"item":"deploy proactive web services"},{"item":"seize B2C channels"},{"item":"syndicate cutting-edge ROI"}],"primary":{"theme":"yellow"},"id":"_Default"}} />
+export const _Default = () => <MyComponent slice={{"variation":"default","name":"Default","slice_type":"marquee","items":[],"primary":{"theme":"yellow","marquee":{"link_type":"Web","url":"https://slicemachine.dev"}},"id":"_Default"}} />
 _Default.storyName = 'Default'

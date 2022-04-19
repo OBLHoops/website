@@ -24,6 +24,68 @@
             "default_value": "dark"
           }
         },
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "multi": "paragraph,strong,em,hyperlink,heading2,heading3",
+            "allowTargetBlank": true,
+            "placeholder": "Enter text...",
+            "label": "Text"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "imagePosition": {
+          "type": "Select",
+          "config": {
+            "label": "Position image on the...",
+            "placeholder": "",
+            "options": [
+              "right",
+              "left"
+            ],
+            "default_value": "right"
+          }
+        },
+        "imageOverlap": {
+          "type": "Boolean",
+          "config": {
+            "label": "Overlap image with next section?",
+            "placeholder_false": "no",
+            "placeholder_true": "yes",
+            "default_value": true
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "withIntroText",
+      "name": "With intro text",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TextAsset",
+      "primary": {
+        "theme": {
+          "type": "Select",
+          "config": {
+            "label": "Theme",
+            "placeholder": "Select a theme....",
+            "options": [
+              "dark",
+              "light",
+              "blue"
+            ],
+            "default_value": "dark"
+          }
+        },
         "label": {
           "type": "StructuredText",
           "config": {
@@ -45,10 +107,10 @@
         "text": {
           "type": "StructuredText",
           "config": {
-            "label": "Text",
-            "placeholder": "Enter text...",
+            "multi": "paragraph,strong,em,hyperlink,heading2,heading3",
             "allowTargetBlank": true,
-            "multi": "paragraph,strong,em,hyperlink"
+            "placeholder": "Enter text...",
+            "label": "Text"
           }
         },
         "image": {
@@ -57,6 +119,27 @@
             "label": "Image",
             "constraint": {},
             "thumbnails": []
+          }
+        },
+        "imagePosition": {
+          "type": "Select",
+          "config": {
+            "label": "Position image on the...",
+            "placeholder": "",
+            "options": [
+              "right",
+              "left"
+            ],
+            "default_value": "right"
+          }
+        },
+        "imageOverlap": {
+          "type": "Boolean",
+          "config": {
+            "label": "Overlap image with next section?",
+            "placeholder_false": "no",
+            "placeholder_true": "yes",
+            "default_value": true
           }
         }
       },

@@ -43,6 +43,9 @@
             },
             "email_sign_up": {
               "type": "SharedSlice"
+            },
+            "latest_news": {
+              "type": "SharedSlice"
             }
           }
         }

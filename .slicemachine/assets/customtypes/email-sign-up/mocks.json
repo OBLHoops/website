@@ -1,0 +1,23 @@
+{
+  "id": "23f9055e-1030-41a2-847f-f52478dea381",
+  "uid": "repudiandae-exercitationem-ut",
+  "type": "email-sign-up",
+  "data": {
+    "theme": "blue",
+    "title": [
+      {
+        "type": "heading2",
+        "text": "Unleash global blockchains",
+        "spans": []
+      }
+    ],
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Adipisicing aute ipsum ea fugiat eiusmod ipsum laboris do. Est culpa duis quis laboris sunt nisi laboris pariatur.",
+        "spans": []
+      }
+    ],
+    "callToAction": "optimize robust web-readiness"
+  }
+}

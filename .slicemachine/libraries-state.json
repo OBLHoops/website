@@ -19,29 +19,14 @@
               "version": "sktwi1xtmkfgx8626",
               "description": "EmailSignUp",
               "primary": {
-                "title": {
-                  "type": "StructuredText",
+                "emailSignUpLink": {
+                  "type": "Link",
                   "config": {
-                    "label": "Title",
-                    "placeholder": "Enter title...",
-                    "allowTargetBlank": false,
-                    "single": "heading2"
-                  }
-                },
-                "description": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "Description",
-                    "placeholder": "Enter description...",
-                    "allowTargetBlank": false,
-                    "single": "paragraph"
-                  }
-                },
-                "submitLabel": {
-                  "type": "Text",
-                  "config": {
-                    "label": "Submit Label",
-                    "placeholder": "Enter submit label..."
+                    "label": "Select an email sign up",
+                    "select": "document",
+                    "customtypes": [
+                      "email-sign-up"
+                    ]
                   }
                 }
               },
@@ -57,21 +42,10 @@
             "slice_type": "email_sign_up",
             "items": [],
             "primary": {
-              "title": [
-                {
-                  "type": "heading2",
-                  "text": "Architect back-end communities",
-                  "spans": []
-                }
-              ],
-              "description": [
-                {
-                  "type": "paragraph",
-                  "text": "Ad sint incididunt esse ex est. Cupidatat commodo in sit deserunt magna laboris officia ullamco sunt.",
-                  "spans": []
-                }
-              ],
-              "submitLabel": "aggregate best-of-breed supply-chains"
+              "emailSignUpLink": {
+                "link_type": "Web",
+                "url": "https://slicemachine.dev"
+              }
             }
           }
         },
@@ -83,7 +57,7 @@
           "default": {
             "path": "/Users/nathan/Sites/oblhoops/.slicemachine/assets/slices/EmailSignUp/default/preview.png",
             "width": 800,
-            "height": 224
+            "height": 24
           }
         }
       },
@@ -138,7 +112,7 @@
                     "label": "Answer",
                     "placeholder": "Enter answer...",
                     "allowTargetBlank": true,
-                    "multi": "paragraph,strong,em,hyperlink"
+                    "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item"
                   }
                 }
               },
@@ -153,31 +127,51 @@
             "slice_type": "frequently_asked_questions",
             "items": [
               {
-                "question": "repurpose clicks-and-mortar blockchains",
+                "question": "deploy end-to-end schemas",
                 "answer": [
                   {
                     "type": "paragraph",
-                    "text": "In culpa do nisi eu sunt quis qui incididunt aute excepteur occaecat fugiat deserunt ut. Ex occaecat nulla commodo ea.",
+                    "text": "Occaecat officia elit duis velit culpa tempor duis cillum laborum consectetur.",
                     "spans": []
                   }
                 ]
               },
               {
-                "question": "expedite enterprise ROI",
+                "question": "brand cross-media niches",
                 "answer": [
                   {
                     "type": "paragraph",
-                    "text": "Est tempor excepteur anim ipsum pariatur nostrud culpa incididunt anim officia proident ullamco eiusmod. Consectetur exercitation proident est reprehenderit minim occaecat.",
+                    "text": "Cillum exercitation do ut ullamco excepteur anim laboris.",
                     "spans": []
                   }
                 ]
               },
               {
-                "question": "visualize world-class e-business",
+                "question": "disintermediate B2B synergies",
                 "answer": [
                   {
                     "type": "paragraph",
-                    "text": "Enim consequat excepteur labore. Elit cupidatat enim officia labore ad dolor eiusmod culpa in mollit occaecat.",
+                    "text": "Do pariatur dolore cupidatat dolor sunt aute exercitation dolor.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "question": "incentivize cross-platform synergies",
+                "answer": [
+                  {
+                    "type": "paragraph",
+                    "text": "Excepteur duis nostrud cupidatat incididunt labore tempor fugiat laboris aute ad quis sunt. Duis labore pariatur do eiusmod sunt duis do reprehenderit aliqua elit exercitation nostrud amet non irure.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "question": "productize synergistic interfaces",
+                "answer": [
+                  {
+                    "type": "paragraph",
+                    "text": "Exercitation officia qui reprehenderit culpa mollit quis Lorem.",
                     "spans": []
                   }
                 ]
@@ -187,14 +181,14 @@
               "title": [
                 {
                   "type": "heading2",
-                  "text": "Orchestrate magnetic schemas",
+                  "text": "Strategize wireless systems",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Nulla nostrud anim occaecat esse. Minim duis mollit est laborum magna officia tempor incididunt dolor adipisicing cupidatat.",
+                  "text": "Adipisicing veniam voluptate quis enim et nostrud.",
                   "spans": []
                 }
               ]
@@ -209,7 +203,7 @@
           "default": {
             "path": "/Users/nathan/Sites/oblhoops/.slicemachine/assets/slices/FrequentlyAskedQuestions/default/preview.png",
             "width": 800,
-            "height": 224
+            "height": 24
           }
         }
       },
@@ -276,6 +270,78 @@
           }
         }
       },
+      "latest_news": {
+        "library": "slices",
+        "id": "latest_news",
+        "name": "LatestNews",
+        "description": "LatestNews",
+        "model": {
+          "id": "latest_news",
+          "type": "SharedSlice",
+          "name": "LatestNews",
+          "description": "LatestNews",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "LatestNews",
+              "primary": {
+                "label": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Label",
+                    "placeholder": ""
+                  }
+                },
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Enter title...",
+                    "allowTargetBlank": false,
+                    "single": "heading3"
+                  }
+                },
+                "callToAction": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Call To Action",
+                    "placeholder": "Enter call to action text..."
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "latest_news",
+            "items": [],
+            "primary": {
+              "label": "transition e-business e-business",
+              "title": [
+                {
+                  "type": "heading3",
+                  "text": "Scale revolutionary convergence",
+                  "spans": []
+                }
+              ],
+              "callToAction": "productize sexy eyeballs"
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
       "marquee": {
         "library": "slices",
         "id": "marquee",
@@ -306,17 +372,19 @@
                     ],
                     "default_value": "yellow"
                   }
-                }
-              },
-              "items": {
-                "item": {
-                  "type": "Text",
+                },
+                "marquee": {
+                  "type": "Link",
                   "config": {
-                    "label": "Item",
-                    "placeholder": ""
+                    "label": "Link marquee",
+                    "select": "document",
+                    "customtypes": [
+                      "marquee"
+                    ]
                   }
                 }
               },
+              "items": {},
               "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
             }
           ]
@@ -326,25 +394,13 @@
             "variation": "default",
             "name": "Default",
             "slice_type": "marquee",
-            "items": [
-              {
-                "item": "revolutionize cross-media e-services"
-              },
-              {
-                "item": "visualize global web services"
-              },
-              {
-                "item": "deploy proactive web services"
-              },
-              {
-                "item": "seize B2C channels"
-              },
-              {
-                "item": "syndicate cutting-edge ROI"
-              }
-            ],
+            "items": [],
             "primary": {
-              "theme": "yellow"
+              "theme": "yellow",
+              "marquee": {
+                "link_type": "Web",
+                "url": "https://slicemachine.dev"
+              }
             }
           }
         },
@@ -356,7 +412,7 @@
           "default": {
             "path": "/Users/nathan/Sites/oblhoops/.slicemachine/assets/slices/Marquee/default/preview.png",
             "width": 800,
-            "height": 124
+            "height": 24
           }
         }
       },
@@ -736,6 +792,68 @@
                     "default_value": "dark"
                   }
                 },
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em,hyperlink,heading2,heading3",
+                    "allowTargetBlank": true,
+                    "placeholder": "Enter text...",
+                    "label": "Text"
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "imagePosition": {
+                  "type": "Select",
+                  "config": {
+                    "label": "Position image on the...",
+                    "placeholder": "",
+                    "options": [
+                      "right",
+                      "left"
+                    ],
+                    "default_value": "right"
+                  }
+                },
+                "imageOverlap": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "Overlap image with next section?",
+                    "placeholder_false": "no",
+                    "placeholder_true": "yes",
+                    "default_value": true
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "withIntroText",
+              "name": "With intro text",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "TextAsset",
+              "primary": {
+                "theme": {
+                  "type": "Select",
+                  "config": {
+                    "label": "Theme",
+                    "placeholder": "Select a theme....",
+                    "options": [
+                      "dark",
+                      "light",
+                      "blue"
+                    ],
+                    "default_value": "dark"
+                  }
+                },
                 "label": {
                   "type": "StructuredText",
                   "config": {
@@ -757,10 +875,10 @@
                 "text": {
                   "type": "StructuredText",
                   "config": {
-                    "label": "Text",
-                    "placeholder": "Enter text...",
+                    "multi": "paragraph,strong,em,hyperlink,heading2,heading3",
                     "allowTargetBlank": true,
-                    "multi": "paragraph,strong,em,hyperlink"
+                    "placeholder": "Enter text...",
+                    "label": "Text"
                   }
                 },
                 "image": {
@@ -769,6 +887,27 @@
                     "label": "Image",
                     "constraint": {},
                     "thumbnails": []
+                  }
+                },
+                "imagePosition": {
+                  "type": "Select",
+                  "config": {
+                    "label": "Position image on the...",
+                    "placeholder": "",
+                    "options": [
+                      "right",
+                      "left"
+                    ],
+                    "default_value": "right"
+                  }
+                },
+                "imageOverlap": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "Overlap image with next section?",
+                    "placeholder_false": "no",
+                    "placeholder_true": "yes",
+                    "default_value": true
                   }
                 }
               },
@@ -784,25 +923,11 @@
             "slice_type": "text_asset",
             "items": [],
             "primary": {
-              "theme": "dark",
-              "label": [
-                {
-                  "type": "heading2",
-                  "text": "Mesh ubiquitous markets",
-                  "spans": []
-                }
-              ],
-              "title": [
-                {
-                  "type": "heading3",
-                  "text": "Expedite holistic deliverables",
-                  "spans": []
-                }
-              ],
+              "theme": "light",
               "text": [
                 {
                   "type": "paragraph",
-                  "text": "Elit laborum fugiat deserunt fugiat esse veniam eiusmod. Aliquip Lorem aliquip eiusmod quis occaecat laborum magna voluptate sit sint in. Ea mollit mollit nulla.",
+                  "text": "Ipsum eiusmod laborum et reprehenderit commodo minim irure amet occaecat officia occaecat aliqua anim magna. Dolor do amet reprehenderit ea elit fugiat. Officia amet magna proident consequat aliquip tempor tempor dolor esse sunt dolor voluptate qui cupidatat fugiat.",
                   "spans": []
                 }
               ],
@@ -813,8 +938,51 @@
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa?w=900&h=500&fit=crop"
-              }
+                "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a?w=900&h=500&fit=crop"
+              },
+              "imagePosition": "left",
+              "imageOverlap": false
+            }
+          },
+          "withIntroText": {
+            "variation": "withIntroText",
+            "name": "With intro text",
+            "slice_type": "text_asset",
+            "items": [],
+            "primary": {
+              "theme": "blue",
+              "label": [
+                {
+                  "type": "heading2",
+                  "text": "Seize vertical models",
+                  "spans": []
+                }
+              ],
+              "title": [
+                {
+                  "type": "heading3",
+                  "text": "Synthesize dynamic experiences",
+                  "spans": []
+                }
+              ],
+              "text": [
+                {
+                  "type": "paragraph",
+                  "text": "Consequat velit dolor proident incididunt fugiat fugiat. Ea Lorem in Lorem eu nisi in cillum deserunt non sit ea proident laborum velit. Laboris est consectetur deserunt veniam in tempor veniam non.",
+                  "spans": []
+                }
+              ],
+              "image": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=900&h=500&fit=crop"
+              },
+              "imagePosition": "right",
+              "imageOverlap": true
             }
           }
         },

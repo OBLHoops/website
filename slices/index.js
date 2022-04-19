@@ -3,6 +3,7 @@
 import EmailSignUp from './EmailSignUp';
 import FrequentlyAskedQuestions from './FrequentlyAskedQuestions';
 import Image from './Image';
+import LatestNews from './LatestNews';
 import Marquee from './Marquee';
 import Partners from './Partners';
 import Schedule from './Schedule';
@@ -15,6 +16,7 @@ export {
 	EmailSignUp,
 	FrequentlyAskedQuestions,
 	Image,
+	LatestNews,
 	Marquee,
 	Partners,
 	Schedule,
@@ -28,6 +30,7 @@ export const components = {
 	email_sign_up: EmailSignUp,
 	frequently_asked_questions: FrequentlyAskedQuestions,
 	image: Image,
+	latest_news: LatestNews,
 	marquee: Marquee,
 	partners: Partners,
 	schedule: Schedule,

@@ -1,0 +1,39 @@
+{
+  "id": "marquee",
+  "label": "Marquee",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "label": {
+        "type": "Text",
+        "config": {
+          "label": "Label",
+          "placeholder": "Enter a marquee name..."
+        }
+      },
+      "items": {
+        "type": "Group",
+        "config": {
+          "label": "Items",
+          "fields": {
+            "item": {
+              "type": "Text",
+              "config": {
+                "label": "Item",
+                "placeholder": "Enter marquee item..."
+              }
+            }
+          }
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
+      }
+    }
+  }
+}

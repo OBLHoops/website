@@ -1,0 +1,42 @@
+{
+  "id": "latest_news",
+  "type": "SharedSlice",
+  "name": "LatestNews",
+  "description": "LatestNews",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "LatestNews",
+      "primary": {
+        "label": {
+          "type": "Text",
+          "config": {
+            "label": "Label",
+            "placeholder": ""
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "Enter title...",
+            "allowTargetBlank": false,
+            "single": "heading3"
+          }
+        },
+        "callToAction": {
+          "type": "Text",
+          "config": {
+            "label": "Call To Action",
+            "placeholder": "Enter call to action text..."
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}
