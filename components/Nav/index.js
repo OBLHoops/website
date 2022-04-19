@@ -3,7 +3,6 @@ import { classNames } from "@lib/utilities";
 import styles from "./nav.module.scss";
 
 export default function Nav({ toggle, navData }) {
-  console.log(navData);
   return (
     <nav className={styles.nav}>
       <ul>

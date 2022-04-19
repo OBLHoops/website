@@ -2,9 +2,42 @@
 @use "@styles/breakpoint";
 
 .footer {
+  font-size: var(--font-size-smaller);
+  a {
+    &:link,
+    &:visited {
+      text-decoration: underline;
+    }
+    &:hover,
+    &:focus {
+      color: var(--blue);
+    }
+  }
+  p {
+    margin-bottom: 0;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    li {
+      margin: 0 0.25rem;
+      img {
+        max-width: 44px;
+      }
+    }
+  }
 }
 
 .container {
   padding: var(--spacing-section) 0 calc(var(--spacing-section) / 4);
   @include mixins.container();
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  > div {
+    display: flex;
+  }
 }

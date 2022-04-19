@@ -1,13 +1,43 @@
 import Link from "next/link";
-import Logo from "@components/Logo";
-import { PrismicRichText } from "@prismicio/react";
 import styles from "./footer.module.scss";
 import { v4 as uuidv4 } from "uuid";
 
-export default function Footer({}) {
+export default function Footer({ footerData }) {
+  const { copyright, links, socialLinks } = footerData.data;
   return (
     <footer className={styles.footer}>
-      <div className={styles.container}>footer</div>
+      <div className={styles.container}>
+        <div>
+          <p>
+            &copy;{new Date().getFullYear()} {copyright}
+          </p>
+          <ul>
+            {links.map((link) => (
+              <li key={uuidv4()}>
+                <Link href="/">
+                  <a>{link.label}</a>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <ul>
+          {socialLinks.map((link) => (
+            <li key={uuidv4()}>
+              <Link href={link.platformLink.url} target="_blank">
+                <a
+                  target="_blank"
+                  aria-describedby="new-window-2"
+                  rel="noopener noreferrer"
+                  aria-label={link.platformName}
+                >
+                  <img src={link.platformIcon.url} alt={link.platformName} />
+                </a>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
     </footer>
   );
 }
