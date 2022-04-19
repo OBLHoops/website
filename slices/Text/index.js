@@ -9,7 +9,7 @@ const Text = ({ slice }) => {
     <section className={classNames([styles.text], primary.ui && styles[primary.uid])}>
       <ContentContainer>
         <div className={classNames([styles.wrapper])}>
-          <PrismicRichText field={primary?.Text} />
+          <PrismicRichText field={primary?.text} />
         </div>
       </ContentContainer>
     </section>

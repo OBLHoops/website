@@ -11,13 +11,14 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "Text",
       "primary": {
-        "Text": {
+        "text": {
           "type": "StructuredText",
           "config": {
             "allowTargetBlank": true,
             "placeholder": "Enter text...",
             "label": "Text",
-            "multi": "paragraph,heading1,heading2,heading3,heading4,strong,em,hyperlink"
+            "multi": "paragraph,heading1,heading2,heading3,heading4,strong,em,hyperlink",
+            "labels": ["handwritten"]
           }
         }
       },

@@ -3,6 +3,11 @@
 
 .text {
   padding: var(--spacing-section) 0;
+
+  :global(.handwritten) {
+    color: var(--yellow);
+    font-family: var(--font-handwritten);
+  }
 }
 
 .wrapper {
