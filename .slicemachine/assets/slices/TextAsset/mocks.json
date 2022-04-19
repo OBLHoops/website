@@ -6,24 +6,24 @@
     "items": [],
     "primary": {
       "theme": "dark",
-      "title": [
-        {
-          "type": "heading3",
-          "text": "Morph e-business deliverables",
-          "spans": []
-        }
-      ],
       "label": [
         {
           "type": "heading2",
-          "text": "Iterate cutting-edge e-commerce",
+          "text": "Mesh ubiquitous markets",
+          "spans": []
+        }
+      ],
+      "title": [
+        {
+          "type": "heading3",
+          "text": "Expedite holistic deliverables",
           "spans": []
         }
       ],
       "text": [
         {
           "type": "paragraph",
-          "text": "Veniam ut quis ipsum magna anim qui culpa enim esse sunt ullamco et. Enim non do fugiat culpa proident amet.",
+          "text": "Elit laborum fugiat deserunt fugiat esse veniam eiusmod. Aliquip Lorem aliquip eiusmod quis occaecat laborum magna voluptate sit sint in. Ea mollit mollit nulla.",
           "spans": []
         }
       ],
@@ -34,83 +34,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
-      }
-    }
-  },
-  {
-    "variation": "textAssetLight",
-    "name": "Light theme",
-    "slice_type": "text_asset",
-    "items": [],
-    "primary": {
-      "title": [
-        {
-          "type": "heading3",
-          "text": "Harness back-end convergence",
-          "spans": []
-        }
-      ],
-      "label": [
-        {
-          "type": "heading2",
-          "text": "Leverage user-centric methodologies",
-          "spans": []
-        }
-      ],
-      "text": [
-        {
-          "type": "paragraph",
-          "text": "Velit ut enim irure sunt sit veniam consequat dolor adipisicing aliqua magna laborum dolor nisi.",
-          "spans": []
-        }
-      ],
-      "image": {
-        "dimensions": {
-          "width": 900,
-          "height": 500
-        },
-        "alt": "Placeholder image",
-        "copyright": null,
-        "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e?w=900&h=500&fit=crop"
-      }
-    }
-  },
-  {
-    "variation": "textAssetBlue",
-    "name": "Blue theme",
-    "slice_type": "text_asset",
-    "items": [],
-    "primary": {
-      "title": [
-        {
-          "type": "heading3",
-          "text": "Utilize efficient infrastructures",
-          "spans": []
-        }
-      ],
-      "label": [
-        {
-          "type": "heading2",
-          "text": "Envisioneer user-centric paradigms",
-          "spans": []
-        }
-      ],
-      "text": [
-        {
-          "type": "paragraph",
-          "text": "Sit aliquip sunt anim magna consequat do esse eiusmod ex magna qui officia.",
-          "spans": []
-        }
-      ],
-      "image": {
-        "dimensions": {
-          "width": 900,
-          "height": 500
-        },
-        "alt": "Placeholder image",
-        "copyright": null,
-        "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?w=900&h=500&fit=crop"
+        "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa?w=900&h=500&fit=crop"
       }
     }
   }

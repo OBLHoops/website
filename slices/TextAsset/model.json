@@ -16,17 +16,12 @@
           "config": {
             "label": "Theme",
             "placeholder": "Select a theme....",
-            "options": ["dark", "light", "blue"],
+            "options": [
+              "dark",
+              "light",
+              "blue"
+            ],
             "default_value": "dark"
-          }
-        },
-        "title": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Title",
-            "placeholder": "Enter title...",
-            "allowTargetBlank": false,
-            "single": "heading3"
           }
         },
         "label": {
@@ -36,6 +31,15 @@
             "placeholder": "Enter label...",
             "allowTargetBlank": false,
             "single": "heading2"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "Enter title...",
+            "allowTargetBlank": false,
+            "single": "heading3"
           }
         },
         "text": {
