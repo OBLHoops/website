@@ -2,7 +2,6 @@ import ContentContainer from "@components/ContentContainer";
 import styles from "./videoPlayerEmbed.module.scss";
 
 const VideoPlayerEmbed = ({ slice }) => {
-  console.log(slice);
   return (
     <section className={styles.videoEmbed}>
       <div className={styles.container}>

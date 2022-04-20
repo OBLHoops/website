@@ -5,7 +5,7 @@ import { classNames } from "@lib/utilities";
 import styles from "./textAsset.module.scss";
 
 const TextAsset = ({ slice }) => {
-  console.log("slice.primary: ", slice.primary);
+  // console.log("slice.primary: ", slice.primary);
 
   const { image, imagePosition, imageOverlap, text, label, title, theme } = slice.primary;
   return (
