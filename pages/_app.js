@@ -5,6 +5,7 @@ import Link from "next/link";
 import { PrismicProvider } from "@prismicio/react";
 import { PrismicPreview } from "@prismicio/next";
 import { linkResolver, repositoryName } from "../prismicio";
+import { classNames } from "@lib/utilities";
 import "@styles/globals.scss";
 
 const isServerSideRendered = () => {
@@ -27,15 +28,21 @@ if (process.env.NODE_ENV !== "production" && !isServerSideRendered()) {
 
 export default function CustomApp({ Component, pageProps, router }) {
   const getLayout = Component.getLayout || ((page) => <Layout>{page}</Layout>);
-
   return (
     <PrismicProvider
       linkResolver={linkResolver}
-      internalLinkComponent={({ href, children, ...props }) => (
-        <Link href={href}>
-          <a {...props}>{children}</a>
-        </Link>
-      )}
+      internalLinkComponent={({ href, children, ...props }) => {
+        const { className, activeclass, ...mutatedProps } = props;
+        const isActiveLink =
+          (activeclass && router.asPath === href) || router.asPath.startsWith(href);
+        return (
+          <Link href={href}>
+            <a {...mutatedProps} className={classNames([className, isActiveLink && activeclass])}>
+              {children}
+            </a>
+          </Link>
+        );
+      }}
     >
       <PrismicPreview repositoryName={repositoryName}>
         {getLayout(<Component {...pageProps} key={router.route} />)}

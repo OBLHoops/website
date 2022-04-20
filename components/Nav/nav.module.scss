@@ -35,6 +35,9 @@
   font-weight: var(--font-medium);
   margin: 0 0.75rem;
   padding: 0 1rem;
+  &.active {
+    color: var(--yellow);
+  }
   &.outline {
     @include mixins.button();
   }
@@ -54,7 +57,7 @@
   background-color: transparent;
   border-width: 0;
   transform: translateY(1px);
-  color: var(--whale-blue);
+  color: var(--white);
   @media (min-width: breakpoint.$md) {
     display: none;
   }
