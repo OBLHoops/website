@@ -22,6 +22,9 @@
   @media (min-width: breakpoint.$lg) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+  img {
+    clip-path: circle(50% at 50% 50%);
+  }
 }
 
 .socialLinks {
