@@ -13,7 +13,13 @@
       {
         "location": {
           "link_type": "Web",
-          "url": "https://slicemachine.dev"
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "location": {
+          "link_type": "Web",
+          "url": "http://google.com"
         }
       }
     ],
@@ -21,14 +27,14 @@
       "title": [
         {
           "type": "heading2",
-          "text": "Extend magnetic paradigms",
+          "text": "Streamline mission-critical functionalities",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Et aute voluptate aliqua veniam nulla incididunt anim eiusmod in aute magna velit officia cupidatat. Ea exercitation reprehenderit mollit sunt in.",
+          "text": "Esse exercitation adipisicing exercitation occaecat occaecat dolor eu elit in non. Excepteur qui consectetur magna eiusmod mollit do laborum commodo dolor eiusmod. Quis quis do dolor consequat ullamco pariatur id pariatur culpa.",
           "spans": []
         }
       ]

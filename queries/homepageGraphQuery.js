@@ -38,7 +38,12 @@ export const homepageGraphQuery = `{
               ...primaryFields
             }
             items {
-              ...itemsFields
+              location {
+                title
+                image
+                startDateTime
+                endDateTime
+              }
             }
           }
         }
