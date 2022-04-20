@@ -1,7 +1,7 @@
-import { classNames } from "@lib/utilities";
-import styles from "./text.module.scss";
 import { PrismicRichText } from "@prismicio/react";
 import ContentContainer from "@components/ContentContainer";
+import { classNames } from "@lib/utilities";
+import styles from "./text.module.scss";
 
 const Text = ({ slice }) => {
   const { primary } = slice;
