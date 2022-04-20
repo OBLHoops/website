@@ -1,5 +1,6 @@
 import Link from "next/link";
-import ActiveLink from "@components/ActiveLink";
+// import ActiveLink from "@components/ActiveLink";
+import { PrismicLink } from "@prismicio/react";
 import { motion, useReducedMotion } from "framer-motion";
 import { classNames } from "@lib/utilities";
 import styles from "./menu.module.scss";
