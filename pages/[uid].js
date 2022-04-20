@@ -6,12 +6,15 @@ import { getLayout } from "@components/Layout/PageLayout";
 import { pageGraphQuery } from "@queries/index";
 
 export default function Page({ pageData, defaultMetaData }) {
-  return (
-    <>
-      <CustomHead defaultMetaData={defaultMetaData} pageMetaData={pageData.data} />
-      <SliceZone slices={pageData.data.slices} components={components} />
-    </>
-  );
+  if (pageData?.data) {
+    return (
+      <>
+        <CustomHead defaultMetaData={defaultMetaData} pageMetaData={pageData.data} />
+        <SliceZone slices={pageData.data.slices} components={components} />
+      </>
+    );
+  }
+  return null;
 }
 
 export async function getStaticPaths() {
