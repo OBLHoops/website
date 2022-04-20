@@ -229,8 +229,41 @@
                   "type": "Image",
                   "config": {
                     "label": "Image",
-                    "constraint": {},
-                    "thumbnails": []
+                    "constraint": {
+                      "width": 320
+                    },
+                    "thumbnails": [
+                      {
+                        "name": "xs",
+                        "width": 320,
+                        "height": null
+                      },
+                      {
+                        "name": "sm",
+                        "width": 640,
+                        "height": null
+                      },
+                      {
+                        "name": "md",
+                        "width": 960,
+                        "height": null
+                      },
+                      {
+                        "name": "lg",
+                        "width": 1280,
+                        "height": null
+                      },
+                      {
+                        "name": "xl",
+                        "width": 1440,
+                        "height": null
+                      },
+                      {
+                        "name": "xxl",
+                        "width": 1920,
+                        "height": null
+                      }
+                    ]
                   }
                 }
               },
@@ -808,8 +841,41 @@
                   "type": "Image",
                   "config": {
                     "label": "Image",
-                    "constraint": {},
-                    "thumbnails": []
+                    "constraint": {
+                      "width": 640
+                    },
+                    "thumbnails": [
+                      {
+                        "name": "xs",
+                        "width": 320,
+                        "height": null
+                      },
+                      {
+                        "name": "sm",
+                        "width": 640,
+                        "height": null
+                      },
+                      {
+                        "name": "md",
+                        "width": 480,
+                        "height": null
+                      },
+                      {
+                        "name": "lg",
+                        "width": 640,
+                        "height": null
+                      },
+                      {
+                        "name": "xl",
+                        "width": 720,
+                        "height": null
+                      },
+                      {
+                        "name": "xxl",
+                        "width": 960,
+                        "height": null
+                      }
+                    ]
                   }
                 },
                 "imagePosition": {
@@ -888,8 +954,41 @@
                   "type": "Image",
                   "config": {
                     "label": "Image",
-                    "constraint": {},
-                    "thumbnails": []
+                    "constraint": {
+                      "width": 640
+                    },
+                    "thumbnails": [
+                      {
+                        "name": "xs",
+                        "width": 320,
+                        "height": null
+                      },
+                      {
+                        "name": "sm",
+                        "width": 640,
+                        "height": null
+                      },
+                      {
+                        "name": "md",
+                        "width": 480,
+                        "height": null
+                      },
+                      {
+                        "name": "lg",
+                        "width": 640,
+                        "height": null
+                      },
+                      {
+                        "name": "xl",
+                        "width": 720,
+                        "height": null
+                      },
+                      {
+                        "name": "xxl",
+                        "width": 960,
+                        "height": null
+                      }
+                    ]
                   }
                 },
                 "imagePosition": {
