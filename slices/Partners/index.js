@@ -5,7 +5,6 @@ import ContentContainer from "@components/ContentContainer";
 import styles from "./partners.module.scss";
 
 const Partners = ({ slice }) => {
-  console.log(slice);
   const { primary, items } = slice;
   return (
     <section className={styles.partners}>

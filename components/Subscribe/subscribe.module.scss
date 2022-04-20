@@ -1,0 +1,68 @@
+@use "@styles/breakpoint";
+@use "@styles/mixins";
+
+.emailSignup {
+  width: 100%;
+  max-width: 425px;
+  min-width: auto;
+  text-align: left;
+  margin-top: 1rem;
+  margin-inline: auto;
+  padding-right: 0;
+  flex-grow: 1;
+  position: relative;
+  > div {
+    width: 100%;
+  }
+  @media (min-width: breakpoint.$md) {
+    margin-top: 0;
+    width: auto;
+  }
+  @media (min-width: breakpoint.$lg) {
+    text-align: left;
+    width: auto;
+  }
+  h4 {
+    margin-top: 0;
+    font-family: var(--font-body);
+  }
+  form {
+    font-size: var(--font-size-smaller);
+    width: 100%;
+    height: 44px;
+    position: relative;
+    display: flex;
+  }
+
+  input {
+    height: 100%;
+    padding: 0.75rem 0.5rem 0.75rem 0.5rem;
+  }
+
+  .emailAddress {
+    width: 100%;
+    height: 100%;
+    font-size: var(--font-size-larger);
+    line-height: 1;
+    border: 2px solid var(--black);
+    background-color: var(--blue);
+    outline: none;
+    border-radius: 0;
+  }
+  .signup {
+    @include mixins.button();
+    text-align: center;
+    margin-left: -2px;
+    &.fill {
+      background-color: var(--black);
+      color: var(--white);
+    }
+  }
+}
+
+.errorMessage {
+  margin: 0.5rem 0;
+  padding: 0 calc(1rem + 2px);
+  text-align: center;
+  position: absolute;
+}

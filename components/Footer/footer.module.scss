@@ -32,7 +32,7 @@
 }
 
 .container {
-  padding: var(--spacing-section) 0 calc(var(--spacing-section) / 4);
+  padding: 2rem 0;
   @include mixins.container();
   display: flex;
   align-items: center;
