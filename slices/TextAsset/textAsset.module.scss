@@ -1,0 +1,13 @@
+.textAsset {
+  padding: var(--spacing-section) 0;
+
+  &.theme-light {
+    background-color: var(--white);
+    color: var(--black);
+  }
+
+  &.theme-blue {
+    background-color: var(--blue);
+    color: var(--white);
+  }
+}

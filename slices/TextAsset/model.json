@@ -16,11 +16,7 @@
           "config": {
             "label": "Theme",
             "placeholder": "Select a theme....",
-            "options": [
-              "dark",
-              "light",
-              "blue"
-            ],
+            "options": ["dark", "light", "blue"],
             "default_value": "dark"
           }
         },
@@ -37,8 +33,41 @@
           "type": "Image",
           "config": {
             "label": "Image",
-            "constraint": {},
-            "thumbnails": []
+            "constraint": {
+              "width": 640
+            },
+            "thumbnails": [
+              {
+                "name": "xs",
+                "width": 320,
+                "height": null
+              },
+              {
+                "name": "sm",
+                "width": 640,
+                "height": null
+              },
+              {
+                "name": "md",
+                "width": 480,
+                "height": null
+              },
+              {
+                "name": "lg",
+                "width": 640,
+                "height": null
+              },
+              {
+                "name": "xl",
+                "width": 720,
+                "height": null
+              },
+              {
+                "name": "xxl",
+                "width": 960,
+                "height": null
+              }
+            ]
           }
         },
         "imagePosition": {
@@ -46,10 +75,7 @@
           "config": {
             "label": "Position image on the...",
             "placeholder": "",
-            "options": [
-              "right",
-              "left"
-            ],
+            "options": ["right", "left"],
             "default_value": "right"
           }
         },
@@ -78,11 +104,7 @@
           "config": {
             "label": "Theme",
             "placeholder": "Select a theme....",
-            "options": [
-              "dark",
-              "light",
-              "blue"
-            ],
+            "options": ["dark", "light", "blue"],
             "default_value": "dark"
           }
         },
@@ -117,8 +139,41 @@
           "type": "Image",
           "config": {
             "label": "Image",
-            "constraint": {},
-            "thumbnails": []
+            "constraint": {
+              "width": 640
+            },
+            "thumbnails": [
+              {
+                "name": "xs",
+                "width": 320,
+                "height": null
+              },
+              {
+                "name": "sm",
+                "width": 640,
+                "height": null
+              },
+              {
+                "name": "md",
+                "width": 480,
+                "height": null
+              },
+              {
+                "name": "lg",
+                "width": 640,
+                "height": null
+              },
+              {
+                "name": "xl",
+                "width": 720,
+                "height": null
+              },
+              {
+                "name": "xxl",
+                "width": 960,
+                "height": null
+              }
+            ]
           }
         },
         "imagePosition": {
@@ -126,10 +181,7 @@
           "config": {
             "label": "Position image on the...",
             "placeholder": "",
-            "options": [
-              "right",
-              "left"
-            ],
+            "options": ["right", "left"],
             "default_value": "right"
           }
         },
