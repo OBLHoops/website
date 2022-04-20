@@ -52,7 +52,11 @@ export const homepageGraphQuery = `{
         variation {
           ...on default {
             primary {
-              ...primaryFields
+              socialContentLink {
+                socialHandle
+                socialLinks
+                images
+              }
             }
           }
         }
