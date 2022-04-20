@@ -3,7 +3,7 @@ import CustomHead from "@components/Head";
 import { SliceZone } from "@prismicio/react";
 import { components } from "../slices/index";
 import { getLayout } from "@components/Layout/PageLayout";
-// import { homepageGraphQuery } from "@queries/index";
+import { pageGraphQuery } from "@queries/index";
 
 export default function Page({ pageData, defaultMetaData }) {
   return (
@@ -36,7 +36,9 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ previewData, params }) {
   const client = createClient({ previewData });
-  const pageData = await client.getByUID("page", params.uid);
+  const pageData = await client.getByUID("page", params.uid, {
+    graphQuery: pageGraphQuery
+  });
   const navData = await client.getByUID("navigation", "navigation");
   const footerData = await client.getByUID("footer", "footer");
   const bannerData = await client.getByUID("banner", "banner");
