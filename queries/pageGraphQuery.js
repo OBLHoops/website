@@ -38,7 +38,12 @@ export const pageGraphQuery = `{
               ...primaryFields
             }
             items {
-              ...itemsFields
+              location {
+                title
+                image
+                startDateTime
+                endDateTime
+              }
             }
           }
         }
