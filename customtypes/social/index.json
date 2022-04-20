@@ -50,7 +50,7 @@
           }
         }
       },
-      "Images": {
+      "images": {
         "type": "Group",
         "config": {
           "label": "Images",
@@ -59,8 +59,41 @@
               "type": "Image",
               "config": {
                 "label": "Image",
-                "constraint": {},
-                "thumbnails": []
+                "constraint": {
+                  "width": 640
+                },
+                "thumbnails": [
+                  {
+                    "name": "xs",
+                    "width": 320,
+                    "height": null
+                  },
+                  {
+                    "name": "sm",
+                    "width": 640,
+                    "height": null
+                  },
+                  {
+                    "name": "md",
+                    "width": 480,
+                    "height": null
+                  },
+                  {
+                    "name": "lg",
+                    "width": 640,
+                    "height": null
+                  },
+                  {
+                    "name": "xl",
+                    "width": 720,
+                    "height": null
+                  },
+                  {
+                    "name": "xxl",
+                    "width": 960,
+                    "height": null
+                  }
+                ]
               }
             }
           }
