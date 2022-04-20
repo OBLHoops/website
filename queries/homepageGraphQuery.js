@@ -108,7 +108,12 @@ export const homepageGraphQuery = `{
         variation {
           ...on default {
             primary {
-              ...primaryFields
+              emailSignUpLink {
+                theme
+                title
+                description
+                callToAction
+              }
             }
           }
         }
