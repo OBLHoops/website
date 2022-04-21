@@ -5,7 +5,6 @@ import styles from "./nav.module.scss";
 
 export default function Nav({ toggle, navData }) {
   if (navData?.data) {
-    console.log(navData);
     return (
       <nav className={styles.nav}>
         <ul>
