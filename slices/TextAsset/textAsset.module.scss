@@ -10,4 +10,9 @@
     background-color: var(--blue);
     color: var(--white);
   }
+
+  &.theme-yellow {
+    background-color: var(--yellow);
+    color: var(--black);
+  }
 }

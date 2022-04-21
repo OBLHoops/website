@@ -12,6 +12,8 @@ export function linkResolver(doc) {
       return "/";
     case "page":
       return `/${doc.uid}`;
+    case "news":
+      return `/${doc.uid}`;
     default:
       return null;
   }
@@ -20,13 +22,13 @@ export function linkResolver(doc) {
 // This factory function allows smooth preview setup
 export function createClient(config = {}) {
   const client = prismic.createClient(endpoint, {
-    ...config,
+    ...config
   });
 
   enableAutoPreviews({
     client,
     previewData: config.previewData,
-    req: config.req,
+    req: config.req
   });
 
   return client;
