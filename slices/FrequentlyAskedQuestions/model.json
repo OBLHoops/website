@@ -17,7 +17,8 @@
             "label": "Title",
             "placeholder": "Enter title...",
             "allowTargetBlank": false,
-            "single": "heading2"
+            "single": "heading2",
+            "labels": ["handwritten"]
           }
         },
         "description": {

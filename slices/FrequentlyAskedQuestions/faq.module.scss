@@ -6,6 +6,16 @@
   color: var(--black);
   padding: var(--spacing-section) 0;
 
+  h2 {
+    text-align: center;
+    font-size: var(--font-size-h1);
+    width: 15ch;
+    margin: 0 auto calc(var(--spacing-section) / 2);
+    :global(.handwritten) {
+      color: var(--blue);
+    }
+  }
+
   h3 {
     margin: 0;
   }

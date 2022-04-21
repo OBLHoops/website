@@ -178,3 +178,8 @@ a {
     background-size: 100%;
   }
 }
+
+.handwritten {
+  font-family: var(--font-handwritten);
+  letter-spacing: -0.04em;
+}
