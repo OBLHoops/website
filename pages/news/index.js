@@ -1,7 +1,7 @@
-import { createClient } from "prismicio";
+import { createClient } from "@root/prismicio";
 import CustomHead from "@components/Head";
 import { SliceZone } from "@prismicio/react";
-import { components } from "slices/index";
+import { components } from "@slices/index";
 import ContentContainer from "@components/ContentContainer";
 import Link from "next/link";
 import Picture from "@components/Picture";

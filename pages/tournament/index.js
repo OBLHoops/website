@@ -5,7 +5,7 @@ import { components } from "@slices/index";
 import { getLayout } from "@components/Layout/PageLayout";
 import { pageGraphQuery } from "@queries/index";
 
-export default function Page({ pageData, defaultMetaData }) {
+export default function Tournament({ pageData, defaultMetaData }) {
   if (pageData?.data) {
     return (
       <>
@@ -17,29 +17,9 @@ export default function Page({ pageData, defaultMetaData }) {
   return null;
 }
 
-export async function getStaticPaths() {
-  const client = createClient();
-  const allPages = await client.getAllByType("page");
-
-  // If a page has a template, e.g. a page called about.js,
-  // add the name to the array
-  const hasPageTemplate = ["tournament"];
-
-  // Remove pages that have a template from static paths
-  const filterOutTemplates = allPages?.filter((node) => !hasPageTemplate.includes(node.uid));
-
-  // Create an array of paths to pass to static paths
-  const allPaths = filterOutTemplates.map((node) => `/${node.uid}`);
-
-  return {
-    paths: allPaths || [],
-    fallback: true
-  };
-}
-
 export async function getStaticProps({ previewData, params }) {
   const client = createClient({ previewData });
-  const pageData = await client.getByUID("page", params.uid, {
+  const pageData = await client.getByUID("page", "tournament", {
     graphQuery: pageGraphQuery
   });
   const navData = await client.getByUID("navigation", "navigation");
@@ -53,4 +33,4 @@ export async function getStaticProps({ previewData, params }) {
   };
 }
 
-Page.getLayout = getLayout;
+Tournament.getLayout = getLayout;

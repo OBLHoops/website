@@ -1,7 +1,7 @@
-import { createClient } from "../prismicio";
+import { createClient } from "@root/prismicio";
 import CustomHead from "@components/Head";
 import { SliceZone } from "@prismicio/react";
-import { components } from "../slices/index";
+import { components } from "@slices/index";
 import { getLayout } from "@components/Layout/PageLayout";
 import { homepageGraphQuery } from "@queries/index";
 
