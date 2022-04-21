@@ -67,7 +67,7 @@
           "placeholder": ""
         }
       },
-      "Venue": {
+      "venue": {
         "type": "Group",
         "config": {
           "label": "Venue",

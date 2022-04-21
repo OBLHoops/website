@@ -1,96 +1,114 @@
 {
-  "id": "4032f917-66f7-4ab9-a000-ab46227df98e",
-  "uid": "veritatis-culpa-praesentium",
+  "id": "b11a3014-fed6-4088-a2de-9e4dd05f6894",
+  "uid": "impedit-provident-dolorem",
   "type": "location",
   "data": {
-    "title": "whiteboard magnetic communities",
+    "title": "revolutionize web-enabled schemas",
     "image": {
       "dimensions": {
-        "width": 900,
+        "width": 320,
         "height": 500
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=320&h=500&fit=crop",
+      "xs": {
+        "dimensions": {
+          "width": 320,
+          "height": null
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=320&h=null&fit=crop"
+      },
+      "sm": {
+        "dimensions": {
+          "width": 640,
+          "height": null
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=640&h=null&fit=crop"
+      },
+      "md": {
+        "dimensions": {
+          "width": 480,
+          "height": null
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=480&h=null&fit=crop"
+      },
+      "lg": {
+        "dimensions": {
+          "width": 640,
+          "height": null
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=640&h=null&fit=crop"
+      },
+      "xl": {
+        "dimensions": {
+          "width": 720,
+          "height": null
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=720&h=null&fit=crop"
+      },
+      "xxl": {
+        "dimensions": {
+          "width": 960,
+          "height": null
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=960&h=null&fit=crop"
+      }
     },
-    "startDateTime": "2015-04-14T07:35:42.001Z",
-    "endDateTime": "2018-08-18T04:09:10.593Z",
-    "Venue": [
+    "startDateTime": "2017-05-03T20:03:10.430Z",
+    "endDateTime": "2016-07-06T03:01:10.605Z",
+    "venue": [
       {
-        "name": "whiteboard rich interfaces",
+        "name": "engage mission-critical platforms",
         "address": [
           {
             "type": "paragraph",
-            "text": "Id nostrud in occaecat in laborum ullamco.",
+            "text": "Do ullamco sit enim excepteur cupidatat cupidatat eu nostrud Lorem. Eiusmod culpa voluptate et esse Lorem quis incididunt exercitation ad id commodo veniam in. Exercitation sunt eiusmod anim id enim duis voluptate deserunt magna nostrud mollit aliquip voluptate.",
             "spans": []
           }
         ],
-        "placeId": "envisioneer robust architectures",
+        "placeId": "reintermediate efficient e-services",
         "description": [
           {
             "type": "paragraph",
-            "text": "Ex mollit nulla voluptate nisi sint magna mollit id culpa duis. Adipisicing sint voluptate reprehenderit labore sit amet tempor exercitation adipisicing sit.",
+            "text": "Est qui enim cupidatat consequat laboris aliqua labore.",
             "spans": []
           }
         ]
       },
       {
-        "name": "architect ubiquitous systems",
+        "name": "redefine front-end e-commerce",
         "address": [
           {
             "type": "paragraph",
-            "text": "Nulla ea fugiat tempor aute dolor consequat non ad aliquip esse eiusmod.",
+            "text": "Magna do veniam aliquip tempor aliqua. Minim pariatur esse consequat enim reprehenderit officia labore consectetur deserunt eiusmod occaecat amet irure nisi. Excepteur nulla et elit amet labore in ex do tempor.",
             "spans": []
           }
         ],
-        "placeId": "engage collaborative ROI",
+        "placeId": "revolutionize rich ROI",
         "description": [
           {
             "type": "paragraph",
-            "text": "Proident ipsum veniam excepteur non commodo officia aliqua et ea consequat incididunt fugiat pariatur.",
-            "spans": []
-          }
-        ]
-      },
-      {
-        "name": "matrix B2C niches",
-        "address": [
-          {
-            "type": "paragraph",
-            "text": "Reprehenderit nostrud et consectetur aliquip laborum. Exercitation sint voluptate fugiat officia eiusmod nisi voluptate consequat cupidatat pariatur tempor dolore Lorem sit. Nostrud enim magna qui est excepteur Lorem dolor excepteur eiusmod.",
-            "spans": []
-          }
-        ],
-        "placeId": "revolutionize seamless methodologies",
-        "description": [
-          {
-            "type": "paragraph",
-            "text": "Proident Lorem dolore eu cupidatat mollit quis magna enim. Adipisicing pariatur aliquip non labore cillum proident sint tempor proident aute ea excepteur incididunt adipisicing. Minim eiusmod in aliqua excepteur nostrud laborum reprehenderit.",
-            "spans": []
-          }
-        ]
-      },
-      {
-        "name": "streamline cross-platform communities",
-        "address": [
-          {
-            "type": "paragraph",
-            "text": "Ut cillum quis sit.",
-            "spans": []
-          }
-        ],
-        "placeId": "deliver enterprise solutions",
-        "description": [
-          {
-            "type": "paragraph",
-            "text": "Eu in velit commodo id ea cillum laborum in id duis. Adipisicing consequat qui est non.",
+            "text": "Ut cillum officia voluptate eu aute velit aliquip tempor laborum fugiat aute mollit. Aute sunt tempor esse tempor veniam.",
             "spans": []
           }
         ]
       }
     ],
-    "metaTitle": "drive integrated web-readiness",
-    "metaDescription": "syndicate end-to-end technologies",
+    "metaTitle": "embrace B2C applications",
+    "metaDescription": "streamline front-end initiatives",
     "socialCard": [
       {
         "socialCardImage": {
@@ -100,10 +118,10 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=900&h=500&fit=crop"
         },
-        "socialCardTitle": "e-enable bleeding-edge relationships",
-        "socialCardDescription": "embrace back-end vortals"
+        "socialCardTitle": "incubate transparent portals",
+        "socialCardDescription": "synergize open-source functionalities"
       },
       {
         "socialCardImage": {
@@ -113,10 +131,10 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
         },
-        "socialCardTitle": "expedite global applications",
-        "socialCardDescription": "repurpose robust e-markets"
+        "socialCardTitle": "enable intuitive mindshare",
+        "socialCardDescription": "integrate magnetic metrics"
       },
       {
         "socialCardImage": {
@@ -126,10 +144,23 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?w=900&h=500&fit=crop"
         },
-        "socialCardTitle": "generate rich metrics",
-        "socialCardDescription": "facilitate dynamic convergence"
+        "socialCardTitle": "reintermediate global partnerships",
+        "socialCardDescription": "transition granular users"
+      },
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1560762484-813fc97650a0?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "brand holistic blockchains",
+        "socialCardDescription": "deploy extensible relationships"
       }
     ]
   }

@@ -3,7 +3,7 @@
     "homepage": {},
     "page": {},
     "location": {
-      "Venue": {
+      "venue": {
         "address": {
           "config": {
             "patternType": "PARAGRAPH",
