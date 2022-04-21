@@ -1,0 +1,46 @@
+@use "@styles/breakpoint";
+@use "@styles/mixins";
+
+.faq {
+  background-color: var(--yellow);
+  color: var(--black);
+  padding: var(--spacing-section) 0;
+
+  h3 {
+    margin: 0;
+  }
+  .icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  [data-reach-accordion-button] {
+    text-transform: uppercase;
+    margin: 1rem 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: left;
+  }
+  [data-reach-accordion-item] {
+    border-top: 2px solid var(--black);
+  }
+  [data-reach-accordion-panel] {
+    max-width: 55ch;
+  }
+  [data-reach-accordion-item][data-state="open"] {
+    .iconY {
+      display: none;
+    }
+  }
+  [data-reach-accordion-item][data-state="collapsed"] {
+    /* styles for all collapsed accordion items */
+  }
+  [data-reach-accordion-item][data-disabled] {
+    /* styles for all disabled accordion items */
+  }
+  [data-reach-accordion-item][data-read-only] {
+    /* styles for all read-only accordion items */
+  }
+}
