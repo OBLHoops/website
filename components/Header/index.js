@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
-// import { FocusOn } from "react-focus-on";
+import { FocusOn } from "react-focus-on";
 import Link from "next/link";
 import { classNames } from "@lib/utilities";
 import Logo from "@components/Logo";
@@ -27,28 +27,28 @@ export default function Header({ navData }) {
         Skip to Content
       </a>
 
-      {/* <FocusOn enabled={navOpen}> */}
-      <div className={classNames([styles.navWrapper, navOpen && styles.navOpen])}>
-        <div className={styles.logo}>
-          <Link href="/">
-            <a
-              onClick={() => setNavOpen(false)}
-              onKeyPress={() => setNavOpen(false)}
-              role="link"
-              tabIndex={0}
-              title="Return to homepage"
-            >
-              <Logo />
-            </a>
-          </Link>
+      <FocusOn enabled={navOpen}>
+        <div className={classNames([styles.navWrapper, navOpen && styles.navOpen])}>
+          <div className={styles.logo}>
+            <Link href="/">
+              <a
+                onClick={() => setNavOpen(false)}
+                onKeyPress={() => setNavOpen(false)}
+                role="link"
+                tabIndex={0}
+                title="Return to homepage"
+              >
+                <Logo />
+              </a>
+            </Link>
+          </div>
+          <Nav navData={navData} toggle={(isOpen) => setNavOpen(isOpen)} />
+          <Toggle navOpen={navOpen} toggle={(isOpen) => setNavOpen(isOpen)} />
         </div>
-        <Nav navData={navData} toggle={(isOpen) => setNavOpen(isOpen)} />
-        <Toggle navOpen={navOpen} toggle={(isOpen) => setNavOpen(isOpen)} />
-      </div>
-      <AnimatePresence>
-        {navOpen && <Menu navData={navData} toggle={(isOpen) => setNavOpen(isOpen)} />}
-      </AnimatePresence>
-      {/* </FocusOn> */}
+        <AnimatePresence>
+          {navOpen && <Menu navData={navData} toggle={(isOpen) => setNavOpen(isOpen)} />}
+        </AnimatePresence>
+      </FocusOn>
     </header>
   );
 }

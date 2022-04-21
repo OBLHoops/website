@@ -18,6 +18,8 @@
   // Fonts
   --font-body: "Roboto", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --font-body-bold: "Knockout 51", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   --font-headline: "Knockout 69", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   --font-headline-condensed: "Knockout 67", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
@@ -139,7 +141,7 @@ a {
   bottom: 15px;
 }
 .swiper-pagination-bullet {
-  border: 2px solid var(--whale-blue);
+  border: 2px solid var(--white);
 }
 
 .swiper-button-prev.swiper-button-prev,

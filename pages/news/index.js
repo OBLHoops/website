@@ -10,7 +10,6 @@ import { newsGraphQuery } from "@queries/index";
 import styles from "@styles/News.module.scss";
 
 export default function News({ pageData, defaultMetaData }) {
-  console.log(pageData);
   return (
     <>
       <CustomHead defaultMetaData={defaultMetaData} pageMetaData={pageData.data} />

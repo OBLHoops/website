@@ -7,7 +7,7 @@
   z-index: 1000;
   color: var(--white);
   background-color: var(--black);
-  height: 80px;
+  min-height: 80px;
   @media (min-width: breakpoint.$md) {
     height: auto;
   }
@@ -24,30 +24,28 @@
 }
 
 .navWrapper {
-  padding-top: 1.1rem;
-  padding-bottom: 1.1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   height: 100%;
   width: 100%;
-  // background-color: var(--white);
+  background-color: var(--black);
   position: relative;
   z-index: 2000;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   @include mixins.container();
 }
 
 .logo {
-  position: relative;
+  z-index: 5;
+  position: absolute;
   display: block;
-  z-index: 100;
-  transform: translateY(5px);
   @media (min-width: breakpoint.$md) {
     margin-right: 3.5rem;
   }
   a {
     display: block;
-    width: 128px;
+    width: 120px;
   }
 }
 

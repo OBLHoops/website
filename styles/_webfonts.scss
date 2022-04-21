@@ -13,6 +13,14 @@
 }
 
 @font-face {
+  font-family: "Knockout 51";
+  src: url("/fonts/knockout/woff2/Knockout-51_Web.woff2") format("woff2"),
+    url("/fonts/knockout/woff/Knockout-51_Web.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Knockout 69";
   src: url("/fonts/knockout/woff2/Knockout-69_Web.woff2") format("woff2"),
     url("/fonts/knockout/woff/Knockout-69_Web.woff") format("woff");

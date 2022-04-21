@@ -5,8 +5,7 @@ import ContentContainer from "@components/ContentContainer";
 import styles from "./emailSignUp.module.scss";
 
 const EmailSignUp = ({ slice }) => {
-  console.log(slice);
-  const { primary, items } = slice;
+  const { primary } = slice;
   return (
     <section className={styles.emailSignUp}>
       <ContentContainer>

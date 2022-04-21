@@ -27,37 +27,24 @@
   &:link,
   &:visited {
     background-color: transparent;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     white-space: nowrap;
-    font-family: var(--font-body);
-    font-weight: var(--font-medium);
-    padding: calc(0.6rem - 1px) 1.75rem;
-    font-weight: var(--font-medium);
+    font-family: var(--font-body-bold);
+    padding: calc(1rem - 2px) 1.875rem;
     line-height: 1;
     text-decoration: none;
     display: inline-block;
-    transform: translateY(-2px);
   }
   &:hover,
   &:focus,
   &.active {
   }
   &.outline {
-    padding: 0.7rem 1.75rem 0.5rem;
-    border-color: var(--whale-blue);
+    border-color: var(--white);
   }
   &.fill {
     color: var(--black);
-    padding: 0.7rem 1.75rem 0.5rem;
-    border-color: var(--coral);
-    background-color: var(--coral);
-  }
-  &.icon {
-    color: var(--life-green);
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 1.125rem;
-    padding-left: 0;
+    border-color: var(--yellow);
+    background-color: var(--yellow);
   }
 }

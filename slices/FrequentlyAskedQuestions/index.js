@@ -8,7 +8,6 @@ import { classNames } from "@lib/utilities";
 import styles from "./faq.module.scss";
 
 const FrequentlyAskedQuestions = ({ slice }) => {
-  console.log(slice);
   const { primary, items } = slice;
 
   const Item = ({ question, answer }) => (

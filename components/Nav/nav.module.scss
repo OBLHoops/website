@@ -2,23 +2,26 @@
 @use "@styles/breakpoint";
 
 .nav {
-  position: relative;
   display: none;
 
   @media (min-width: breakpoint.$md) {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+
     align-items: center;
     width: 100%;
   }
   ul {
+    z-index: 0;
+    position: absolute;
     width: 100%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
+    justify-content: center;
     list-style: none;
     padding: 0;
     margin: 0;
-    transform: translateY(3px);
     &:last-child {
       justify-content: flex-end;
       margin-right: -0.75rem;
@@ -31,18 +34,27 @@
   display: block;
   color: var(--white);
   line-height: 1;
-  font-size: 0.9375rem;
-  font-weight: var(--font-medium);
+  font-size: 1.3125rem;
+  font-family: var(--font-body-bold);
+  text-transform: uppercase;
   margin: 0 0.75rem;
   padding: 0 1rem;
   &.active {
     color: var(--yellow);
   }
-  &.outline {
-    @include mixins.button();
-  }
+}
+
+.button {
+  @include mixins.button();
+  position: relative;
+  z-index: 5;
   &.fill {
-    @include mixins.button();
+    margin-left: auto;
+    font-size: 1.3125rem;
+    font-family: var(--font-body-bold);
+    text-transform: uppercase;
+    color: var(--black);
+    background-color: var(--yellow);
   }
 }
 
@@ -52,7 +64,8 @@
   height: 35px;
   padding: 0.25rem;
   margin-right: -0.25rem;
-  position: relative;
+  position: absolute;
+  right: 1.65rem;
   z-index: 100;
   background-color: transparent;
   border-width: 0;
