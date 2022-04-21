@@ -1,5 +1,6 @@
 import { PrismicLink } from "@prismicio/react";
 import { classNames } from "@lib/utilities";
+import { ExternalLink } from "@components/Icon";
 import styles from "./nav.module.scss";
 
 export default function Nav({ toggle, navData }) {
@@ -20,6 +21,7 @@ export default function Nav({ toggle, navData }) {
                 target={item.link.link_type == "Web" ? "_blank" : "_self"}
               >
                 {item.label}
+                {item.link.link_type == "Web" && <ExternalLink className={styles.externalLink} />}
               </PrismicLink>
             </li>
           ))}
@@ -30,9 +32,12 @@ export default function Nav({ toggle, navData }) {
           className={classNames([styles.button, styles.fill])}
           onClick={() => toggle(false)}
           onKeyPress={() => toggle(false)}
-          target={navData.data.buttonLink == "Web" ? "_blank" : "_self"}
+          target={navData.data.buttonLink.link_type == "Web" ? "_blank" : "_self"}
         >
           {navData.data.buttonLabel}
+          {navData.data.buttonLink.link_type == "Web" && (
+            <ExternalLink className={styles.externalLink} />
+          )}
         </PrismicLink>
       </nav>
     );

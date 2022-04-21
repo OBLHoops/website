@@ -39,16 +39,24 @@
   text-transform: uppercase;
   margin: 0 0.75rem;
   padding: 0 1rem;
+  display: flex;
   &.active {
     color: var(--yellow);
   }
+}
+
+.externalLink {
+  width: 13px;
+  height: 13px;
 }
 
 .button {
   @include mixins.button();
   position: relative;
   z-index: 5;
+
   &.fill {
+    display: flex;
     margin-left: auto;
     font-size: 1.3125rem;
     font-family: var(--font-body-bold);
