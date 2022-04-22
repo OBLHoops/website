@@ -8,7 +8,12 @@ import Picture from "@components/Picture";
 import LocationPreview from "@components/LocationPreview";
 import styles from "@styles/Location.module.scss";
 
-export default function Page({ pageData, marqueeData = {}, locationsData = {}, defaultMetaData }) {
+export default function Location({
+  pageData,
+  marqueeData = {},
+  locationsData = {},
+  defaultMetaData
+}) {
   if (pageData?.data) {
     const marqueeObj = {
       primary: {
@@ -109,4 +114,4 @@ export async function getStaticProps({ previewData, params }) {
   };
 }
 
-Page.getLayout = getLayout;
+Location.getLayout = getLayout;
