@@ -53,7 +53,10 @@ export async function getStaticProps({ previewData }) {
     graphQuery: newsGraphQuery
   });
   const newsPosts = await client.getAllByType("news-post", {
-    orderings: "document.postDate"
+    orderings: {
+      field: "my.news-post.postDate",
+      direction: "desc"
+    }
   });
   const navData = await client.getByUID("navigation", "navigation");
   const footerData = await client.getByUID("footer", "footer");
