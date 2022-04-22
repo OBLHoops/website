@@ -1,21 +1,19 @@
 import { createClient } from "@root/prismicio";
 import CustomHead from "@components/Head";
-import { SliceZone } from "@prismicio/react";
-import { components } from "@slices/index";
-import ContentContainer from "@components/ContentContainer";
 import Link from "next/link";
 import Picture from "@components/Picture";
+import NewsPostPreview from "@components/NewsPostPreview";
 import { getLayout } from "@components/Layout/PageLayout";
 import { newsGraphQuery } from "@queries/index";
 import styles from "@styles/News.module.scss";
 
-export default function News({ pageData, defaultMetaData }) {
+export default function News({ pageData, newsPosts, defaultMetaData }) {
+  console.log(newsPosts);
   return (
     <>
       <CustomHead defaultMetaData={defaultMetaData} pageMetaData={pageData.data} />
       <div className={styles.container}>
         <h1>{pageData.data.title}</h1>
-
         {pageData.data.pinnedNewsPost && (
           <div className={styles.pinnedPost}>
             <Link
@@ -35,6 +33,15 @@ export default function News({ pageData, defaultMetaData }) {
             </Link>
           </div>
         )}
+        {newsPosts.length && (
+          <div className={styles.newsPosts}>
+            <div className={styles.grid}>
+              {newsPosts.map((item) => (
+                <NewsPostPreview {...item} slug={item.uid} key={item.id} />
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </>
   );
@@ -45,13 +52,16 @@ export async function getStaticProps({ previewData }) {
   const pageData = await client.getByUID("news", "news", {
     graphQuery: newsGraphQuery
   });
+  const newsPosts = await client.getAllByType("news-post", {
+    orderings: "document.postDate"
+  });
   const navData = await client.getByUID("navigation", "navigation");
   const footerData = await client.getByUID("footer", "footer");
   const bannerData = await client.getByUID("banner", "banner");
   const defaultMetaData = await client.getByUID("metadata", "metadata");
-
+  console.log("newsPosts: ", newsPosts);
   return {
-    props: { pageData, navData, footerData, bannerData, defaultMetaData },
+    props: { pageData, newsPosts, navData, footerData, bannerData, defaultMetaData },
     revalidate: 10
   };
 }
