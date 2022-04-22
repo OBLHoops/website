@@ -24,7 +24,14 @@
 }
 
 @mixin button() {
-  &:link,
+  background-color: transparent;
+  border: 2px solid transparent;
+  white-space: nowrap;
+  font-family: var(--font-body-bold);
+  padding: calc(1rem - 2px) 1.875rem;
+  line-height: 1;
+  text-decoration: none;
+  display: inline-block;
   &:visited {
     background-color: transparent;
     border: 2px solid transparent;
