@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "focus-visible";
 import Layout from "@components/Layout";
 import Link from "next/link";
@@ -27,6 +27,26 @@ if (process.env.NODE_ENV !== "production" && !isServerSideRendered()) {
 }
 
 export default function CustomApp({ Component, pageProps, router }) {
+  useEffect(() => {
+    const handleRouteComplete = (url, { shallow }) => {
+      console.log(
+        `Route change complete to ${url} ${shallow ? "with" : "without"} shallow routing`
+      );
+
+      // Delay scroll to top an route change
+      setTimeout(() => {
+        window.scrollTo({
+          top: 0,
+          left: 0
+        });
+      }, 100);
+    };
+    router.events.on("routeChangeComplete", handleRouteComplete);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteComplete);
+    };
+  }, []);
+
   const getLayout = Component.getLayout || ((page) => <Layout>{page}</Layout>);
   return (
     <PrismicProvider
@@ -36,7 +56,7 @@ export default function CustomApp({ Component, pageProps, router }) {
         const isActiveLink =
           (activeclass && router.asPath === href) || router.asPath.startsWith(href);
         return (
-          <Link href={href}>
+          <Link href={href} scroll={false}>
             <a {...mutatedProps} className={classNames([className, isActiveLink && activeclass])}>
               {children}
             </a>

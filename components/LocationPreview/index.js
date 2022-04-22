@@ -5,7 +5,7 @@ import styles from "./locationPreview.module.scss";
 export default function LocationPreview({ slug, data }) {
   return (
     <div className={styles.location}>
-      <Link href={`/tournament/${slug}`}>
+      <Link href={`/tournament/${slug}`} scroll={false}>
         <a>
           <Picture image={data.image} />
           <h3>{data.title}</h3>

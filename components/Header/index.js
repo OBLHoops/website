@@ -30,7 +30,7 @@ export default function Header({ navData }) {
       <FocusOn enabled={navOpen}>
         <div className={classNames([styles.navWrapper, navOpen && styles.navOpen])}>
           <div className={styles.logo}>
-            <Link href="/">
+            <Link href="/" scroll={false}>
               <a
                 onClick={() => setNavOpen(false)}
                 onKeyPress={() => setNavOpen(false)}

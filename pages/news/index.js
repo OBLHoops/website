@@ -22,6 +22,7 @@ export default function News({ pageData, defaultMetaData }) {
               href={`/news/${pageData.data.pinnedNewsPost.uid}`}
               title={pageData.data.pinnedNewsPost.data.title}
               className={styles.link}
+              scroll={false}
             >
               <a>
                 <Picture image={pageData.data.pinnedNewsPost.data.coverImage} />

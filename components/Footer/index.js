@@ -14,7 +14,7 @@ export default function Footer({ footerData }) {
             <ul>
               {footerData.data.links.map((link) => (
                 <li key={uuidv4()}>
-                  <Link href="/">
+                  <Link href="/" scroll={false}>
                     <a>{link.label}</a>
                   </Link>
                 </li>
@@ -24,16 +24,15 @@ export default function Footer({ footerData }) {
           <ul>
             {footerData.data.socialLinks.map((link) => (
               <li key={uuidv4()}>
-                <Link href={link.platformLink.url} target="_blank">
-                  <a
-                    target="_blank"
-                    aria-describedby="new-window-2"
-                    rel="noopener noreferrer"
-                    aria-label={link.platformName}
-                  >
-                    <img src={link.platformIcon.url} alt={link.platformName} />
-                  </a>
-                </Link>
+                <a
+                  target="_blank"
+                  aria-describedby="new-window-2"
+                  rel="noopener noreferrer"
+                  aria-label={link.platformName}
+                  href={link.platformLink.url}
+                >
+                  <img src={link.platformIcon.url} alt={link.platformName} />
+                </a>
               </li>
             ))}
           </ul>
