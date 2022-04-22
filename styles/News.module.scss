@@ -30,3 +30,23 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
+.button {
+  @include mixins.button();
+  position: relative;
+  z-index: 5;
+  margin: 0 auto;
+  &.fill {
+    display: flex;
+    margin-left: auto;
+    font-size: 1.3125rem;
+    font-family: var(--font-body-bold);
+    text-transform: uppercase;
+    color: var(--black);
+    background-color: var(--yellow);
+  }
+  &.disabled {
+    cursor: auto;
+    opacity: 0.2;
+  }
+}
