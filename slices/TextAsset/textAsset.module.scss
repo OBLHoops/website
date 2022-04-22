@@ -16,3 +16,10 @@
     color: var(--black);
   }
 }
+
+.grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+}

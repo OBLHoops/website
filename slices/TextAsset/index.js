@@ -11,8 +11,10 @@ const TextAsset = ({ slice }) => {
   return (
     <section className={classNames([styles.textAsset, styles[`theme-${theme}`]])}>
       <ContentContainer>
-        {text && <PrismicRichText field={text} />}
-        {image && <Picture image={image} />}
+        <div className={styles.grid}>
+          <div>{text && <PrismicRichText field={text} />}</div>
+          <div>{image && <Picture image={image} />}</div>
+        </div>
       </ContentContainer>
     </section>
   );
