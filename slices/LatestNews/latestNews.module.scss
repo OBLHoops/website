@@ -1,27 +1,31 @@
 @use "@styles/breakpoint";
 @use "@styles/mixins";
 
-.container {
+.latestNews {
   padding: var(--spacing-section) 0;
+}
+
+.container {
   @include mixins.container();
 }
 
-.pinnedPost {
-  margin-bottom: var(--spacing-section);
-  a {
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
+.intro {
+  display: grid;
+  align-items: flex-end;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  margin-bottom: calc(var(--spacing-section) / 2);
+  > div:nth-of-type(2) {
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
-.newsPosts .grid {
+.grid {
   display: grid;
   column-gap: 0;
   row-gap: 1rem;
   grid-template-columns: repeat(1, minmax(0, 1fr));
-  margin-bottom: calc(var(--spacing-section) / 2);
   @media (min-width: breakpoint.$sm) {
     padding: 0;
     column-gap: 2rem;
@@ -37,18 +41,13 @@
   @include mixins.button();
   position: relative;
   z-index: 5;
-  margin: 0 auto;
   &.fill {
-    display: flex;
+    display: inline-block;
     margin-left: auto;
     font-size: 1.3125rem;
     font-family: var(--font-body-bold);
     text-transform: uppercase;
     color: var(--black);
     background-color: var(--yellow);
-  }
-  &.disabled {
-    cursor: auto;
-    opacity: 0.2;
   }
 }

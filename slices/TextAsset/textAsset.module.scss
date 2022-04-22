@@ -1,19 +1,25 @@
 .textAsset {
-  padding: var(--spacing-section) 0;
+  margin: var(--spacing-section) 0;
 
   &.theme-light {
     background-color: var(--white);
     color: var(--black);
+    margin: 0;
+    padding: var(--spacing-section) 0;
   }
 
   &.theme-blue {
     background-color: var(--blue);
     color: var(--white);
+    margin: 0;
+    padding: var(--spacing-section) 0;
   }
 
   &.theme-yellow {
     background-color: var(--yellow);
     color: var(--black);
+    margin: 0;
+    padding: var(--spacing-section) 0;
   }
 }
 

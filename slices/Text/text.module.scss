@@ -2,7 +2,7 @@
 @use "@styles/mixins";
 
 .text {
-  padding: var(--spacing-section) 0;
+  margin: var(--spacing-section) 0;
 
   :global(.handwritten) {
     color: var(--yellow);
