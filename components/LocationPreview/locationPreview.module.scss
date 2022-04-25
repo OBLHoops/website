@@ -6,16 +6,19 @@
         &::after {
           background-color: var(--yellow);
           mix-blend-mode: multiply;
-          transition: background-color 800ms ease-out 160ms;
+          opacity: 0.25;
+          transition: opacity 500ms ease-out 80ms;
         }
       }
     }
     &:hover,
     &:focus {
+      color: var(--blue);
       .image {
         &::after {
-          background-color: var(--blue);
-          transition: background-color 300ms ease-out;
+          background-color: var(--yellow);
+          opacity: 0.75;
+          transition: opacity 250ms ease-out;
         }
       }
     }
