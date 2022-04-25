@@ -13,7 +13,7 @@
   --gray-dark: #616161;
   --black: #000;
 
-  --spacing-section: min(30vh, 12.5rem);
+  --spacing-section: min(10vh, 12.5rem);
 
   // Fonts
   --font-body: "Roboto", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
@@ -38,7 +38,7 @@
   --font-size-larger: 1.25rem;
   --font-size-largest: 1.5rem;
   // 320 > 1280 https://fluid-typography.netlify.app/
-  --font-size-h1: clamp(6rem, 5vw + 5rem, 9rem);
+  --font-size-h1: clamp(4rem, 14.2vw + 1.2rem, 12.5rem);
   --font-size-h2: clamp(3.5rem, 2.5vw + 3rem, 5rem);
   --font-size-h3: clamp(1.5rem, 1.8vw + 1.1rem, 3rem);
   --font-size-h4: 2rem;
