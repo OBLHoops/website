@@ -10,14 +10,16 @@
 }
 
 .intro {
-  display: grid;
-  align-items: flex-end;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 2rem;
   margin-bottom: calc(var(--spacing-section) / 2);
-  > div:nth-of-type(2) {
-    display: flex;
-    justify-content: flex-end;
+  @media (min-width: breakpoint.$md) {
+    display: grid;
+    align-items: flex-end;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    > div:nth-of-type(2) {
+      display: flex;
+      justify-content: flex-end;
+    }
   }
 }
 

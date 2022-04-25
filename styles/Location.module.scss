@@ -56,8 +56,10 @@
   }
 
   .blank {
-    background-color: var(--black);
-    opacity: 0.1;
-    aspect-ratio: 1/1;
+    @media (min-width: breakpoint.$lg) {
+      background-color: var(--black);
+      opacity: 0.1;
+      aspect-ratio: 1/1;
+    }
   }
 }
