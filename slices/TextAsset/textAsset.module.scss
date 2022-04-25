@@ -75,14 +75,27 @@
 .grid {
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 8rem;
-
+  column-gap: 0;
+  row-gap: 2rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  @media (min-width: breakpoint.$sm) {
+    column-gap: 2rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @media (min-width: breakpoint.$md) {
+    column-gap: 4rem;
+  }
+  @media (min-width: breakpoint.$lg) {
+    column-gap: 8rem;
+  }
   p,
   ul,
   ol {
     max-width: 25rem;
     font-size: var(--font-size-larger);
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 
   h2 {
@@ -93,6 +106,20 @@
     max-width: 25rem;
   }
 
+  &.align-image-right {
+    div:nth-of-type(1) {
+      order: 2;
+      @media (min-width: breakpoint.$sm) {
+        order: 1;
+      }
+    }
+    div:nth-of-type(2) {
+      order: 1;
+      @media (min-width: breakpoint.$sm) {
+        order: 2;
+      }
+    }
+  }
   &.align-image-left {
     div:nth-of-type(1) {
       order: 2;
