@@ -5,6 +5,8 @@
   position: sticky;
   top: 0;
   z-index: 1001;
+  display: flex;
+  align-items: center;
   color: var(--white);
   background-color: var(--black);
   min-height: 80px;
@@ -13,6 +15,7 @@
   }
   > div {
     height: 100%;
+    width: 100%;
   }
 }
 
@@ -26,26 +29,30 @@
 .navWrapper {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  height: 100%;
+  min-height: 80px;
   width: 100%;
   background-color: var(--black);
   position: relative;
   z-index: 2000;
+  @include mixins.container();
   display: flex;
   align-items: center;
-  @include mixins.container();
 }
 
 .logo {
   z-index: 5;
   position: absolute;
   display: block;
-  @media (min-width: breakpoint.$md) {
-    margin-right: 3.5rem;
-  }
   a {
     display: block;
-    width: 120px;
+    width: 75px;
+  }
+  @media (min-width: breakpoint.$md) {
+    margin-right: 3.5rem;
+    a {
+      display: block;
+      width: 100px;
+    }
   }
 }
 

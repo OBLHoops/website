@@ -1,8 +1,7 @@
-import Link from "next/link";
-// import ActiveLink from "@components/ActiveLink";
 import { PrismicLink } from "@prismicio/react";
 import { motion, useReducedMotion } from "framer-motion";
 import { classNames } from "@lib/utilities";
+import { ExternalLink } from "@components/Icon";
 import styles from "./menu.module.scss";
 
 export default function Menu({ toggle, navData }) {
@@ -108,34 +107,37 @@ export default function Menu({ toggle, navData }) {
       exit="closed"
     >
       <div className={styles.container}>
-        menu
-        {/* {navData.data.slices.map((nav, index) => (
-          <motion.ul className={classNames([styles.items])} variants={listVariant} key={index}>
-            {nav.items.map((item) => (
-              <motion.li variants={itemVariant} key={item.link.uid}>
-                <ActiveLink
-                  href={`/${item.link.uid}`}
-                  className={classNames([styles.link])}
-                  activeClassName={styles.active}
-                  onClick={() => toggle(false)}
-                  onKeyPress={() => toggle(false)}
-                >
-                  <a
-                    title={item.label}
-                    className={classNames([styles.link, item.theme && styles[item.theme]])}
-                    onClick={() => toggle(false)}
-                    onKeyPress={() => toggle(false)}
-                    role="link"
-                    tabIndex="0"
-                    target={item.link.link_type == "Web" ? "_blank" : "_self"}
-                  >
-                    {item.label}
-                  </a>
-                </ActiveLink>
-              </motion.li>
-            ))}
-          </motion.ul> 
-        ))}*/}
+        <motion.ul className={classNames([styles.items])} variants={listVariant}>
+          {navData.data.links.map((item, index) => (
+            <motion.li variants={itemVariant} key={index}>
+              <PrismicLink
+                field={item.link}
+                title={item.label}
+                className={styles.link}
+                activeclass={styles.active}
+                onClick={() => toggle(false)}
+                onKeyPress={() => toggle(false)}
+                target={item.link.link_type == "Web" ? "_blank" : "_self"}
+              >
+                {item.label}
+                {item.link.link_type == "Web" && <ExternalLink className={styles.externalLink} />}
+              </PrismicLink>
+            </motion.li>
+          ))}
+        </motion.ul>
+        <PrismicLink
+          field={navData.data.buttonLink}
+          title={navData.data.buttonLabel}
+          className={classNames([styles.button, styles.fill])}
+          onClick={() => toggle(false)}
+          onKeyPress={() => toggle(false)}
+          target={navData.data.buttonLink.link_type == "Web" ? "_blank" : "_self"}
+        >
+          {navData.data.buttonLabel}
+          {navData.data.buttonLink.link_type == "Web" && (
+            <ExternalLink className={styles.externalLink} />
+          )}
+        </PrismicLink>
       </div>
     </motion.nav>
   );
