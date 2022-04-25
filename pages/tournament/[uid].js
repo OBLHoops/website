@@ -1,6 +1,7 @@
 import { createClient } from "@root/prismicio";
 import CustomHead from "@components/Head";
 import { PrismicRichText } from "@prismicio/react";
+import * as prismicH from "@prismicio/helpers";
 import { getLayout } from "@components/Layout/PageLayout";
 import ContentContainer from "@components/ContentContainer";
 import Marquee from "@slices/Marquee";
@@ -14,7 +15,8 @@ export default function Location({
   locationsData = {},
   defaultMetaData
 }) {
-  console.log(locationsData);
+  const options = { weekday: "long", month: "long", day: "numeric" };
+  const timeOptions = { timeStyle: "short" };
   if (pageData?.data) {
     const marqueeObj = {
       primary: {
@@ -33,12 +35,18 @@ export default function Location({
                 <Picture image={pageData.data.image} />
               </div>
               <div>
-                when
+                <p className={styles.label}>When</p>
                 <h2>
-                  {pageData.data.startDateTime} - {pageData.data.endDateTime}
+                  {prismicH.asDate(pageData.data.startDateTime).toLocaleString(undefined, options)}{" "}
+                  - {prismicH.asDate(pageData.data.endDateTime).toLocaleString(undefined, options)}{" "}
                 </h2>
-                <p>Starts @ {pageData.data.startDateTime}</p>
-                location
+                <p>
+                  Starts @{" "}
+                  {prismicH
+                    .asDate(pageData.data.startDateTime)
+                    .toLocaleString(undefined, timeOptions)}
+                </p>
+                <p className={styles.label}>Location</p>
                 <h3>{pageData.data.venue[0].name}</h3>
                 <a
                   target="_blank"

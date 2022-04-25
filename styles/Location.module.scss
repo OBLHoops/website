@@ -12,6 +12,10 @@
   column-gap: 2rem;
 }
 
+.label {
+  @include mixins.sectionLabel();
+}
+
 .schedule {
   padding: var(--spacing-section) 0;
   padding: var(--spacing-section) 0;
