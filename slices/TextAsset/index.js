@@ -7,7 +7,7 @@ import styles from "./textAsset.module.scss";
 const TextAsset = ({ slice }) => {
   const variation = slice.variation;
   const { image, imagePosition, imageOverlap, text, label, title, theme } = slice.primary;
-  console.log(slice);
+  console.log(imagePosition);
   return (
     <section className={classNames([styles.textAsset, styles[`theme-${theme}`]])}>
       <ContentContainer>
@@ -18,7 +18,12 @@ const TextAsset = ({ slice }) => {
               <PrismicRichText field={title} />
             </div>
           )}
-          <div className={styles.grid}>
+          <div
+            className={classNames([
+              styles.grid,
+              imagePosition && styles[`align-image-${imagePosition}`]
+            ])}
+          >
             <div>{text && <PrismicRichText field={text} />}</div>
             <div>{image && <Picture image={image} />}</div>
           </div>

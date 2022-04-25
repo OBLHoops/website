@@ -16,6 +16,9 @@
     color: var(--white);
     margin: 0;
     padding: var(--spacing-section) 0;
+    h2 {
+      color: var(--white);
+    }
   }
 
   &.theme-yellow {
@@ -73,12 +76,29 @@
   display: grid;
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 2rem;
+  column-gap: 8rem;
 
   p,
   ul,
   ol {
     max-width: 25rem;
     font-size: var(--font-size-larger);
+  }
+
+  h2 {
+    @include mixins.sectionLabel();
+  }
+
+  h3 {
+    max-width: 25rem;
+  }
+
+  &.align-image-left {
+    div:nth-of-type(1) {
+      order: 2;
+    }
+    div:nth-of-type(2) {
+      order: 1;
+    }
   }
 }
