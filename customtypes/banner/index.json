@@ -5,13 +5,6 @@
   "status": true,
   "json": {
     "Main": {
-      "uid": {
-        "config": {
-          "label": "Uid",
-          "placeholder": ""
-        },
-        "type": "UID"
-      },
       "active": {
         "type": "Boolean",
         "config": {
@@ -20,6 +13,13 @@
           "placeholder_true": "yes",
           "default_value": true
         }
+      },
+      "uid": {
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        },
+        "type": "UID"
       },
       "text": {
         "config": {
