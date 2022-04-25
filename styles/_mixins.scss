@@ -32,6 +32,8 @@
   line-height: 1;
   text-decoration: none;
   display: inline-block;
+  transition: color 240ms ease-out 80ms, background-color 240ms ease-out 80ms,
+    border 240ms ease-out 80ms;
   &:visited {
     background-color: transparent;
     border: 2px solid transparent;
@@ -45,6 +47,7 @@
   &:hover,
   &:focus,
   &.active {
+    transition: color 180ms ease-in, background-color 180ms ease-in, border 180ms ease-in;
   }
   &.outline {
     border-color: var(--white);
@@ -53,5 +56,11 @@
     color: var(--black);
     border-color: var(--yellow);
     background-color: var(--yellow);
+    &:hover,
+    &:focus,
+    &.active {
+      border-color: var(--white);
+      background-color: var(--white);
+    }
   }
 }

@@ -44,18 +44,32 @@
     height: 100%;
     font-size: var(--font-size-larger);
     line-height: 1;
-    border: 2px solid var(--black);
+    color: var(--white);
+    border: 2px solid var(--white);
     background-color: var(--blue);
     outline: none;
     border-radius: 0;
+    &::placeholder {
+      color: var(--white);
+      opacity: 0.5;
+    }
   }
   .signup {
-    @include mixins.button();
     text-align: center;
     margin-left: -2px;
+    @include mixins.button();
+    position: relative;
+    z-index: 5;
+    margin: 0 auto;
     &.fill {
-      background-color: var(--black);
-      color: var(--white);
+      display: flex;
+      margin-left: auto;
+      font-size: 1rem;
+      font-family: var(--font-body-bold);
+      text-transform: uppercase;
+      color: var(--black);
+      background-color: var(--white);
+      border-color: var(--white);
     }
   }
 }
