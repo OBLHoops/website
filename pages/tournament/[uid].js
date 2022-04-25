@@ -14,6 +14,7 @@ export default function Location({
   locationsData = {},
   defaultMetaData
 }) {
+  console.log(locationsData);
   if (pageData?.data) {
     const marqueeObj = {
       primary: {
@@ -53,13 +54,15 @@ export default function Location({
           </ContentContainer>
         </div>
         <Marquee slice={marqueeObj} />
-        {locationsData.length && (
+        {locationsData?.results.length && (
           <div className={styles.schedule}>
             <ContentContainer>
+              <h2>Schedule</h2>
               <div className={styles.grid}>
-                {locationsData.map((item) => (
+                {locationsData.results.map((item) => (
                   <LocationPreview {...item} slug={item.uid} key={item.id} />
                 ))}
+                <div className={styles.blank}></div>
               </div>
             </ContentContainer>
           </div>
@@ -94,7 +97,15 @@ export async function getStaticProps({ previewData, params }) {
   const client = createClient({ previewData });
   const pageData = await client.getByUID("location", params.uid);
   const marqueeData = await client.getByID("Yl7sHxcAAGfZF6rO");
-  const locationsData = await client.getAllByType("location");
+  // const locationsData = await client.getAllByType("location");
+
+  const locationsData = await client.getByType("location", {
+    orderings: {
+      field: "my.location.startDateTime",
+      direction: "asc"
+    }
+  });
+
   const navData = await client.getByUID("navigation", "navigation");
   const footerData = await client.getByUID("footer", "footer");
   const bannerData = await client.getByUID("banner", "banner");

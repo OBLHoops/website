@@ -17,6 +17,7 @@ const Schedule = ({ slice }) => {
             {items.map((item) => (
               <LocationPreview {...item.location} key={item.location.id} />
             ))}
+            <div className={styles.blank}></div>
           </div>
         )}
       </ContentContainer>

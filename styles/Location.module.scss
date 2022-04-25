@@ -14,6 +14,9 @@
 
 .schedule {
   padding: var(--spacing-section) 0;
+  padding: var(--spacing-section) 0;
+  background-color: var(--white);
+  color: var(--black);
 }
 
 .schedule .grid {
@@ -29,5 +32,11 @@
   }
   @media (min-width: breakpoint.$lg) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .blank {
+    background-color: var(--black);
+    opacity: 0.1;
+    aspect-ratio: 1/1;
   }
 }
