@@ -19,8 +19,10 @@ export default function Nav({ toggle, navData }) {
                 onKeyPress={() => toggle(false)}
                 target={item.link.link_type == "Web" ? "_blank" : "_self"}
               >
-                {item.label}
-                {item.link.link_type == "Web" && <ExternalLink className={styles.externalLink} />}
+                <span>
+                  {item.label}
+                  {item.link.link_type == "Web" && <ExternalLink className={styles.externalLink} />}
+                </span>
               </PrismicLink>
             </li>
           ))}

@@ -75,8 +75,15 @@
   text-transform: uppercase;
   margin: 0 0.75rem;
   padding: 0 1rem;
+  span {
+    display: flex;
+    border-bottom: 2px solid transparent;
+  }
   &.active {
     color: var(--yellow);
+    span {
+      border-color: var(--yellow);
+    }
   }
 }
 
