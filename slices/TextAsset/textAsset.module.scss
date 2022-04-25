@@ -1,3 +1,6 @@
+@use "@styles/breakpoint";
+@use "@styles/mixins";
+
 .textAsset {
   margin: var(--spacing-section) 0;
 
@@ -21,6 +24,49 @@
     margin: 0;
     padding: var(--spacing-section) 0;
   }
+
+  :global(.button-outline) {
+    a {
+      @include mixins.button();
+      position: relative;
+      z-index: 5;
+      margin: 0 auto;
+      text-transform: uppercase;
+      color: var(--yellow);
+      border-color: var(--yellow);
+      &:link,
+      &:visited {
+        color: var(--yellow);
+        border-color: var(--yellow);
+      }
+      &:hover,
+      &:focus {
+        color: var(--black);
+        background-color: var(--yellow);
+        border-color: var(--yellow);
+      }
+    }
+  }
+}
+
+.intro {
+  max-width: 48rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: var(--spacing-section);
+  h2 {
+    @include mixins.sectionLabel();
+  }
+  h3 {
+    font-size: var(--font-size-h2);
+    line-height: 0.85;
+    span {
+      line-height: 0.85;
+    }
+  }
+  :global(.text-yellow) {
+    color: var(--yellow);
+  }
 }
 
 .grid {
@@ -28,4 +74,11 @@
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 2rem;
+
+  p,
+  ul,
+  ol {
+    max-width: 25rem;
+    font-size: var(--font-size-larger);
+  }
 }

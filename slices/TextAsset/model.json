@@ -16,12 +16,7 @@
           "config": {
             "label": "Theme",
             "placeholder": "Select a theme....",
-            "options": [
-              "dark",
-              "light",
-              "blue",
-              "yellow"
-            ],
+            "options": ["dark", "light", "blue", "yellow"],
             "default_value": "dark"
           }
         },
@@ -80,10 +75,7 @@
           "config": {
             "label": "Position image on the...",
             "placeholder": "",
-            "options": [
-              "right",
-              "left"
-            ],
+            "options": ["right", "left"],
             "default_value": "right"
           }
         },
@@ -112,11 +104,7 @@
           "config": {
             "label": "Theme",
             "placeholder": "Select a theme....",
-            "options": [
-              "dark",
-              "light",
-              "blue"
-            ],
+            "options": ["dark", "light", "blue"],
             "default_value": "dark"
           }
         },
@@ -135,7 +123,8 @@
             "label": "Title",
             "placeholder": "Enter title...",
             "allowTargetBlank": false,
-            "single": "heading3"
+            "single": "heading3",
+            "labels": ["text-yellow"]
           }
         },
         "text": {
@@ -144,7 +133,8 @@
             "multi": "paragraph,strong,em,hyperlink,heading2,heading3",
             "allowTargetBlank": true,
             "placeholder": "Enter text...",
-            "label": "Text"
+            "label": "Text",
+            "labels": ["button-outline"]
           }
         },
         "image": {
@@ -193,10 +183,7 @@
           "config": {
             "label": "Position image on the...",
             "placeholder": "",
-            "options": [
-              "right",
-              "left"
-            ],
+            "options": ["right", "left"],
             "default_value": "right"
           }
         },

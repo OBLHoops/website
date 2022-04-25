@@ -964,7 +964,10 @@
                     "label": "Title",
                     "placeholder": "Enter title...",
                     "allowTargetBlank": false,
-                    "single": "heading3"
+                    "single": "heading3",
+                    "labels": [
+                      "text-yellow"
+                    ]
                   }
                 },
                 "text": {
@@ -973,7 +976,10 @@
                     "multi": "paragraph,strong,em,hyperlink,heading2,heading3",
                     "allowTargetBlank": true,
                     "placeholder": "Enter text...",
-                    "label": "Text"
+                    "label": "Text",
+                    "labels": [
+                      "button-outline"
+                    ]
                   }
                 },
                 "image": {

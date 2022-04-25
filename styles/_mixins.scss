@@ -64,3 +64,12 @@
     }
   }
 }
+
+@mixin sectionLabel() {
+  color: var(--gray);
+  font-family: var(--font-body);
+  font-weight: var(--font-medium);
+  font-size: var(--font-size-normal);
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
