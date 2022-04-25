@@ -1,6 +1,13 @@
 {
-  "id": "dada685d-db7e-4025-a3cb-597b2343a3bd",
-  "uid": "totam-voluptatem-magni",
+  "id": "d36b70d1-1768-44c1-8750-ebed1de2ff6c",
+  "uid": "saepe-ut-et",
   "type": "banner",
-  "data": {}
+  "data": {
+    "active": true,
+    "text": "embrace customized networks",
+    "link": {
+      "link_type": "Web",
+      "url": "https://prismic.io"
+    }
+  }
 }

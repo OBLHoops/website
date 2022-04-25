@@ -12,6 +12,15 @@
         },
         "type": "UID"
       },
+      "active": {
+        "type": "Boolean",
+        "config": {
+          "label": "Display banner on website?",
+          "placeholder_false": "no",
+          "placeholder_true": "yes",
+          "default_value": true
+        }
+      },
       "text": {
         "config": {
           "label": "Text",
@@ -23,7 +32,8 @@
         "config": {
           "label": "Link",
           "placeholder": "",
-          "allowTargetBlank": false
+          "allowTargetBlank": false,
+          "select": null
         },
         "type": "Link"
       }
