@@ -21,7 +21,7 @@ export default function Footer({ footerData }) {
               ))}
             </ul>
           </div>
-          <ul>
+          <ul className={styles.socialLinks}>
             {footerData.data.socialLinks.map((link) => (
               <li key={uuidv4()}>
                 <a
