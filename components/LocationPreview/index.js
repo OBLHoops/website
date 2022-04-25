@@ -9,7 +9,9 @@ export default function LocationPreview({ slug, data }) {
     <div className={styles.location}>
       <Link href={`/tournament/${slug}`} scroll={false}>
         <a>
-          <Picture image={data.image} />
+          <div className={styles.image}>
+            <Picture image={data.image} />
+          </div>
           <div className={styles.content}>
             <h3>{data.title}</h3>
             <p>
