@@ -1,5 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
+import { ParallaxProvider } from "react-scroll-parallax";
 import Header from "@components/Header";
 import Footer from "@components/Footer";
 import Banner from "@components/Banner";
@@ -17,7 +18,7 @@ export default function Layout({ children, preview }) {
     };
   });
   return (
-    <>
+    <ParallaxProvider>
       {childProps && <Banner bannerData={childProps[0].bannerData} />}
       {childProps && <Header navData={childProps[0].navData} />}
       {children}
@@ -28,7 +29,7 @@ export default function Layout({ children, preview }) {
         <span id="new-window-1">Opens an external site</span>
         <span id="new-window-2">Opens an external site in a new window</span>
       </div>
-    </>
+    </ParallaxProvider>
   );
 }
 
