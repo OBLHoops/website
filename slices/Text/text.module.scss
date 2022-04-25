@@ -3,7 +3,19 @@
 
 .text {
   margin: var(--spacing-section) 0;
-
+  &.align-center {
+    text-align: center;
+  }
+  &.spacing-remove-top {
+    margin-top: 0;
+  }
+  &.spacing-remove-bottom {
+    margin-bottom: 0;
+  }
+  &.spacing-remove-all {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
   :global(.handwritten) {
     color: var(--yellow);
     font-family: var(--font-handwritten);
@@ -11,5 +23,12 @@
 }
 
 .wrapper {
-  max-width: 42.8rem;
+  p,
+  ul,
+  ol {
+    max-width: 42.8rem;
+  }
+  .align-center & {
+    margin: 0 auto;
+  }
 }

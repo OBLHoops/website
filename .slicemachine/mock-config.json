@@ -56,7 +56,8 @@
               "blocks": 1
             }
           }
-        }
+        },
+        "items": {}
       }
     },
     "TextAsset": {

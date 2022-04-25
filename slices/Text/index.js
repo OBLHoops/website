@@ -5,8 +5,15 @@ import styles from "./text.module.scss";
 
 const Text = ({ slice }) => {
   const { primary } = slice;
+
   return (
-    <section className={classNames([styles.text], primary.ui && styles[primary.uid])}>
+    <section
+      className={classNames([
+        styles.text,
+        primary.align && styles[`align-${primary.align}`],
+        primary.spacing && styles[`spacing-${primary.spacing}`]
+      ])}
+    >
       <ContentContainer>
         <div className={classNames([styles.wrapper])}>
           <PrismicRichText field={primary?.text} />

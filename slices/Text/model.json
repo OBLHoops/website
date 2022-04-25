@@ -20,6 +20,24 @@
             "multi": "paragraph,heading1,heading2,heading3,heading4,strong,em,hyperlink",
             "labels": ["handwritten"]
           }
+        },
+        "align": {
+          "type": "Select",
+          "config": {
+            "label": "Align Text",
+            "placeholder": "",
+            "options": ["left", "center"],
+            "default_value": "left"
+          }
+        },
+        "spacing": {
+          "type": "Select",
+          "config": {
+            "label": "Section spacing",
+            "placeholder": "",
+            "options": ["default", "remove-top", "remove-bottom", "remove-all"],
+            "default_value": "default"
+          }
         }
       },
       "items": {},

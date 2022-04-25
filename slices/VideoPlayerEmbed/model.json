@@ -17,6 +17,15 @@
             "label": "Video Embed Link",
             "placeholder": "Enter video embed link..."
           }
+        },
+        "spacing": {
+          "type": "Select",
+          "config": {
+            "label": "Section spacing",
+            "placeholder": "",
+            "options": ["default", "remove-top", "remove-bottom", "remove-all"],
+            "default_value": "default"
+          }
         }
       },
       "items": {},

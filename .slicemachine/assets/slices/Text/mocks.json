@@ -5,13 +5,15 @@
     "slice_type": "text",
     "items": [],
     "primary": {
-      "Text": [
+      "text": [
         {
           "type": "paragraph",
-          "text": "Reprehenderit dolore minim incididunt.",
+          "text": "Enim minim laborum commodo.",
           "spans": []
         }
-      ]
+      ],
+      "align": "left",
+      "spacing": "remove-top-spacing"
     }
   }
 ]
