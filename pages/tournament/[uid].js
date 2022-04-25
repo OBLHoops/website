@@ -31,7 +31,7 @@ export default function Location({
           <ContentContainer>
             <h1>{pageData.data.title}</h1>
             <div className={styles.grid}>
-              <div>
+              <div className={styles.image}>
                 <Picture image={pageData.data.image} />
               </div>
               <div>
