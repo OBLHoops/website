@@ -26,6 +26,11 @@
     color: var(--black);
     margin: 0;
     padding: var(--spacing-section) 0;
+    h2,
+    h3,
+    p {
+      color: var(--black);
+    }
   }
 
   :global(.button-outline) {
