@@ -4,12 +4,13 @@
     &:visited {
       .image {
         &::after {
-          background-color: var(--yellow);
-          mix-blend-mode: multiply;
-          opacity: 0.25;
+          background-color: var(--blue);
+          mix-blend-mode: overlay;
+          opacity: 0.33;
           transition: opacity 500ms ease-out 80ms;
         }
         img {
+          will-change: transform;
           transform: scale(1);
           transition: transform 850ms ease-out 80ms;
         }
@@ -20,13 +21,12 @@
       color: var(--blue);
       .image {
         &::after {
-          background-color: var(--yellow);
-          opacity: 0.75;
-          transition: opacity 250ms ease-out;
+          opacity: 1;
+          transition: opacity 650ms ease-out;
         }
         img {
-          transform: scale(1.025);
-          transition: transform 550ms ease-out;
+          transform: scale(1.033);
+          transition: transform 1250ms ease-out;
         }
       }
     }
