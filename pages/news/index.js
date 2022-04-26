@@ -58,8 +58,8 @@ export default function News({ pageData, newsPosts, defaultMetaData }) {
               <a>
                 <Picture image={pageData.data.pinnedNewsPost.data.coverImage} />
                 <div>
+                  <p className={styles.label}>{pageData.data.pinnedNewsPost.data.source}</p>
                   <h2>{pageData.data.pinnedNewsPost.data.title}</h2>
-                  <p>{pageData.data.pinnedNewsPost.data.source}</p>
                   <p>{pageData.data.pinnedNewsPost.data.postDate}</p>
                 </div>
               </a>

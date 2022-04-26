@@ -7,13 +7,32 @@
 }
 
 .pinnedPost {
-  margin-bottom: var(--spacing-section);
+  margin: var(--spacing-section) 0;
   a {
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
+    column-gap: 0;
+    row-gap: 2rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    @media (min-width: breakpoint.$sm) {
+      column-gap: 2rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    @media (min-width: breakpoint.$md) {
+      column-gap: 4rem;
+    }
+    @media (min-width: breakpoint.$lg) {
+      column-gap: 8rem;
+    }
+    h2 {
+      overflow-wrap: unset;
+      max-width: 12ch;
+    }
   }
+}
+
+.label {
+  @include mixins.sectionLabel();
 }
 
 .newsPosts .grid {

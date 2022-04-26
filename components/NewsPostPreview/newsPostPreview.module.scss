@@ -1,5 +1,7 @@
+@use "@styles/breakpoint";
+@use "@styles/mixins";
+
 .preview {
-  // background-color: var(--white);
   h3 {
     margin: 0;
     flex: 1 1;
@@ -30,6 +32,8 @@
 }
 
 .source {
+  @include mixins.sectionLabel();
+  color: var(--black);
   margin-top: 0;
   margin-bottom: 1rem;
 }
