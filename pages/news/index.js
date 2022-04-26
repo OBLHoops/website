@@ -1,5 +1,5 @@
 import { createClient } from "@root/prismicio";
-import { usePrismicDocumentsByType } from "@prismicio/react";
+import { PrismicRichText, usePrismicDocumentsByType } from "@prismicio/react";
 import CustomHead from "@components/Head";
 import Link from "next/link";
 import Picture from "@components/Picture";
@@ -46,7 +46,7 @@ export default function News({ pageData, newsPosts, defaultMetaData }) {
     <>
       <CustomHead defaultMetaData={defaultMetaData} pageMetaData={pageData.data} />
       <div className={styles.container}>
-        <h1>{pageData.data.title}</h1>
+        <PrismicRichText field={pageData.data.title} />
         {pageData.data.pinnedNewsPost && (
           <div className={styles.pinnedPost}>
             <Link

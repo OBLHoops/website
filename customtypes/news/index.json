@@ -6,20 +6,21 @@
   "json": {
     "Main": {
       "title": {
+        "type": "StructuredText",
         "config": {
           "label": "Title",
-          "placeholder": "Enter page title..."
-        },
-        "type": "Text"
+          "placeholder": "Enter title...",
+          "allowTargetBlank": false,
+          "single": "heading1"
+        }
       },
+
       "pinnedNewsPost": {
         "type": "Link",
         "config": {
           "label": "Pinned News Post",
           "select": "document",
-          "customtypes": [
-            "news-post"
-          ]
+          "customtypes": ["news-post"]
         }
       }
     },
