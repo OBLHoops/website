@@ -7,7 +7,6 @@ import styles from "./textAsset.module.scss";
 const TextAsset = ({ slice }) => {
   const variation = slice.variation;
   const { image, imagePosition, imageOverlap, text, label, title, theme } = slice.primary;
-  console.log(imagePosition);
   return (
     <section className={classNames([styles.textAsset, styles[`theme-${theme}`]])}>
       <ContentContainer>

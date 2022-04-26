@@ -124,7 +124,7 @@
             "placeholder": "Enter title...",
             "allowTargetBlank": false,
             "single": "heading3",
-            "labels": ["text-yellow"]
+            "labels": ["text-yellow", "handwritten"]
           }
         },
         "text": {

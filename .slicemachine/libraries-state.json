@@ -966,7 +966,8 @@
                     "allowTargetBlank": false,
                     "single": "heading3",
                     "labels": [
-                      "text-yellow"
+                      "text-yellow",
+                      "handwritten"
                     ]
                   }
                 },

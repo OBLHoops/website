@@ -2,7 +2,6 @@ import { PrismicLink } from "@prismicio/react";
 import styles from "./banner.module.scss";
 
 export default function Banner({ bannerData }) {
-  console.log(bannerData);
   if (bannerData?.data && bannerData?.data.active) {
     return (
       <div className={styles.banner}>

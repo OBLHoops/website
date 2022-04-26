@@ -70,7 +70,7 @@ export default function News({ pageData, newsPosts, defaultMetaData }) {
           <>
             <div className={styles.newsPosts}>
               <div className={styles.grid}>
-                {postResults.map((item) => (
+                {[...new Set(postResults)].map((item) => (
                   <NewsPostPreview {...item} slug={item.uid} key={item.id} />
                 ))}
               </div>
