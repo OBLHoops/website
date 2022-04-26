@@ -13,9 +13,10 @@ const client = createClient();
 
 export default function News({ pageData, newsPosts, defaultMetaData }) {
   const [postResults, setPostResults] = useState([...newsPosts.results]);
-  const [postsPage, setPostPage] = useState(2);
+  const [postsPage, setPostPage] = useState(1);
   const [totalPostPages, setTotalPostPages] = useState(null);
   const [paginationActive, setPaginationActive] = useState(true);
+  const pinnedPostUID = pageData?.data?.pinnedNewsPost?.id;
 
   const [documents, { state, error }] = usePrismicDocumentsByType("news-post", {
     client: client,
@@ -28,8 +29,14 @@ export default function News({ pageData, newsPosts, defaultMetaData }) {
   });
 
   useEffect(() => {
-    documents?.results && setPostResults([...postResults, ...documents.results]);
-    setTotalPostPages(documents?.total_results_size);
+    function getUniqueListBy(arr, key) {
+      return [...new Map(arr.map((item) => [item[key], item])).values()];
+    }
+    if (documents?.results) {
+      const results = getUniqueListBy([...postResults, ...documents.results], "id");
+      setPostResults(results);
+      setTotalPostPages(documents?.total_results_size);
+    }
   }, [documents]);
 
   useEffect(() => {
@@ -70,9 +77,11 @@ export default function News({ pageData, newsPosts, defaultMetaData }) {
           <>
             <div className={styles.newsPosts}>
               <div className={styles.grid}>
-                {[...new Set(postResults)].map((item) => (
-                  <NewsPostPreview {...item} slug={item.uid} key={item.id} />
-                ))}
+                {postResults
+                  // .filter((post) => post.id !== pinnedPostUID)
+                  .map((post) => (
+                    <NewsPostPreview {...post} slug={post.uid} key={post.id} />
+                  ))}
               </div>
             </div>
             <button
