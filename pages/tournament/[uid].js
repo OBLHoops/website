@@ -40,7 +40,7 @@ export default function Location({
                   {asDate(pageData.data.startDateTime).toLocaleString(undefined, options)} -{" "}
                   {asDate(pageData.data.endDateTime).toLocaleString(undefined, options)}{" "}
                 </h2>
-                <p>
+                <p className={styles.startTime}>
                   Starts @{" "}
                   {asDate(pageData.data.startDateTime).toLocaleString(undefined, timeOptions)}
                 </p>

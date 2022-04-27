@@ -3,6 +3,65 @@
 
 .location {
   padding: calc(var(--spacing-section) / 2) 0 var(--spacing-section);
+  h2 {
+    margin: 0 0 1rem;
+    line-height: 0.9;
+  }
+  :global(.button-outline) {
+    a {
+      @include mixins.button();
+      position: relative;
+      z-index: 5;
+      margin: 0 auto;
+      text-transform: uppercase;
+      color: var(--yellow);
+      border-color: var(--yellow);
+      &:link,
+      &:visited {
+        color: var(--yellow);
+        border-color: var(--yellow);
+      }
+      &:hover,
+      &:focus {
+        color: var(--black);
+        background-color: var(--yellow);
+        border-color: var(--yellow);
+      }
+    }
+  }
+  :global(.button-fill) {
+    a {
+      @include mixins.button();
+      position: relative;
+      z-index: 5;
+      margin-right: 0.5rem;
+      text-transform: uppercase;
+      color: var(--black);
+      background-color: var(--yellow);
+      border-color: var(--yellow);
+      &:link,
+      &:visited {
+        color: var(--black);
+        background-color: var(--yellow);
+        border-color: var(--yellow);
+      }
+      &:hover,
+      &:focus {
+        color: var(--black);
+        background-color: var(--white);
+        border-color: var(--white);
+      }
+    }
+  }
+}
+
+.startTime {
+  color: var(--gray);
+  font-family: var(--font-body);
+  font-weight: var(--font-medium);
+  font-size: var(--font-size-largest);
+  margin-top: 0;
+  margin-bottom: 3rem;
 }
 
 .location .grid {

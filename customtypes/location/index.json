@@ -98,10 +98,11 @@
             "description": {
               "type": "StructuredText",
               "config": {
-                "label": "Description",
+                "allowTargetBlank": true,
                 "placeholder": "Enter venue description...",
-                "allowTargetBlank": false,
-                "single": "paragraph,strong,em"
+                "label": "Description",
+                "multi": "paragraph,strong,em,hyperlink",
+                "labels": ["button-outline", "button-fill"]
               }
             }
           }
