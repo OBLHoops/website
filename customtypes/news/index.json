@@ -11,7 +11,8 @@
           "label": "Title",
           "placeholder": "Enter title...",
           "allowTargetBlank": false,
-          "single": "heading1"
+          "single": "heading1",
+          "labels": ["text-yellow", "handwritten"]
         }
       },
       "pinnedNewsPost": {
