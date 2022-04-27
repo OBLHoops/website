@@ -1,6 +1,7 @@
 import { createClient } from "@root/prismicio";
 import CustomHead from "@components/Head";
 import { SliceZone } from "@prismicio/react";
+import { asDate } from "@prismicio/helpers";
 import { components } from "@slices/index";
 import { getLayout } from "@components/Layout/PageLayout";
 import ContentContainer from "@components/ContentContainer";
@@ -8,15 +9,18 @@ import { pageGraphQuery } from "@queries/index";
 import styles from "@styles/NewsPost.module.scss";
 
 export default function NewsPost({ pageData, defaultMetaData }) {
+  const options = { month: "long", day: "numeric", year: "numeric" };
   if (pageData?.data) {
     return (
       <>
         <CustomHead defaultMetaData={defaultMetaData} pageMetaData={pageData.data} />
         <div className={styles.intro}>
           <ContentContainer>
+            <p className={styles.label}>{pageData.data.source}</p>
             <h1>{pageData.data.title}</h1>
-            <h2>{pageData.data.source}</h2>
-            <p>{pageData.data.postDate}</p>
+            <p className={styles.date}>
+              {asDate(pageData.data.postDate).toLocaleString(undefined, options)}
+            </p>
           </ContentContainer>
         </div>
         <SliceZone slices={pageData.data.slices} components={components} />

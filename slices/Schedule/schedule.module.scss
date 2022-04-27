@@ -5,10 +5,15 @@
   padding: var(--spacing-section) 0;
   background-color: var(--white);
   color: var(--black);
-  // background-image: url(/images/obl-background-light.svg);
-  // background-size: 18%;
-  // background-position: top;
-  // background-repeat: repeat;
+  background-image: url(/images/obl-background-light.svg);
+  background-size: 18%;
+  background-position: top;
+  background-repeat: repeat;
+
+  h2 {
+    margin-bottom: 6rem;
+    // font-size: var(--font-size-h1);
+  }
 }
 
 .grid {

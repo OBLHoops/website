@@ -35,9 +35,6 @@
 .text {
   font-family: var(--font-headline-condensed);
   text-transform: uppercase;
-  font-size: var(--font-size-largest);
+  font-size: var(--font-size-h3);
   padding: 0 0.25ch;
-  @media (min-width: breakpoint.$md) {
-    font-size: var(--font-size-h2);
-  }
 }

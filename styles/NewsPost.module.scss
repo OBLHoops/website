@@ -1,3 +1,19 @@
+@use "@styles/breakpoint";
+@use "@styles/mixins";
+
 .intro {
-  margin: calc(var(--spacing-section) / 2) var(--spacing-section);
+  margin: var(--spacing-section) 0 0;
+  h1 {
+    font-size: var(--font-size-h2);
+    margin: 1rem 0;
+  }
+}
+
+.label {
+  @include mixins.sectionLabel();
+}
+
+.date {
+  margin-top: 1rem;
+  margin-bottom: 0;
 }

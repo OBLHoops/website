@@ -17,6 +17,10 @@
 
 .container {
   @include mixins.container();
+  @media (max-width: breakpoint.$md) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .wrapper {

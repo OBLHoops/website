@@ -40,8 +40,8 @@
   --font-size-largest: 1.5rem;
   // 320 > 1280 https://fluid-typography.netlify.app/
   --font-size-h1: clamp(4rem, 14.2vw + 1.2rem, 12.5rem);
-  --font-size-h2: clamp(3.5rem, 2.5vw + 3rem, 5rem);
-  --font-size-h3: clamp(1.5rem, 1.8vw + 1.1rem, 3rem);
+  --font-size-h2: clamp(4rem, 10vw + 2rem, 10rem);
+  --font-size-h3: clamp(3rem, 4.2vw + 2.2rem, 5.5rem);
   --font-size-h4: 2rem;
 }
 html,
