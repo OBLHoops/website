@@ -42,9 +42,7 @@ export default function Location({
                 </h2>
                 <p>
                   Starts @{" "}
-                  {prismicH
-                    .asDate(pageData.data.startDateTime)
-                    .toLocaleString(undefined, timeOptions)}
+                  {asDate(pageData.data.startDateTime).toLocaleString(undefined, timeOptions)}
                 </p>
                 <p className={styles.label}>Location</p>
                 <h3>{pageData.data.venue[0].name}</h3>
