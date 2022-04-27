@@ -1,5 +1,5 @@
 import Link from "next/link";
-import * as prismicH from "@prismicio/helpers";
+import { asDate } from "@prismicio/helpers";
 import Picture from "@components/Picture";
 import styles from "./locationPreview.module.scss";
 
@@ -15,8 +15,8 @@ export default function LocationPreview({ slug, data }) {
           <div className={styles.content}>
             <h3>{data.title}</h3>
             <p>
-              {prismicH.asDate(data.startDateTime).toLocaleString(undefined, options)} -{" "}
-              {prismicH.asDate(data.endDateTime).toLocaleString(undefined, options)}{" "}
+              {asDate(data.startDateTime).toLocaleString(undefined, options)} -{" "}
+              {asDate(data.endDateTime).toLocaleString(undefined, options)}{" "}
             </p>
           </div>
         </a>

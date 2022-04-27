@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { PrismicLink } from "@prismicio/react";
-import * as prismicH from "@prismicio/helpers";
+import { asDate } from "@prismicio/helpers";
 import Picture from "@components/Picture";
 import styles from "./newsPostPreview.module.scss";
 
@@ -18,7 +17,7 @@ export default function NewsPostPreview({ slug, data }) {
             {data.title && <h3>{data.title}</h3>}
             {data.postDate && (
               <p className={styles.date}>
-                {prismicH.asDate(data.postDate).toLocaleString(undefined, options)}
+                {asDate(data.postDate).toLocaleString(undefined, options)}
               </p>
             )}
           </div>

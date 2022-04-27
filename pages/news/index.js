@@ -1,5 +1,6 @@
 import { createClient } from "@root/prismicio";
 import { PrismicRichText, usePrismicDocumentsByType } from "@prismicio/react";
+import { asDate } from "@prismicio/helpers";
 import CustomHead from "@components/Head";
 import Link from "next/link";
 import Picture from "@components/Picture";
@@ -17,6 +18,7 @@ export default function News({ pageData, newsPosts, defaultMetaData }) {
   const [totalPostPages, setTotalPostPages] = useState(null);
   const [paginationActive, setPaginationActive] = useState(true);
   const pinnedPostUID = pageData?.data?.pinnedNewsPost?.id;
+  const dateOptions = { month: "long", day: "numeric", year: "numeric" };
 
   const [documents, { state, error }] = usePrismicDocumentsByType("news-post", {
     client: client,
@@ -24,6 +26,8 @@ export default function News({ pageData, newsPosts, defaultMetaData }) {
       field: "my.news-post.postDate",
       direction: "desc"
     },
+    // q: '[[at(document.tags,["Recap"])]]',
+    // q: `[[not(document.id,"${pinnedPostUID}")]]`,
     pageSize: 1,
     page: postsPage
   });
@@ -67,7 +71,12 @@ export default function News({ pageData, newsPosts, defaultMetaData }) {
                 <div>
                   <p className={styles.label}>{pageData.data.pinnedNewsPost.data.source}</p>
                   <h2>{pageData.data.pinnedNewsPost.data.title}</h2>
-                  <p>{pageData.data.pinnedNewsPost.data.postDate}</p>
+                  <p>
+                    {asDate(pageData.data.pinnedNewsPost.data.postDate).toLocaleString(
+                      undefined,
+                      dateOptions
+                    )}
+                  </p>
                 </div>
               </a>
             </Link>
@@ -77,11 +86,9 @@ export default function News({ pageData, newsPosts, defaultMetaData }) {
           <>
             <div className={styles.newsPosts}>
               <div className={styles.grid}>
-                {postResults
-                  // .filter((post) => post.id !== pinnedPostUID)
-                  .map((post) => (
-                    <NewsPostPreview {...post} slug={post.uid} key={post.id} />
-                  ))}
+                {postResults.map((post) => (
+                  <NewsPostPreview {...post} slug={post.uid} key={post.id} />
+                ))}
               </div>
             </div>
             <button
@@ -107,11 +114,14 @@ export async function getStaticProps({ previewData }) {
   const pageData = await client.getByUID("news", "news", {
     graphQuery: newsGraphQuery
   });
+  const pinnedPostUID = pageData?.data?.pinnedNewsPost?.id;
   const newsPosts = await client.getByType("news-post", {
     orderings: {
       field: "my.news-post.postDate",
       direction: "desc"
     },
+    q: `[[not(document.id,"${pinnedPostUID}")]]`,
+    // q: '[[at(document.tags,["Recap"])]]',
     pageSize: 1,
     page: 1
   });

@@ -1,7 +1,7 @@
 import { createClient } from "@root/prismicio";
 import CustomHead from "@components/Head";
 import { PrismicRichText } from "@prismicio/react";
-import * as prismicH from "@prismicio/helpers";
+import { asDate } from "@prismicio/helpers";
 import { getLayout } from "@components/Layout/PageLayout";
 import ContentContainer from "@components/ContentContainer";
 import Marquee from "@slices/Marquee";
@@ -37,8 +37,8 @@ export default function Location({
               <div>
                 <p className={styles.label}>When</p>
                 <h2>
-                  {prismicH.asDate(pageData.data.startDateTime).toLocaleString(undefined, options)}{" "}
-                  - {prismicH.asDate(pageData.data.endDateTime).toLocaleString(undefined, options)}{" "}
+                  {asDate(pageData.data.startDateTime).toLocaleString(undefined, options)} -{" "}
+                  {asDate(pageData.data.endDateTime).toLocaleString(undefined, options)}{" "}
                 </h2>
                 <p>
                   Starts @{" "}
