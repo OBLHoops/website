@@ -1,0 +1,75 @@
+@use "@styles/breakpoint";
+@use "@styles/mixins";
+
+.location {
+  padding: calc(var(--spacing-section) / 2) 0 var(--spacing-section);
+}
+
+.location .grid {
+  display: grid;
+  align-items: center;
+  column-gap: 0;
+  row-gap: 2rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  @media (min-width: breakpoint.$sm) {
+    column-gap: 2rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @media (min-width: breakpoint.$md) {
+    column-gap: 4rem;
+  }
+  @media (min-width: breakpoint.$lg) {
+    column-gap: 8rem;
+  }
+}
+
+.label {
+  @include mixins.sectionLabel();
+}
+
+.image {
+  aspect-ratio: 1/1;
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue);
+    mix-blend-mode: overlay;
+    opacity: 1;
+  }
+}
+
+.schedule {
+  padding: var(--spacing-section) 0;
+  padding: var(--spacing-section) 0;
+}
+
+.schedule .grid {
+  display: grid;
+  column-gap: 0;
+  row-gap: 1rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  @media (min-width: breakpoint.$sm) {
+    padding: 0;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @media (min-width: breakpoint.$lg) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .blank {
+    @media (min-width: breakpoint.$lg) {
+      background-color: var(--black);
+      opacity: 0.1;
+      aspect-ratio: 1/1;
+    }
+  }
+}
