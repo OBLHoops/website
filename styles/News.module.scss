@@ -2,7 +2,7 @@
 @use "@styles/mixins";
 
 .container {
-  padding: var(--spacing-section) 0;
+  margin: var(--spacing-section) 0;
   @include mixins.container();
 }
 

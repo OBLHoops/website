@@ -3,6 +3,7 @@ import { PrismicRichText, usePrismicDocumentsByType } from "@prismicio/react";
 import { asDate } from "@prismicio/helpers";
 import CustomHead from "@components/Head";
 import Link from "next/link";
+import ContentContainer from "@components/ContentContainer";
 import Picture from "@components/Picture";
 import { classNames } from "@lib/utilities";
 import NewsPostPreview from "@components/NewsPostPreview";
@@ -56,8 +57,10 @@ export default function News({ pageData, newsPosts, defaultMetaData }) {
   return (
     <>
       <CustomHead defaultMetaData={defaultMetaData} pageMetaData={pageData.data} />
-      <div className={styles.container}>
+      <ContentContainer margin="top">
         <PrismicRichText field={pageData.data.title} />
+      </ContentContainer>
+      <div className={styles.container}>
         {pageData.data.pinnedNewsPost && (
           <div className={styles.pinnedPost}>
             <Link

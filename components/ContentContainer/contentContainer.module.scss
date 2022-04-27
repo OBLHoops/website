@@ -12,4 +12,13 @@
       grid-column: 2/12;
     }
   }
+  &.margin-top {
+    margin-top: var(--spacing-section);
+  }
+  &.margin-bottom {
+    margin-bottom: var(--spacing-section);
+  }
+  &.margin-block {
+    margin: var(--spacing-section) 0;
+  }
 }
