@@ -1,0 +1,73 @@
+@use "@styles/breakpoint";
+@use "@styles/mixins";
+
+.container {
+  padding: var(--spacing-section) 0;
+  @include mixins.container();
+}
+
+.pinnedPost {
+  margin: var(--spacing-section) 0;
+  a {
+    display: grid;
+    align-items: center;
+    column-gap: 0;
+    row-gap: 2rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    @media (min-width: breakpoint.$sm) {
+      column-gap: 2rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    @media (min-width: breakpoint.$md) {
+      column-gap: 4rem;
+    }
+    @media (min-width: breakpoint.$lg) {
+      column-gap: 8rem;
+    }
+    h2 {
+      overflow-wrap: unset;
+      max-width: 12ch;
+    }
+  }
+}
+
+.label {
+  @include mixins.sectionLabel();
+}
+
+.watchPosts .grid {
+  display: grid;
+  column-gap: 0;
+  row-gap: 1rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  margin-bottom: calc(var(--spacing-section) / 2);
+  @media (min-width: breakpoint.$sm) {
+    padding: 0;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @media (min-width: breakpoint.$lg) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.button {
+  @include mixins.button();
+  position: relative;
+  z-index: 5;
+  margin: 0 auto;
+  &.fill {
+    display: flex;
+    margin-left: auto;
+    font-size: 1.3125rem;
+    font-family: var(--font-body-bold);
+    text-transform: uppercase;
+    color: var(--black);
+    background-color: var(--yellow);
+  }
+  &.disabled {
+    cursor: auto;
+    opacity: 0.2;
+  }
+}

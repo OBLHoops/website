@@ -1,6 +1,6 @@
 {
-  "id": "news",
-  "label": "News",
+  "id": "watch",
+  "label": "Watch",
   "repeatable": false,
   "status": true,
   "json": {
@@ -14,12 +14,12 @@
           "single": "heading1"
         }
       },
-      "pinnedNewsPost": {
+      "pinnedWatchPost": {
         "type": "Link",
         "config": {
-          "label": "Pinned News Post",
+          "label": "Pinned Watch Post",
           "select": "document",
-          "customtypes": ["news-post"]
+          "customtypes": ["watch-post"]
         }
       }
     },

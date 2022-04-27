@@ -1,25 +1,78 @@
 {
-  "id": "news",
-  "label": "News",
-  "repeatable": false,
+  "id": "watch-post",
+  "label": "Watch post",
+  "repeatable": true,
   "status": true,
   "json": {
     "Main": {
       "title": {
-        "type": "StructuredText",
         "config": {
           "label": "Title",
-          "placeholder": "Enter title...",
-          "allowTargetBlank": false,
-          "single": "heading1"
+          "placeholder": "Enter watch post title..."
+        },
+        "type": "Text"
+      },
+      "source": {
+        "type": "Text",
+        "config": {
+          "label": "Source",
+          "placeholder": ""
         }
       },
-      "pinnedNewsPost": {
+      "coverImage": {
+        "type": "Image",
+        "config": {
+          "label": "Cover Image",
+          "constraint": {
+            "width": 320
+          },
+          "thumbnails": [
+            {
+              "name": "xs",
+              "width": 320,
+              "height": null
+            },
+            {
+              "name": "sm",
+              "width": 640,
+              "height": null
+            },
+            {
+              "name": "md",
+              "width": 480,
+              "height": null
+            },
+            {
+              "name": "lg",
+              "width": 640,
+              "height": null
+            },
+            {
+              "name": "xl",
+              "width": 720,
+              "height": null
+            },
+            {
+              "name": "xxl",
+              "width": 960,
+              "height": null
+            }
+          ]
+        }
+      },
+      "postDate": {
+        "type": "Date",
+        "config": {
+          "label": "Date",
+          "placeholder": ""
+        }
+      },
+      "externalLink": {
         "type": "Link",
         "config": {
-          "label": "Pinned News Post",
-          "select": "document",
-          "customtypes": ["news-post"]
+          "label": "Video Link",
+          "placeholder": "",
+          "select": null
         }
       }
     },

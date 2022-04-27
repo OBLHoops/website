@@ -44,7 +44,9 @@
           "blocks": 1
         }
       }
-    }
+    },
+    "watch": {},
+    "watch-post": {}
   },
   "slices": {
     "Text": {

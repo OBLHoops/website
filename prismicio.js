@@ -14,6 +14,8 @@ export function linkResolver(doc) {
       return `/${doc.uid}`;
     case "news":
       return `/${doc.uid}`;
+    case "watch":
+      return `/${doc.uid}`;
     default:
       return null;
   }
