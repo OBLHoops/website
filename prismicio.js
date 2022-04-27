@@ -18,6 +18,8 @@ export function linkResolver(doc) {
       return `/${doc.uid}`;
     case "tickets":
       return `/${doc.uid}`;
+    case "apply":
+      return `/${doc.uid}`;
     default:
       return null;
   }

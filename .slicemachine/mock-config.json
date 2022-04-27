@@ -47,7 +47,8 @@
     },
     "watch": {},
     "watch-post": {},
-    "tickets": {}
+    "tickets": {},
+    "apply": {}
   },
   "slices": {
     "Text": {
