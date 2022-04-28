@@ -1,0 +1,66 @@
+.filter {
+  min-width: 18ch;
+  position: relative;
+  color: var(--black);
+  background-color: var(--white);
+  font-size: var(--font-size-larger);
+  font-family: var(--font-body-bold);
+  text-transform: uppercase;
+}
+
+.listLabel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.25rem;
+  text-transform: uppercase;
+}
+
+.listOptions {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  list-style-type: none;
+  margin: 0.5rem 0;
+  padding: 0;
+  white-space: nowrap;
+  background-color: var(--white);
+  cursor: pointer;
+  li {
+    margin: 0;
+    padding: 0.5rem 1.25rem 0.5rem 2.75rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: var(--black);
+    .icon {
+      position: absolute;
+      left: 0;
+      padding-left: 1.25rem;
+    }
+  }
+
+  .selected {
+    color: var(--blue);
+  }
+
+  .active {
+    background-color: var(--gray-light);
+    &.selected {
+      color: var(--blue);
+    }
+  }
+}
+
+.iconCheck {
+  width: 1.25rem;
+  height: auto;
+  margin-right: 0.25rem;
+}
+
+.iconDownArrow {
+  width: 20px;
+  height: 20px;
+  margin-left: 0.25rem;
+}
