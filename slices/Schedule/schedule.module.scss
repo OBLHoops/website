@@ -11,8 +11,10 @@
   background-repeat: repeat;
 
   h2 {
-    margin-bottom: 6rem;
-    // font-size: var(--font-size-h1);
+    margin-bottom: 3rem;
+    @media (min-width: breakpoint.$md) {
+      margin-bottom: 6rem;
+    }
   }
 }
 

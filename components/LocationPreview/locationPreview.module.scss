@@ -2,6 +2,17 @@
   a {
     &:link,
     &:visited {
+      .image {
+        &::after {
+          background-color: var(--blue);
+          mix-blend-mode: overlay;
+          opacity: 1;
+          transition: opacity 250ms ease-out 80ms;
+        }
+      }
+      picture {
+        background-color: var(--blue);
+      }
       @media (any-hover: hover) and (any-pointer: fine) {
         transition: color 250ms ease-out 80ms;
         .image {

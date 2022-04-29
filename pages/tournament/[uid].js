@@ -50,7 +50,8 @@ export default function Location({
                   target="_blank"
                   aria-describedby="new-window-2"
                   rel="noopener noreferrer"
-                  href={`https://www.google.com/maps/place/?q=place_id:${pageData.data.venue[0].placeId}`}
+                  ChIJN1t_tDeuEmsRUsoyG83frY4
+                  href={` https://www.google.com/maps/search/?api=1&query=${pageData.data.venue[0].name}&query_place_id=${pageData.data.venue[0].placeId}`}
                 >
                   <PrismicRichText field={pageData.data.venue[0].address} />
                 </a>
