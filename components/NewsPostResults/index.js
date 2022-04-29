@@ -6,7 +6,7 @@ const client = createClient();
 const newsPostPerPage = 1;
 
 export default function NewsPostResults({ filterBy, resultsPage, updatePostPages }) {
-  console.log(filterBy);
+  // console.log(filterBy);
   const [postResults, setPostResults] = useState([]);
   // fetchQuery: only pass document.tags to query if filterBy value exists
   const fetchQuery = {

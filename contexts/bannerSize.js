@@ -12,7 +12,6 @@ export const useBannerSizeContext = () => {
 
 export const BannerProvider = ({ children }) => {
   const [bannerSize, setBannerSize] = useState({ width: 0, height: 0 });
-  console.log("bannerSize:", bannerSize);
   return (
     <BannerSizeContext.Provider value={[bannerSize, setBannerSize]}>
       {children}
