@@ -1,9 +1,18 @@
+import { useState, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import FastMarquee from "react-fast-marquee";
 import { classNames } from "@lib/utilities";
 import { v4 as uuidv4 } from "uuid";
 import styles from "./marquee.module.scss";
 
 const Marquee = ({ slice }) => {
+  const [isPaused, setIsPaused] = useState(false);
+
+  const { ref, inView } = useInView({
+    threshold: 0,
+    triggerOnce: false
+  });
+
   const Items = ({ data }) => {
     let itemsArray = data;
     // If there is only one item in the array create a second for the even/odd styles
@@ -23,9 +32,20 @@ const Marquee = ({ slice }) => {
       </>
     );
   };
+
+  const togglePause = () => {
+    setIsPaused(!isPaused);
+  };
+
   return (
-    <section className={classNames([styles.marquee, styles[`theme-${slice.primary.theme}`]])}>
-      <FastMarquee speed="80" gradient={false}>
+    <section
+      className={classNames([styles.marquee, styles[`theme-${slice.primary.theme}`]])}
+      onClick={togglePause}
+      aria-hidden="true"
+      ref={ref}
+    >
+      <div className={styles.blocker}></div>
+      <FastMarquee play={!isPaused} speed="80" gradient={false}>
         {/* create 10x of the items so there's enough to fill the space */}
         {[...Array(10)].map(() => (
           <Items key={uuidv4()} data={[...slice.primary.marquee.data.items]} />
