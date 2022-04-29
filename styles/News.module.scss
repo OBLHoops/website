@@ -80,5 +80,11 @@
   &.disabled {
     cursor: auto;
     opacity: 0.2;
+    &:hover,
+    &:focus {
+      color: var(--black);
+      background-color: var(--yellow);
+      border-color: var(--yellow);
+    }
   }
 }

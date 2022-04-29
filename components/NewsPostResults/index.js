@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { createClient } from "@root/prismicio";
 import { usePrismicDocumentsByType } from "@prismicio/react";
 import NewsPostPreview from "@components/NewsPostPreview";
+import styles from "./newsPostsResults.module.scss";
 const client = createClient();
 const newsPostPerPage = 1;
 
@@ -31,7 +32,12 @@ export default function NewsPostResults({ filterBy, resultsPage, updatePostPages
       return [...new Map(arr.map((item) => [item[key], item])).values()];
     }
     if (documents?.results && state === "loaded") {
-      updatePostPages(documents?.total_results_size);
+      if (documents.results.length > 0) {
+        updatePostPages(documents?.total_results_size);
+      } else {
+        updatePostPages(-1);
+      }
+
       setPostResults((currentPostResults) =>
         getUniqueListBy([...currentPostResults, ...documents.results], "id")
       );
@@ -40,8 +46,17 @@ export default function NewsPostResults({ filterBy, resultsPage, updatePostPages
 
   return (
     <>
-      {postResults &&
-        postResults.map((post) => <NewsPostPreview {...post} slug={post.uid} key={post.id} />)}
+      {postResults.length > 0 ? (
+        postResults.map((post) => <NewsPostPreview {...post} slug={post.uid} key={post.id} />)
+      ) : (
+        <div className={styles.placeholder}>
+          <div className={styles.content}>
+            <h3>
+              Hmm, we can't find any <span className={styles.filter}>{filterBy}</span> news.
+            </h3>
+          </div>
+        </div>
+      )}
     </>
   );
 }

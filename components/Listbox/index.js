@@ -4,7 +4,7 @@ import { Listbox } from "@headlessui/react";
 import styles from "./listbox.module.scss";
 
 export default function CustomListbox({ onSelect, activeFilter, options }) {
-  const [selectedOption, setSelectedOption] = useState(options[0].label);
+  const [selectedOption, setSelectedOption] = useState(options[0]);
 
   useEffect(() => {
     activeFilter && setSelectedOption(activeFilter);
@@ -53,24 +53,24 @@ export default function CustomListbox({ onSelect, activeFilter, options }) {
         </Listbox.Button>
         <Listbox.Options className={styles.listOptions}>
           {options.map((option, index) => (
-            <Listbox.Option key={option.label} value={option.label} as={Fragment}>
+            <Listbox.Option key={option} value={option} as={Fragment}>
               {({ active }) => (
                 <li
                   className={`${active ? styles.active : ""} ${
-                    selectedOption === option.label ? styles.selected : ""
+                    selectedOption === option ? styles.selected : ""
                   }`}
                   aria-label={
-                    selectedOption === option.label
-                      ? `Currently filtering by ${option.label}`
-                      : `Filter by ${option.label}`
+                    selectedOption === option
+                      ? `Currently filtering by ${option}`
+                      : `Filter by ${option}`
                   }
                 >
-                  {selectedOption === option.label && (
+                  {selectedOption === option && (
                     <span className={styles.icon}>
                       <CheckIcon />
                     </span>
                   )}
-                  <span className={styles.label}>{option.label}</span>
+                  <span className={styles.label}>{option}</span>
                 </li>
               )}
             </Listbox.Option>
