@@ -18,9 +18,7 @@ export default function Banner({ bannerData }) {
             field={bannerData?.data.link}
             target={bannerData?.data.link.link_type == "Web" ? "_blank" : "_self"}
           >
-            <p>
-              {bannerData.data.text} {height}
-            </p>
+            <p>{bannerData.data.text}</p>
           </PrismicLink>
         </div>
       </div>
