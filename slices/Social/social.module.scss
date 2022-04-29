@@ -103,10 +103,19 @@
   justify-content: center;
   li {
     display: block;
-    margin: 0 1rem;
+    margin: 0 0.5rem;
+    @media (min-width: breakpoint.$md) {
+      margin: 0 1rem;
+    }
     a {
       display: flex;
       align-items: center;
+    }
+    span {
+      display: none;
+      @media (min-width: breakpoint.$md) {
+        display: block;
+      }
     }
   }
   img {
