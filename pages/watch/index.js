@@ -1,56 +1,58 @@
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+import Link from "next/link";
 import { createClient } from "@root/prismicio";
-import { PrismicRichText, usePrismicDocumentsByType } from "@prismicio/react";
+import { PrismicRichText } from "@prismicio/react";
 import { asDate } from "@prismicio/helpers";
+import slugify from "slugify";
 import CustomHead from "@components/Head";
 import ContentContainer from "@components/ContentContainer";
 import Picture from "@components/Picture";
 import { classNames } from "@lib/utilities";
-import NewsPostPreview from "@components/NewsPostPreview";
 import { getLayout } from "@components/Layout/PageLayout";
 import { watchGraphQuery } from "@queries/index";
+import { watchFilters } from "@lib/filters";
+import Listbox from "@components/Listbox";
+import WatchPostResults from "@components/WatchPostResults";
 import styles from "@styles/Watch.module.scss";
-import { useEffect, useState } from "react";
-const client = createClient();
 
-export default function Watch({ pageData, watchPosts, defaultMetaData }) {
-  const [postResults, setPostResults] = useState([...watchPosts.results]);
-  const [postsPage, setPostPage] = useState(1);
-  const [totalPostPages, setTotalPostPages] = useState(null);
-  const [paginationActive, setPaginationActive] = useState(true);
-  const pinnedPostUID = pageData?.data?.pinnedWatchPost?.id;
+export default function Watch({ pageData, defaultMetaData }) {
   const dateOptions = { month: "long", day: "numeric", year: "numeric" };
-
-  const [documents, { state, error }] = usePrismicDocumentsByType("watch-post", {
-    client: client,
-    orderings: {
-      field: "my.watch-post.postDate",
-      direction: "desc"
-    },
-    // q: '[[at(document.tags,["Recap"])]]',
-    // q: `[[not(document.id,"${pinnedPostUID}")]]`,
-    pageSize: 1,
-    page: postsPage
-  });
+  const router = useRouter();
+  const [postsPage, setPostsPage] = useState(1);
+  const [totalPostPages, setTotalPostPages] = useState(0);
+  const [filterBy, setFilterBy] = useState(null);
+  const [paginationActive, setPaginationActive] = useState(true);
 
   useEffect(() => {
-    function getUniqueListBy(arr, key) {
-      return [...new Map(arr.map((item) => [item[key], item])).values()];
+    if (totalPostPages && postsPage >= totalPostPages) {
+      setPaginationActive(false);
+    } else {
+      setPaginationActive(true);
     }
-    if (documents?.results) {
-      const results = getUniqueListBy([...postResults, ...documents.results], "id");
-      setPostResults(results);
-      setTotalPostPages(documents?.total_results_size);
-    }
-  }, [documents]);
-
-  useEffect(() => {
-    totalPostPages > 0 && postsPage >= totalPostPages && setPaginationActive(false);
   }, [postsPage, totalPostPages]);
+
+  useEffect(() => {
+    router.query && setFilterBy(router.query?.filter);
+  }, [router.query]);
+
+  useEffect(() => {
+    if (filterBy === "all") {
+      router.push({ query: { filter: "all" } }, undefined, { shallow: true });
+    } else if (filterBy) {
+      router.push({ query: { filter: filterBy } }, undefined, { shallow: true });
+    }
+  }, [filterBy]);
 
   const handlePagination = () => {
     if (postsPage <= totalPostPages) {
-      setPostPage(postsPage + 1);
+      setPostsPage(postsPage + 1);
     }
+  };
+
+  const handleFilter = (value) => {
+    value === "view all" ? setFilterBy("view all") : setFilterBy(value);
+    setPostsPage(1);
   };
 
   return (
@@ -86,28 +88,38 @@ export default function Watch({ pageData, watchPosts, defaultMetaData }) {
             </a>
           </div>
         )}
-        {postResults?.length && (
-          <>
-            <div className={styles.watchPosts}>
-              <div className={styles.grid}>
-                {postResults.map((post) => (
-                  <NewsPostPreview {...post} slug={post.uid} key={post.id} />
-                ))}
-              </div>
+
+        <div className={styles.filter}>
+          <Listbox
+            onSelect={(value) => handleFilter(value)}
+            activeFilter={filterBy}
+            options={watchFilters}
+          />
+        </div>
+
+        <>
+          <div className={styles.watchPosts}>
+            <div className={styles.grid}>
+              <WatchPostResults
+                filterBy={filterBy}
+                resultsPage={postsPage}
+                updatePostPages={(num) => setTotalPostPages(num)}
+                key={filterBy}
+              />
             </div>
-            <button
-              onClick={handlePagination}
-              className={classNames([
-                styles.button,
-                styles.fill,
-                !paginationActive && styles.disabled
-              ])}
-              disabled={!paginationActive}
-            >
-              show more
-            </button>
-          </>
-        )}
+          </div>
+          <button
+            onClick={handlePagination}
+            className={classNames([
+              styles.button,
+              styles.fill,
+              !paginationActive && styles.disabled
+            ])}
+            disabled={!paginationActive}
+          >
+            show more
+          </button>
+        </>
       </div>
     </>
   );
@@ -115,26 +127,46 @@ export default function Watch({ pageData, watchPosts, defaultMetaData }) {
 
 export async function getStaticProps({ previewData }) {
   const client = createClient({ previewData });
+  // const allTagsData = await client.getTags();
   const pageData = await client.getByUID("watch", "watch", {
     graphQuery: watchGraphQuery
   });
-  const pinnedPostUID = pageData?.data?.pinnedWatchPost?.id;
-  const watchPosts = await client.getByType("watch-post", {
-    orderings: {
-      field: "my.watch-post.postDate",
-      direction: "desc"
-    },
-    q: `[[not(document.id,"${pinnedPostUID}")]]`,
-    // q: '[[at(document.tags,["Recap"])]]',
-    pageSize: 1,
-    page: 1
-  });
+  // const pinnedPostUID = pageData?.data?.pinnedWatchPost?.id;
+  // const newsPosts = await client.getByType("news-post", {
+  //   orderings: {
+  //     field: "my.news-post.postDate",
+  //     direction: "desc"
+  //   },
+  //   q: `[[at(document.type, "news-post")][not(document.id,"${pinnedPostUID}")]]`,
+  //   pageSize: 1,
+  //   page: 1
+  // });
+
+  // Define default tag object
+  // const defaultTag = [
+  //   {
+  //     label: "view all",
+  //     slug: "all"
+  //   }
+  // ];
+  // Lower base all tag names, corrects case issues in Prismic
+  // const lowerCaseTags = allTagsData.map((tag) => tag.toLowerCase());
+  // Remove duplicate tags
+  // const removeTagDuplicates = [...new Set(lowerCaseTags)];
+  // Define tags object
+  // const tagsObject = removeTagDuplicates.map((tag) => ({
+  //   label: tag,
+  //   slug: slugify(tag, { lower: true })
+  // }));
+  // Combine defaultTag and tagsObject
+  // const allTags = [...defaultTag, ...tagsObject];
+
   const navData = await client.getByUID("navigation", "navigation");
   const footerData = await client.getByUID("footer", "footer");
   const bannerData = await client.getByUID("banner", "banner");
   const defaultMetaData = await client.getByUID("metadata", "metadata");
   return {
-    props: { pageData, watchPosts, navData, footerData, bannerData, defaultMetaData },
+    props: { pageData, navData, footerData, bannerData, defaultMetaData },
     revalidate: 10
   };
 }

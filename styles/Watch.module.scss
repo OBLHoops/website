@@ -36,21 +36,31 @@
   @include mixins.sectionLabel();
 }
 
-.watchPosts .grid {
-  display: grid;
-  column-gap: 0;
-  row-gap: 1rem;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-  margin-bottom: calc(var(--spacing-section) / 2);
-  @media (min-width: breakpoint.$sm) {
-    padding: 0;
-    column-gap: 2rem;
-    row-gap: 2rem;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+.watchPosts {
+  .grid {
+    min-height: 600px;
+    display: grid;
+    column-gap: 0;
+    row-gap: 1rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin-bottom: calc(var(--spacing-section) / 2);
+    @media (min-width: breakpoint.$sm) {
+      padding: 0;
+      column-gap: 2rem;
+      row-gap: 2rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    @media (min-width: breakpoint.$lg) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
   }
-  @media (min-width: breakpoint.$lg) {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
+}
+
+.filter {
+  width: 100%;
+  margin: calc(var(--spacing-section) / 2) 0;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .button {
@@ -70,5 +80,11 @@
   &.disabled {
     cursor: auto;
     opacity: 0.2;
+    &:hover,
+    &:focus {
+      color: var(--black);
+      background-color: var(--yellow);
+      border-color: var(--yellow);
+    }
   }
 }
