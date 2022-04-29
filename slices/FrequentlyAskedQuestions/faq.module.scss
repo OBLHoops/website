@@ -18,10 +18,22 @@
 
   h3 {
     margin: 0;
+    div {
+      line-height: 0.85;
+      max-width: 20ch;
+      width: 80%;
+    }
   }
   .icon {
-    width: 45px;
-    height: 45px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-top: 0.45rem;
+    @media (min-width: breakpoint.$md) {
+      margin-top: 0.95rem;
+      width: 40px;
+      height: 40px;
+    }
   }
 
   [data-reach-accordion-button] {
@@ -32,6 +44,7 @@
     justify-content: space-between;
     width: 100%;
     text-align: left;
+    color: var(--black);
   }
   [data-reach-accordion-item] {
     border-top: 2px solid var(--black);

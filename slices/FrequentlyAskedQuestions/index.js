@@ -14,7 +14,7 @@ const FrequentlyAskedQuestions = ({ slice }) => {
     <AccordionItem>
       <h3>
         <AccordionButton>
-          {question}
+          <div>{question}</div>
           <svg
             viewBox="0 0 45 45"
             fill="none"
