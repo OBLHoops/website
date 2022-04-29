@@ -32,9 +32,13 @@ export default function News({ pageData, allTags, defaultMetaData }) {
   }, [postsPage, totalPostPages]);
 
   useEffect(() => {
-    if (filterBy === "View All") {
+    router.query && setFilterBy(router.query?.filter);
+  }, [router.query]);
+
+  useEffect(() => {
+    if (filterBy === "all") {
       router.push({ query: { filter: "all" } }, undefined, { shallow: true });
-    } else {
+    } else if (filterBy) {
       router.push({ query: { filter: filterBy } }, undefined, { shallow: true });
     }
   }, [filterBy]);
@@ -46,7 +50,7 @@ export default function News({ pageData, allTags, defaultMetaData }) {
   };
 
   const handleFilter = (value) => {
-    value === "View All" ? setFilterBy(null) : setFilterBy(value);
+    value === "view all" ? setFilterBy("view all") : setFilterBy(value);
     setPostsPage(1);
   };
 
@@ -83,7 +87,11 @@ export default function News({ pageData, allTags, defaultMetaData }) {
         )}
 
         <div className={styles.filter}>
-          <Listbox onSelect={(value) => handleFilter(value)} options={allTags} />
+          <Listbox
+            onSelect={(value) => handleFilter(value)}
+            activeFilter={filterBy}
+            options={allTags}
+          />
         </div>
 
         <>
@@ -134,7 +142,7 @@ export async function getStaticProps({ previewData }) {
   // Define default tag object
   const defaultTag = [
     {
-      label: "View All",
+      label: "view all",
       slug: "all"
     }
   ];

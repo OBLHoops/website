@@ -53,7 +53,7 @@ export default function CustomListbox({ onSelect, activeFilter, options }) {
         </Listbox.Button>
         <Listbox.Options className={styles.listOptions}>
           {options.map((option, index) => (
-            <Listbox.Option key={option.slug} value={option.label} as={Fragment}>
+            <Listbox.Option key={option.label} value={option.label} as={Fragment}>
               {({ active }) => (
                 <li
                   className={`${active ? styles.active : ""} ${

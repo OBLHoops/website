@@ -11,7 +11,7 @@ export default function NewsPostResults({ filterBy, resultsPage, updatePostPages
   const fetchQuery = {
     type: `[at(document.type, "news-post")]`,
     // not: `[not(document.id,"${pinnedPostUID}")]`,
-    ...(filterBy && { filterBy: `[at(document.tags,["${filterBy}"])]` })
+    ...(filterBy !== "view all" && { filterBy: `[at(document.tags,["${filterBy}"])]` })
   };
 
   const [documents, { state, error }] = usePrismicDocumentsByType("news-post", {
