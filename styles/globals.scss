@@ -14,7 +14,10 @@
   --gray-dark: #616161;
   --black: #000;
 
-  --spacing-section: min(10vh, 12.5rem);
+  --spacing-section: min(5vh, 6rem);
+  @media (min-width: breakpoint.$md) {
+    --spacing-section: min(10vh, 12.5rem);
+  }
 
   // Fonts
   --font-body: "Roboto", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
