@@ -45,13 +45,15 @@
   display: block;
   a {
     display: block;
-    width: 75px;
+    width: 93px;
+    transform: translate(-5px, -10px);
   }
   @media (min-width: breakpoint.$md) {
     margin-right: 3.5rem;
     a {
       display: block;
-      width: 100px;
+      width: 123px;
+      transform: translate(-7px, -13px);
     }
   }
 }
