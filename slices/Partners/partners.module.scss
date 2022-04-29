@@ -23,10 +23,14 @@
     flex-direction: row;
   }
   img {
+    display: block;
     width: 50%;
-    padding: 1rem 3rem;
+    height: auto;
+    margin: 1rem 0;
     @media (min-width: breakpoint.$sm) {
       width: 25%;
+      margin: 0;
+      padding: 1rem 3rem;
     }
   }
 }
