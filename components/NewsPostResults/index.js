@@ -6,12 +6,13 @@ const client = createClient();
 const newsPostPerPage = 1;
 
 export default function NewsPostResults({ filterBy, resultsPage, updatePostPages }) {
+  console.log(filterBy);
   const [postResults, setPostResults] = useState([]);
   // fetchQuery: only pass document.tags to query if filterBy value exists
   const fetchQuery = {
     type: `[at(document.type, "news-post")]`,
     // not: `[not(document.id,"${pinnedPostUID}")]`,
-    ...(filterBy !== "view all" && { filterBy: `[at(document.tags,["${filterBy}"])]` })
+    ...(filterBy !== "view all" && filterBy && { filterBy: `[at(document.tags,["${filterBy}"])]` })
   };
 
   const [documents, { state, error }] = usePrismicDocumentsByType("news-post", {
