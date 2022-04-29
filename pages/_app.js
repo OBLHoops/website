@@ -33,13 +33,18 @@ export default function CustomApp({ Component, pageProps, router }) {
         `Route change complete to ${url} ${shallow ? "with" : "without"} shallow routing`
       );
 
+      // Array of URL terms to prevent scroll to top
+      const preventScroll = ["?filter="];
+
       // Delay scroll to top an route change
-      setTimeout(() => {
-        window.scrollTo({
-          top: 0,
-          left: 0
-        });
-      }, 100);
+      if (!preventScroll.some((v) => url.includes(v))) {
+        setTimeout(() => {
+          window.scrollTo({
+            top: 0,
+            left: 0
+          });
+        }, 100);
+      }
     };
     router.events.on("routeChangeComplete", handleRouteComplete);
     return () => {
