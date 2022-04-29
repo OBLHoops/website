@@ -45,28 +45,52 @@
   position: absolute;
   aspect-ratio: 1/1;
   &:nth-child(1) {
-    width: 12%;
-    transform: translate(290%, -160%);
+    width: 20%;
+    transform: translate(220%, -180%);
+    @media (min-width: breakpoint.$md) {
+      width: 12%;
+      transform: translate(290%, -160%);
+    }
   }
   &:nth-child(2) {
     width: 25%;
-    transform: translate(180%, 0%);
+    transform: translate(140%, 150%);
+    @media (min-width: breakpoint.$md) {
+      width: 25%;
+      transform: translate(180%, 0%);
+    }
   }
   &:nth-child(3) {
     width: 20%;
-    transform: translate(60%, 150%);
+    transform: translate(40%, -150%);
+    @media (min-width: breakpoint.$md) {
+      width: 20%;
+      transform: translate(60%, 150%);
+    }
   }
   &:nth-child(4) {
-    width: 10%;
-    transform: translate(-80%, 180%);
+    width: 20%;
+    transform: translate(-10%, 200%);
+    @media (min-width: breakpoint.$md) {
+      width: 10%;
+      transform: translate(-80%, 180%);
+    }
   }
   &:nth-child(5) {
     width: 20%;
-    transform: translate(-205%, 48%);
+    transform: translate(-215%, 138%);
+    @media (min-width: breakpoint.$md) {
+      width: 20%;
+      transform: translate(-205%, 48%);
+    }
   }
   &:nth-child(6) {
-    width: 15%;
+    width: 25%;
     transform: translate(-145%, -150%);
+    @media (min-width: breakpoint.$md) {
+      width: 15%;
+      transform: translate(-145%, -150%);
+    }
   }
 }
 
