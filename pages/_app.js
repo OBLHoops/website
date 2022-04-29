@@ -5,6 +5,7 @@ import Link from "next/link";
 import { PrismicProvider } from "@prismicio/react";
 import { PrismicPreview } from "@prismicio/next";
 import { linkResolver, repositoryName } from "../prismicio";
+import { BannerProvider } from "@contexts/bannerSize";
 import { classNames } from "@lib/utilities";
 import "@styles/globals.scss";
 
@@ -69,9 +70,11 @@ export default function CustomApp({ Component, pageProps, router }) {
         );
       }}
     >
-      <PrismicPreview repositoryName={repositoryName}>
-        {getLayout(<Component {...pageProps} key={router.route} />)}
-      </PrismicPreview>
+      <BannerProvider>
+        <PrismicPreview repositoryName={repositoryName}>
+          {getLayout(<Component {...pageProps} key={router.route} />)}
+        </PrismicPreview>
+      </BannerProvider>
     </PrismicProvider>
   );
 }

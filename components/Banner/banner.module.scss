@@ -7,12 +7,7 @@
   width: 100%;
   overflow: hidden;
   background-color: var(--yellow);
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  @media (min-width: breakpoint.$sm) {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-  }
+
   p {
     font-size: var(--font-size-smaller);
     font-weight: var(--font-bold);
@@ -26,6 +21,12 @@
 
 .container {
   @include mixins.container();
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  @media (min-width: breakpoint.$sm) {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
   display: flex;
   justify-content: center;
   position: relative;

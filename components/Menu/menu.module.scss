@@ -28,8 +28,11 @@
   left: 0;
   right: 0;
   top: 80px;
+  // top: 117px;
   bottom: 0;
   > div {
+    @include mixins.container();
+    width: 100%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -40,41 +43,26 @@
   position: relative;
   width: 100%;
   list-style: none;
-  text-align: center;
+  text-align: left;
   padding: 0;
-  margin: 0;
 
   li {
-    margin: 3rem 0;
+    margin: 1rem 0;
   }
-
-  // .link {
-  //   color: var(--white);
-  //   line-height: 1;
-  //   font-size: 2.125rem;
-  //   font-weight: var(--font-medium);
-  //   margin: 0 0.5rem;
-  //   padding: 0 1rem;
-  //   &.outline {
-  //     @include mixins.button();
-  //   }
-  //   &.fill {
-  //     @include mixins.button();
-  //   }
-  // }
 }
 
 .link {
+  width: 100%;
   white-space: nowrap;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
   color: var(--white);
-  line-height: 1;
-  font-size: 1.3125rem;
-  font-family: var(--font-body-bold);
+  font-size: var(--font-size-h3);
+  font-family: var(--font-headline);
+  line-height: 0.75;
   text-transform: uppercase;
-  margin: 0 0.75rem;
-  padding: 0 1rem;
   span {
     display: flex;
     border-bottom: 2px solid transparent;
@@ -94,14 +82,17 @@
   transform: translateY(1px);
 }
 
+.menuSpacer {
+  height: 2rem;
+  width: 100%;
+}
+
 .button {
   @include mixins.button();
   position: relative;
   z-index: 5;
-  margin: 0 auto;
   &.fill {
     display: flex;
-    margin-left: auto;
     font-size: 1.3125rem;
     font-family: var(--font-body-bold);
     text-transform: uppercase;
