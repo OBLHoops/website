@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "focus-visible";
 import Layout from "@components/Layout";
 import Link from "next/link";
@@ -28,6 +28,8 @@ if (process.env.NODE_ENV !== "production" && !isServerSideRendered()) {
 }
 
 export default function CustomApp({ Component, pageProps, router }) {
+  const isBrowserNavigation = useRef(false);
+
   useEffect(() => {
     const handleRouteComplete = (url, { shallow }) => {
       console.log(
@@ -38,20 +40,34 @@ export default function CustomApp({ Component, pageProps, router }) {
       const preventScroll = ["?filter="];
 
       // Delay scroll to top an route change
-      if (!preventScroll.some((v) => url.includes(v))) {
+      if (!preventScroll.some((v) => url.includes(v)) && !isBrowserNavigation.current) {
         setTimeout(() => {
           window.scrollTo({
             top: 0,
             left: 0
           });
+          isBrowserNavigation.current = false;
         }, 100);
       }
     };
+
+    // detect browser navigation (back/forward)
+    router.beforePopState(({ as }) => {
+      if (as !== router.asPath) {
+        isBrowserNavigation.current = true;
+      }
+      return true;
+    });
+
     router.events.on("routeChangeComplete", handleRouteComplete);
+
     return () => {
+      // detect browser navigation (back/forward)
+      router.beforePopState(() => true);
+
       router.events.off("routeChangeComplete", handleRouteComplete);
     };
-  }, []);
+  }, [router]);
 
   const getLayout = Component.getLayout || ((page) => <Layout>{page}</Layout>);
   return (
