@@ -46,17 +46,8 @@ export default function WatchPostResults({ filterBy, resultsPage, updatePostPage
 
   return (
     <>
-      {postResults.length > 0 ? (
-        postResults.map((post) => <NewsPostPreview {...post} slug={post.uid} key={post.id} />)
-      ) : (
-        <div className={styles.placeholder}>
-          <div className={styles.content}>
-            <h3>
-              Hmm, we can't find any <span className={styles.filter}>{filterBy}</span> videos.
-            </h3>
-          </div>
-        </div>
-      )}
+      {postResults.length > 0 &&
+        postResults.map((post) => <NewsPostPreview {...post} slug={post.uid} key={post.id} />)}
     </>
   );
 }

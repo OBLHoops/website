@@ -1,10 +1,7 @@
 import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
-import Link from "next/link";
 import { createClient } from "@root/prismicio";
 import { PrismicRichText } from "@prismicio/react";
 import { asDate } from "@prismicio/helpers";
-import slugify from "slugify";
 import CustomHead from "@components/Head";
 import ContentContainer from "@components/ContentContainer";
 import Picture from "@components/Picture";
@@ -18,7 +15,6 @@ import styles from "@styles/Watch.module.scss";
 
 export default function Watch({ pageData, defaultMetaData }) {
   const dateOptions = { month: "long", day: "numeric", year: "numeric" };
-  const router = useRouter();
   const [postsPage, setPostsPage] = useState(1);
   const [totalPostPages, setTotalPostPages] = useState(0);
   const [filterBy, setFilterBy] = useState(null);
@@ -31,18 +27,6 @@ export default function Watch({ pageData, defaultMetaData }) {
       setPaginationActive(true);
     }
   }, [postsPage, totalPostPages]);
-
-  useEffect(() => {
-    router.query && setFilterBy(router.query?.filter);
-  }, [router.query]);
-
-  useEffect(() => {
-    if (filterBy === "all") {
-      router.push({ query: { filter: "all" } }, undefined, { shallow: true });
-    } else if (filterBy) {
-      router.push({ query: { filter: filterBy } }, undefined, { shallow: true });
-    }
-  }, [filterBy]);
 
   const handlePagination = () => {
     if (postsPage <= totalPostPages) {
