@@ -1,10 +1,8 @@
-import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
+import { useEffect } from "react";
 import Link from "next/link";
 import { createClient } from "@root/prismicio";
 import { PrismicRichText } from "@prismicio/react";
 import { asDate } from "@prismicio/helpers";
-import slugify from "slugify";
 import CustomHead from "@components/Head";
 import ContentContainer from "@components/ContentContainer";
 import Picture from "@components/Picture";
@@ -13,47 +11,43 @@ import { getLayout } from "@components/Layout/PageLayout";
 import { newsGraphQuery } from "@queries/index";
 import { newsFilters } from "@lib/filters";
 import Listbox from "@components/Listbox";
+import { useSharedState } from "@lib/useSharedState";
 import NewsPostResults from "@components/NewsPostResults";
 import styles from "@styles/News.module.scss";
 
 export default function News({ pageData, defaultMetaData }) {
   const dateOptions = { month: "long", day: "numeric", year: "numeric" };
-  const router = useRouter();
-  const [postsPage, setPostsPage] = useState(1);
-  const [totalPostPages, setTotalPostPages] = useState(0);
-  const [filterBy, setFilterBy] = useState(null);
-  const [paginationActive, setPaginationActive] = useState(true);
 
-  useEffect(() => {
-    if (totalPostPages && postsPage >= totalPostPages) {
-      setPaginationActive(false);
-    } else {
-      setPaginationActive(true);
-    }
-  }, [postsPage, totalPostPages]);
-
-  useEffect(() => {
-    router.query && setFilterBy(router.query?.filter);
-  }, [router.query]);
-
-  useEffect(() => {
-    if (filterBy === "all") {
-      router.push({ query: { filter: "all" } }, undefined, { shallow: true });
-    } else if (filterBy) {
-      router.push({ query: { filter: filterBy } }, undefined, { shallow: true });
-    }
-  }, [filterBy]);
+  const [filterBy, setFilterBy] = useSharedState("filterBy", {
+    current: "view all"
+  });
+  const [pagination, setPagination] = useSharedState("pagination", {
+    current: 1,
+    total: 1,
+    active: false,
+    available: true
+  });
 
   const handlePagination = () => {
-    if (postsPage <= totalPostPages) {
-      setPostsPage(postsPage + 1);
+    if (pagination.current <= pagination.total) {
+      setPagination({ ...pagination, current: pagination.current + 1, active: true });
     }
   };
 
   const handleFilter = (value) => {
-    value === "view all" ? setFilterBy("view all") : setFilterBy(value);
-    setPostsPage(1);
+    value === "view all"
+      ? setFilterBy({ ...filterBy, current: "view all" })
+      : setFilterBy({ ...filterBy, current: value });
+    setPagination({ ...pagination, current: 1 });
   };
+
+  useEffect(() => {
+    if (pagination.total && pagination.current >= pagination.total) {
+      setPagination({ ...pagination, available: false });
+    } else {
+      setPagination({ ...pagination, available: true });
+    }
+  }, [pagination]);
 
   return (
     <>
@@ -90,7 +84,7 @@ export default function News({ pageData, defaultMetaData }) {
         <div className={styles.filter}>
           <Listbox
             onSelect={(value) => handleFilter(value)}
-            activeFilter={filterBy}
+            activeFilter={filterBy.current}
             options={newsFilters}
           />
         </div>
@@ -98,12 +92,7 @@ export default function News({ pageData, defaultMetaData }) {
         <>
           <div className={styles.newsPostsResults}>
             <div className={styles.grid}>
-              <NewsPostResults
-                filterBy={filterBy}
-                resultsPage={postsPage}
-                updatePostPages={(num) => setTotalPostPages(num)}
-                key={filterBy}
-              />
+              <NewsPostResults key={filterBy.current} />
             </div>
           </div>
           <button
@@ -111,9 +100,9 @@ export default function News({ pageData, defaultMetaData }) {
             className={classNames([
               styles.button,
               styles.fill,
-              !paginationActive && styles.disabled
+              !pagination.available && styles.disabled
             ])}
-            disabled={!paginationActive}
+            disabled={!pagination.available}
           >
             show more
           </button>
