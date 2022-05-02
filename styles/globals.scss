@@ -14,7 +14,7 @@
   --gray-dark: #616161;
   --black: #000;
 
-  --spacing-section: min(5vh, 6rem);
+  --spacing-section: min(8vh, 10.5rem);
   @media (min-width: breakpoint.$md) {
     --spacing-section: min(10vh, 12.5rem);
   }

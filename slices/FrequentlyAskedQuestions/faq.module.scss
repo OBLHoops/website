@@ -17,6 +17,9 @@
   }
 
   h3 {
+    @media (max-width: breakpoint.$sm) {
+      font-size: var(--font-size-h4);
+    }
     margin: 0;
     div {
       line-height: 0.85;
@@ -28,7 +31,7 @@
     display: block;
     width: 30px;
     height: 30px;
-    margin-top: 0.45rem;
+    margin-top: 0.05rem;
     @media (min-width: breakpoint.$md) {
       margin-top: 0.95rem;
       width: 40px;

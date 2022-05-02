@@ -12,7 +12,7 @@
     display: grid;
     align-items: center;
     column-gap: 0;
-    row-gap: 2rem;
+    row-gap: 3rem;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     @media (min-width: breakpoint.$sm) {
       column-gap: 2rem;
