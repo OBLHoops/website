@@ -9,7 +9,7 @@ export default function NewsPostPreview({ slug, data }) {
     <div className={styles.preview}>
       <Link href={data.externalLink.link_type == "Web" ? data.externalLink.url : `/news/${slug}`}>
         <a target={data.externalLink.link_type == "Web" ? "_blank" : "_self"}>
-          <div className={styles.image}>
+          <div className={styles.image} aria-hidden="true">
             {data.coverImage.url && <Picture image={data.coverImage} />}
           </div>
           <div className={styles.content}>

@@ -102,6 +102,10 @@ const Picture = ({ image }) => {
     }
   }, []);
 
+  const imageAltTag = {
+    ...(image.alt && { alt: image.alt })
+  };
+
   return (
     <>
       {image && (
@@ -130,7 +134,7 @@ const Picture = ({ image }) => {
             ref={imageRef}
             onLoad={handleImageLoaded}
             src={image.url}
-            alt={image.alt}
+            alt={image.alt ? image.alt : ""}
             width={image.dimensions.width}
             height={image.dimensions.height}
             // loading="lazy"

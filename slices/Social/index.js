@@ -50,7 +50,7 @@ const Social = ({ slice }) => {
           </ul>
         </div>
 
-        <div className={styles.images}>
+        <div className={styles.images} aria-hidden="true">
           {data?.images?.map((item, index) => {
             if (index < 7) {
               return <ParallaxImage data={item} key={uuidv4()} index={index} />;
