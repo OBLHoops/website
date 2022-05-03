@@ -1,7 +1,6 @@
 import Head from "next/head";
 
 const CustomHead = ({ defaultMetaData, pageMetaData }) => {
-  console.log(defaultMetaData, pageMetaData);
   const {
     metaTitle: globalMetaTitle,
     metaDescription: globalMetaDescription,
