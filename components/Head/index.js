@@ -30,8 +30,6 @@ const CustomHead = ({ defaultMetaData, pageMetaData }) => {
     globalMetaDescription;
   const socialImage = pageSocialCard[0]?.socialCardImage || globalSocialCard[0]?.socialCardImage;
 
-  console.log(pageTitle);
-
   return (
     <Head>
       {/* General Meta Tags */}
