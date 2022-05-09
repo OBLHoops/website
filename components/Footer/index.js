@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { PrismicLink } from "@prismicio/react";
 import styles from "./footer.module.scss";
 import { v4 as uuidv4 } from "uuid";
 
@@ -12,11 +12,14 @@ export default function Footer({ footerData }) {
               &copy;{new Date().getFullYear()} {footerData.data.copyright}
             </p>
             <ul>
-              {footerData.data.links.map((link) => (
+              {footerData.data.links.map((item) => (
                 <li key={uuidv4()}>
-                  <Link href="/" scroll={false}>
-                    <a>{link.label}</a>
-                  </Link>
+                  <PrismicLink
+                    field={item.link}
+                    target={item.link.link_type == "Web" ? "_blank" : "_self"}
+                  >
+                    {item.label}
+                  </PrismicLink>
                 </li>
               ))}
             </ul>
