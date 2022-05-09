@@ -29,7 +29,9 @@ export default function Location({
         <CustomHead defaultMetaData={defaultMetaData} pageMetaData={pageData.data} />
         <div className={styles.location}>
           <ContentContainer>
-            <h1>{pageData.data.title}</h1>
+            <div className={styles.title}>
+              <h1>{pageData.data.title}</h1>
+            </div>
             <div className={styles.grid}>
               <div className={styles.image}>
                 <Picture image={pageData.data.image} />
@@ -50,7 +52,6 @@ export default function Location({
                   target="_blank"
                   aria-describedby="new-window-2"
                   rel="noopener noreferrer"
-                  ChIJN1t_tDeuEmsRUsoyG83frY4
                   href={` https://www.google.com/maps/search/?api=1&query=${pageData.data.venue[0].name}&query_place_id=${pageData.data.venue[0].placeId}`}
                 >
                   <PrismicRichText field={pageData.data.venue[0].address} />

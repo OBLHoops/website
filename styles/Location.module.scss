@@ -2,11 +2,14 @@
 @use "@styles/mixins";
 
 .location {
-  padding: calc(var(--spacing-section) / 2) 0 var(--spacing-section);
+  // padding: calc(var(--spacing-section) / 2) 0 var(--spacing-section);
   h2 {
     margin: 0 0 1rem;
     line-height: 0.9;
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-h4);
+  }
+  h3 {
+    font-size: var(--font-size-h4);
   }
   :global(.button-outline) {
     a {
@@ -57,6 +60,10 @@
   }
 }
 
+.title {
+  padding: var(--spacing-section) 0 calc(var(--spacing-section) / 2);
+}
+
 .startTime {
   color: var(--gray);
   font-family: var(--font-body);
@@ -67,8 +74,9 @@
 }
 
 .location .grid {
+  margin-bottom: var(--spacing-section);
   display: grid;
-  align-items: center;
+  align-items: flex-start;
   column-gap: 0;
   row-gap: 2rem;
   grid-template-columns: repeat(1, minmax(0, 1fr));
