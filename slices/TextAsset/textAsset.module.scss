@@ -95,8 +95,10 @@
   p,
   ul,
   ol {
-    max-width: 25rem;
     font-size: var(--font-size-larger);
+    @media (min-width: breakpoint.$lg) {
+      max-width: 30rem;
+    }
     &:last-of-type {
       margin-bottom: 0;
     }
@@ -107,7 +109,9 @@
   }
 
   h3 {
-    max-width: 25rem;
+    @media (min-width: breakpoint.$lg) {
+      max-width: 30rem;
+    }
   }
 
   &.align-image-right {
