@@ -111,9 +111,18 @@
 
 .schedule {
   padding: var(--spacing-section) 0;
-  padding: var(--spacing-section) 0;
   background-color: var(--white);
   color: var(--black);
+  background-image: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 60%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url(/images/obl-background-light.svg);
+  background-size: 100%, 18%;
+  background-position: top, top;
+  background-repeat: no-repeat, repeat;
   h2 {
     margin-bottom: 3rem;
     @media (min-width: breakpoint.$md) {
