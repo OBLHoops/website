@@ -30,10 +30,12 @@ const CustomHead = ({ defaultMetaData, pageMetaData }) => {
     globalMetaDescription;
   const socialImage = pageSocialCard[0]?.socialCardImage || globalSocialCard[0]?.socialCardImage;
 
+  console.log(pageTitle);
+
   return (
     <Head>
       {/* General Meta Tags */}
-      <title>{metaTitle ? `${metaTitle} – ${defaultTitle}` : defaultTitle}</title>
+      <title>{metaTitle !== "Homepage" ? `${metaTitle} – ${defaultTitle}` : defaultTitle}</title>
       <meta name="description" content={metaDescription} />
       <meta
         name="viewport"
