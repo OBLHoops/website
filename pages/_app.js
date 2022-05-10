@@ -32,23 +32,19 @@ export default function CustomApp({ Component, pageProps, router }) {
 
   useEffect(() => {
     const handleRouteComplete = (url, { shallow }) => {
-      console.log(
-        `Route change complete to ${url} ${shallow ? "with" : "without"} shallow routing`
-      );
-
-      // Array of URL terms to prevent scroll to top
-      const preventScroll = ["?filter="];
-
+      // console.log(
+      //   `Route change complete to ${url} ${shallow ? "with" : "without"} shallow routing`
+      // );
       // Delay scroll to top an route change
-      if (!preventScroll.some((v) => url.includes(v)) && !isBrowserNavigation.current) {
+      if (!isBrowserNavigation.current) {
         setTimeout(() => {
           window.scrollTo({
             top: 0,
             left: 0
           });
-          isBrowserNavigation.current = false;
-        }, 100);
+        }, 150);
       }
+      isBrowserNavigation.current = false;
     };
 
     // detect browser navigation (back/forward)
