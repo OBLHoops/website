@@ -1,6 +1,13 @@
 import Head from "next/head";
 
-const CustomHead = ({ defaultMetaData, pageMetaData }) => {
+const fallbackMetaData = {
+  metaTitle: "",
+  metaDescription: "",
+  socialCard: [],
+  title: ""
+};
+
+const CustomHead = ({ defaultMetaData, pageMetaData = fallbackMetaData }) => {
   const {
     metaTitle: globalMetaTitle,
     metaDescription: globalMetaDescription,
