@@ -40,12 +40,15 @@ export default function Subscribe({ cta }) {
     <div className={styles.emailSignup}>
       <div>
         <form onSubmit={subscribe}>
-          <input
-            type="email"
-            className={styles.emailAddress}
-            ref={inputEl}
-            placeholder="email@domain.com"
-          />
+          <label className={styles.emailLabel}>
+            <span className="visually-hidden">email address</span>
+            <input
+              type="email"
+              className={styles.emailAddress}
+              ref={inputEl}
+              placeholder="email@domain.com"
+            />
+          </label>
           <input
             type="submit"
             value={cta ? cta : "Sign up!"}

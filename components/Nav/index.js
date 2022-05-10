@@ -12,7 +12,6 @@ export default function Nav({ toggle, navData }) {
             <li key={index}>
               <PrismicLink
                 field={item.link}
-                title={item.label}
                 className={styles.link}
                 activeclass={styles.active}
                 onClick={() => toggle(false)}
@@ -29,7 +28,6 @@ export default function Nav({ toggle, navData }) {
         </ul>
         <PrismicLink
           field={navData.data.buttonLink}
-          title={navData.data.buttonLabel}
           className={classNames([styles.button, styles.fill])}
           onClick={() => toggle(false)}
           onKeyPress={() => toggle(false)}

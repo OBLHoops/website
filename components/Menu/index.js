@@ -80,7 +80,6 @@ export default function Menu({ toggle, navData }) {
             <motion.li variants={itemVariant} key={index}>
               <PrismicLink
                 field={item.link}
-                title={item.label}
                 className={styles.link}
                 activeclass={styles.active}
                 onClick={() => toggle(false)}
@@ -98,7 +97,6 @@ export default function Menu({ toggle, navData }) {
         <motion.div variants={itemVariant}>
           <PrismicLink
             field={navData.data.buttonLink}
-            title={navData.data.buttonLabel}
             className={classNames([styles.button, styles.fill])}
             onClick={() => toggle(false)}
             onKeyPress={() => toggle(false)}

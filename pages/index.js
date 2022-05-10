@@ -9,6 +9,7 @@ export default function Homepage({ pageData, defaultMetaData }) {
   return (
     <>
       <CustomHead defaultMetaData={defaultMetaData} pageMetaData={pageData.data} />
+      <h1 className="visually-hidden">Ones Basketball League</h1>
       <SliceZone slices={pageData.data.slices} components={components} />
     </>
   );

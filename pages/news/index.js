@@ -60,7 +60,6 @@ export default function News({ pageData, defaultMetaData }) {
           <div className={styles.pinnedPost}>
             <Link
               href={`/news/${pageData.data.pinnedNewsPost.uid}`}
-              title={pageData.data.pinnedNewsPost.data.title}
               className={styles.link}
               scroll={false}
             >

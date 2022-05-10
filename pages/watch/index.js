@@ -50,7 +50,6 @@ export default function Watch({ pageData, defaultMetaData }) {
           <div className={styles.pinnedPost}>
             <a
               href={pageData?.data?.pinnedWatchPost?.data?.externalLink.url}
-              title={pageData?.data?.pinnedWatchPost?.data?.title}
               className={styles.link}
               target="_blank"
               aria-describedby="new-window-2"

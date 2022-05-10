@@ -38,11 +38,10 @@ const Social = ({ slice }) => {
               <li key={index}>
                 <PrismicLink
                   field={item.platformLink}
-                  title={item.platformName}
                   className={styles.link}
                   target={item.platformLink.link_type == "Web" ? "_blank" : "_self"}
                 >
-                  <img src={item.platformIcon.url} alt={item.platformName} />
+                  <img src={item.platformIcon.url} alt="" />
                   <span>{item.platformName}</span>
                 </PrismicLink>
               </li>
