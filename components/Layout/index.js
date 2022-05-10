@@ -8,8 +8,8 @@ import Overlay from "@components/Overlay";
 
 export default function Layout({ children, preview }) {
   const router = useRouter();
-  // prevent ?filter= from changing route key
-  const route = router.asPath === "/" ? "homepage" : router.asPath.replace(/\?filter=(.?)+/, "");
+
+  const route = router.asPath === "/" ? "homepage" : router.asPath;
   const childProps = React.Children.map(children?.props?.children, (child) => {
     return {
       bannerData: child?.props?.bannerData,
