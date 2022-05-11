@@ -55,7 +55,7 @@ export default function Subscribe({ cta }) {
             className={classNames([styles.signup, styles.fill])}
           />
         </form>
-        <div className={styles.errorMessage}>{message ? message : ``}</div>
+        {message && <div className={styles.errorMessage}>{message}</div>}
       </div>
     </div>
   );
