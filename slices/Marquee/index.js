@@ -37,14 +37,25 @@ const Marquee = ({ slice }) => {
     setIsPaused(!isPaused);
   };
 
+  const handleKeyDown = (e) => {
+    const { key, keyCode } = e;
+    if (keyCode === 13 || keyCode === 32) {
+      e.preventDefault();
+      togglePause();
+    }
+  };
+
   return (
     <section
       className={classNames([styles.marquee, styles[`theme-${slice.primary.theme}`]])}
       onClick={togglePause}
+      onKeyDown={handleKeyDown}
       aria-hidden="true"
       ref={ref}
+      tabIndex="0"
+      role="button"
     >
-      <div className={styles.blocker}></div>
+      <div className={styles.blocker} tabIndex="-1"></div>
       <FastMarquee play={!isPaused} speed="80" gradient={false}>
         {/* create 10x of the items so there's enough to fill the space */}
         {[...Array(10)].map(() => (

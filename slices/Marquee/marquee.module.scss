@@ -23,6 +23,18 @@
     --marquee-item-even: var(--white);
     --marquee-item-odd: var(--yellow);
   }
+  &:focus,
+  &.focus-visible {
+    // outline-color: red;
+    // outline-offset: 0.25rem;
+    // outline: 0.25rem;
+    // outline-style: auto;
+
+    outline-width: 2px;
+    outline-offset: 2px;
+    outline-style: solid;
+    outline-color: var(--blue);
+  }
 }
 
 .item {
