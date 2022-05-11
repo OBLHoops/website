@@ -21,8 +21,10 @@ const CustomHead = ({ defaultMetaData, pageMetaData = fallbackMetaData }) => {
     title: pageTitle
   } = pageMetaData;
 
+  const pageTitleIsArray = !Array.isArray(pageTitle) ? Array.isArray(pageTitle) : null;
+
   const defaultTitle = "Ones Basketball League";
-  const metaTitle = pageMetaTitle || pageTitle || globalMetaTitle;
+  const metaTitle = pageMetaTitle || pageTitleIsArray || globalMetaTitle;
   const metaDescription = pageMetaDescription || globalMetaDescription;
 
   const socialTitle =
