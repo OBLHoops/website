@@ -4,8 +4,7 @@ const fetcher = (url) => fetch(url).then((res) => res.text());
 
 export default function Icon({ url }) {
   const { data, error } = useSWR(url, fetcher);
-  if (error) return "An error has occurred.";
-  if (!data) return "Loading...";
-
+  if (error) return <></>;
+  if (!data) return <></>;
   return <div dangerouslySetInnerHTML={{ __html: data }} />;
 }
