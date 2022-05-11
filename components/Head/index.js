@@ -53,6 +53,7 @@ const CustomHead = ({ defaultMetaData, pageMetaData = fallbackMetaData }) => {
       <meta name="theme-color" content="#000" />
       <link rel="alternate icon" type="image/png" href="/favicon.png" />
       <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      <link color="#0000ff" href="/favicon-pinned.svg" rel="mask-icon" />
       <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       <link rel="manifest" href="/site.webmanifest" />
 
