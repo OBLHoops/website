@@ -1,6 +1,7 @@
 import { PrismicLink } from "@prismicio/react";
 import styles from "./footer.module.scss";
 import { v4 as uuidv4 } from "uuid";
+import Icon from "./Icon";
 
 export default function Footer({ footerData }) {
   if (footerData?.data) {
@@ -34,7 +35,7 @@ export default function Footer({ footerData }) {
                   aria-label={link.platformName}
                   href={link.platformLink.url}
                 >
-                  <img src={link.platformIcon.url} alt={link.platformName} />
+                  <Icon url={link.platformIcon.url} />
                 </a>
               </li>
             ))}

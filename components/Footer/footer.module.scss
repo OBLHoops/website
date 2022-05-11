@@ -69,8 +69,20 @@ ul.socialLinks {
     align-items: center;
     aspect-ratio: 1/1;
     padding: 0.25rem;
+    svg {
+      fill: var(--white);
+      transition: fill 150ms ease-out;
+    }
+    @media (any-hover: hover) and (any-pointer: fine) {
+      &:hover,
+      &:focus {
+        svg {
+          fill: var(--yellow);
+        }
+      }
+    }
   }
-  img {
+  svg {
     display: block;
     width: 25px;
     height: auto;
