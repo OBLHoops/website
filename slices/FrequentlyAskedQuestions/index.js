@@ -52,7 +52,7 @@ const FrequentlyAskedQuestions = ({ slice }) => {
         <PrismicRichText field={primary.description} />
 
         {items && (
-          <Accordion>
+          <Accordion collapsible>
             {items.map((item) => (
               <Item {...item} key={uuidv4()} />
             ))}
