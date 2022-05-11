@@ -3,11 +3,12 @@
 
 .header {
   position: sticky;
-  top: 0;
+  top: -1px;
   z-index: 1001;
   display: flex;
   align-items: center;
   color: var(--white);
+  border-top: 1px solid var(--black);
   background-color: var(--black);
   min-height: 80px;
   @media (min-width: breakpoint.$md) {
