@@ -29,11 +29,22 @@
       max-width: 12ch;
       font-size: var(--font-size-h3);
     }
+    transition: color 150ms ease-out;
+    &:hover,
+    &:focus {
+      @media (any-hover: hover) and (any-pointer: fine) {
+        color: var(--yellow);
+        .label {
+          color: var(--yellow);
+        }
+      }
+    }
   }
 }
 
 .label {
   @include mixins.sectionLabel();
+  transition: color 150ms ease-out;
 }
 
 .newsPostsResults {

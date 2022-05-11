@@ -53,6 +53,7 @@ export default function Location({
                   aria-describedby="new-window-2"
                   rel="noopener noreferrer"
                   href={` https://www.google.com/maps/search/?api=1&query=${pageData.data.venue[0].name}&query_place_id=${pageData.data.venue[0].placeId}`}
+                  className={styles.textLink}
                 >
                   <PrismicRichText field={pageData.data.venue[0].address} />
                 </a>

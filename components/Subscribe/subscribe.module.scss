@@ -75,6 +75,14 @@
       color: var(--black);
       background-color: var(--white);
       border-color: var(--white);
+      transition: color 180ms ease-in;
+      &:hover,
+      &:focus,
+      &.active {
+        @media (any-hover: hover) and (any-pointer: fine) {
+          color: var(--blue);
+        }
+      }
     }
   }
 }

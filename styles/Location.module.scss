@@ -93,6 +93,17 @@
   p {
     max-width: 45ch;
   }
+  .textLink {
+    display: inline-block;
+    transition: color 150ms ease-out;
+    color: var(--white);
+    &:hover,
+    &:focus {
+      @media (any-hover: hover) and (any-pointer: fine) {
+        color: var(--yellow);
+      }
+    }
+  }
 }
 
 .label {
