@@ -1,29 +1,13 @@
 import { createClient } from "@root/prismicio";
 import CustomHead from "@components/Head";
 import { PrismicRichText } from "@prismicio/react";
-import { asDate } from "@prismicio/helpers";
 import { getLayout } from "@components/Layout/PageLayout";
 import ContentContainer from "@components/ContentContainer";
-import Marquee from "@slices/Marquee";
-import Picture from "@components/Picture";
 import LocationPreview from "@components/LocationPreview";
 import styles from "@styles/Tickets.module.scss";
 
-export default function Tickets({
-  pageData,
-  marqueeData = {},
-  locationsData = {},
-  defaultMetaData
-}) {
-  const options = { weekday: "long", month: "long", day: "numeric" };
-  const timeOptions = { timeStyle: "short" };
+export default function Tickets({ pageData, locationsData, defaultMetaData }) {
   if (pageData?.data) {
-    const marqueeObj = {
-      primary: {
-        theme: "yellow",
-        marquee: { ...marqueeData }
-      }
-    };
     return (
       <>
         <CustomHead defaultMetaData={defaultMetaData} pageMetaData={pageData.data} />
