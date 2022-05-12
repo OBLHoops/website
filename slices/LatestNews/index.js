@@ -2,9 +2,12 @@ import { createClient } from "@root/prismicio";
 import { usePrismicDocumentsByType } from "@prismicio/react";
 import { PrismicRichText } from "@prismicio/react";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { classNames } from "@lib/utilities";
-import NewsPostPreview from "@components/NewsPostPreview";
 import styles from "./latestNews.module.scss";
+
+const NewsPostPreview = dynamic(() => import("@components/NewsPostPreview"), { ssr: false });
+
 const client = createClient();
 
 const LatestNews = ({ slice }) => {

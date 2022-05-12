@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 import { createClient } from "@root/prismicio";
 import { PrismicRichText } from "@prismicio/react";
 import { asDate } from "@prismicio/helpers";
@@ -10,8 +11,9 @@ import { getLayout } from "@components/Layout/PageLayout";
 import { watchGraphQuery } from "@queries/index";
 import { watchFilters } from "@lib/filters";
 import Listbox from "@components/Listbox";
-import WatchPostResults from "@components/WatchPostResults";
 import styles from "@styles/Watch.module.scss";
+
+const WatchPostResults = dynamic(() => import("@components/WatchPostResults"), { ssr: false });
 
 export default function Watch({ pageData, defaultMetaData }) {
   const dateOptions = { month: "long", day: "numeric", year: "numeric" };

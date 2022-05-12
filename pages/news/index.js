@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import { createClient } from "@root/prismicio";
 import { PrismicRichText } from "@prismicio/react";
@@ -12,8 +13,9 @@ import { newsGraphQuery } from "@queries/index";
 import { newsFilters } from "@lib/filters";
 import Listbox from "@components/Listbox";
 import { useSharedState } from "@lib/useSharedState";
-import NewsPostResults from "@components/NewsPostResults";
 import styles from "@styles/News.module.scss";
+
+const NewsPostResults = dynamic(() => import("@components/NewsPostResults"), { ssr: false });
 
 export default function News({ pageData, defaultMetaData }) {
   const dateOptions = { month: "long", day: "numeric", year: "numeric" };
