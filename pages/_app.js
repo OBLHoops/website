@@ -1,12 +1,13 @@
-import React, { useEffect, useRef } from "react";
-import "focus-visible";
-import Layout from "@components/Layout";
+import React from "react";
 import Link from "next/link";
 import { PrismicProvider } from "@prismicio/react";
 import { PrismicPreview } from "@prismicio/next";
-import { linkResolver, repositoryName } from "../prismicio";
+import { linkResolver, repositoryName } from "@root/prismicio";
+import useScrollRestoration from "@hooks/useScrollRestoration";
+import Layout from "@components/Layout";
 import { BannerProvider } from "@contexts/bannerSize";
 import { classNames } from "@lib/utilities";
+import "focus-visible";
 import "@styles/globals.scss";
 
 const isServerSideRendered = () => {
@@ -28,44 +29,10 @@ if (process.env.NODE_ENV !== "production" && !isServerSideRendered()) {
 }
 
 export default function CustomApp({ Component, pageProps, router }) {
-  const isBrowserNavigation = useRef(false);
-
-  useEffect(() => {
-    const handleRouteComplete = (url, { shallow }) => {
-      // console.log(
-      //   `Route change complete to ${url} ${shallow ? "with" : "without"} shallow routing`
-      // );
-      // Delay scroll to top an route change
-      if (!isBrowserNavigation.current) {
-        setTimeout(() => {
-          window.scrollTo({
-            top: 0,
-            left: 0
-          });
-        }, 150);
-      }
-      isBrowserNavigation.current = false;
-    };
-
-    // detect browser navigation (back/forward)
-    router.beforePopState(({ as }) => {
-      if (as !== router.asPath) {
-        isBrowserNavigation.current = true;
-      }
-      return true;
-    });
-
-    router.events.on("routeChangeComplete", handleRouteComplete);
-
-    return () => {
-      // detect browser navigation (back/forward)
-      router.beforePopState(() => true);
-
-      router.events.off("routeChangeComplete", handleRouteComplete);
-    };
-  }, [router]);
+  useScrollRestoration(router);
 
   const getLayout = Component.getLayout || ((page) => <Layout>{page}</Layout>);
+
   return (
     <PrismicProvider
       linkResolver={linkResolver}
