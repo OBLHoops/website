@@ -55,9 +55,9 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/nathan/Sites/oblhoops/.slicemachine/assets/slices/EmailSignUp/default/preview.png",
-            "width": 800,
-            "height": 24
+            "path": "/Users/nathan/Sites/oblhoops/slices/EmailSignUp/default/preview.png",
+            "width": 1490,
+            "height": 792
           }
         }
       },
@@ -204,9 +204,9 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/nathan/Sites/oblhoops/.slicemachine/assets/slices/FrequentlyAskedQuestions/default/preview.png",
-            "width": 800,
-            "height": 24
+            "path": "/Users/nathan/Sites/oblhoops/slices/FrequentlyAskedQuestions/default/preview.png",
+            "width": 2400,
+            "height": 1360
           }
         }
       },
@@ -300,9 +300,9 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/nathan/Sites/oblhoops/.slicemachine/assets/slices/Image/default/preview.png",
-            "width": 800,
-            "height": 124
+            "path": "/Users/nathan/Sites/oblhoops/slices/Image/default/preview.jpeg",
+            "width": 2500,
+            "height": 2000
           }
         }
       },
@@ -446,9 +446,9 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/nathan/Sites/oblhoops/.slicemachine/assets/slices/Marquee/default/preview.png",
-            "width": 800,
-            "height": 24
+            "path": "/Users/nathan/Sites/oblhoops/slices/Marquee/default/preview.png",
+            "width": 948,
+            "height": 564
           }
         }
       },
@@ -567,9 +567,9 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/nathan/Sites/oblhoops/.slicemachine/assets/slices/Partners/default/preview.png",
-            "width": 800,
-            "height": 272
+            "path": "/Users/nathan/Sites/oblhoops/slices/Partners/default/preview.png",
+            "width": 2266,
+            "height": 1342
           }
         }
       },
@@ -673,7 +673,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/nathan/Sites/oblhoops/slices/Schedule/default/preview.png",
+            "width": 2800,
+            "height": 1824
+          }
+        }
       },
       "social": {
         "library": "slices",
@@ -729,9 +735,9 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/nathan/Sites/oblhoops/.slicemachine/assets/slices/Social/default/preview.png",
-            "width": 800,
-            "height": 124
+            "path": "/Users/nathan/Sites/oblhoops/slices/Social/default/preview.png",
+            "width": 2296,
+            "height": 1562
           }
         }
       },
@@ -820,7 +826,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/nathan/Sites/oblhoops/slices/Text/default/preview.png",
+            "width": 2888,
+            "height": 1658
+          }
+        }
       },
       "text_asset": {
         "library": "slices",
@@ -1233,7 +1245,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/nathan/Sites/oblhoops/slices/TextAsset/default/preview.png",
+            "width": 2644,
+            "height": 1520
+          }
+        }
       },
       "video_player_embed": {
         "library": "slices",
@@ -1311,9 +1329,9 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/nathan/Sites/oblhoops/.slicemachine/assets/slices/VideoPlayerEmbed/default/preview.png",
-            "width": 800,
-            "height": 124
+            "path": "/Users/nathan/Sites/oblhoops/slices/VideoPlayerEmbed/default/preview.png",
+            "width": 2626,
+            "height": 1476
           }
         }
       }
