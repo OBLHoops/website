@@ -7,6 +7,9 @@ import styles from "./textAsset.module.scss";
 const TextAsset = ({ slice }) => {
   const variation = slice.variation;
   const { image, imagePosition, imageOverlap, text, label, title, theme } = slice.primary;
+  const imageProps = {
+    ...(!image.alt && { "aria-hidden": "true" })
+  };
   return (
     <section className={classNames([styles.textAsset, styles[`theme-${theme}`]])}>
       <ContentContainer>
@@ -24,7 +27,7 @@ const TextAsset = ({ slice }) => {
             ])}
           >
             <div>{text && <PrismicRichText field={text} />}</div>
-            <div>{image && <Picture image={image} />}</div>
+            <div {...imageProps}>{image && <Picture image={image} />}</div>
           </div>
         </>
       </ContentContainer>
