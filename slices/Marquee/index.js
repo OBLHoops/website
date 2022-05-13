@@ -52,6 +52,7 @@ const Marquee = ({ slice }) => {
       onKeyDown={handleKeyDown}
       ref={ref}
       tabIndex="0"
+      /* eslint-disable-next-line */
       role="button"
       aria-label={isPaused ? "Play animation" : "Pause animation"}
     >
