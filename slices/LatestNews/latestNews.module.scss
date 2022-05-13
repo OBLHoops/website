@@ -10,7 +10,6 @@
 }
 
 .intro {
-  margin-bottom: var(--spacing-section);
   @media (min-width: breakpoint.$md) {
     display: grid;
     align-items: flex-end;
@@ -37,6 +36,7 @@
   column-gap: 0;
   row-gap: 2rem;
   grid-template-columns: repeat(1, minmax(0, 1fr));
+  margin-top: var(--spacing-section);
   @media (min-width: breakpoint.$sm) {
     padding: 0;
     column-gap: 2rem;
