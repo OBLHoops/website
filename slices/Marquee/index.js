@@ -50,10 +50,10 @@ const Marquee = ({ slice }) => {
       className={classNames([styles.marquee, styles[`theme-${slice.primary.theme}`]])}
       onClick={togglePause}
       onKeyDown={handleKeyDown}
-      aria-hidden="true"
       ref={ref}
       tabIndex="0"
       role="button"
+      aria-label={isPaused ? "Play animation" : "Pause animation"}
     >
       <div className={styles.blocker} tabIndex="-1"></div>
       <FastMarquee play={!isPaused} speed="80" gradient={false}>
