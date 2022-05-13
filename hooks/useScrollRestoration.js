@@ -9,7 +9,10 @@ function saveScrollPos(url) {
 function restoreScrollPos(url) {
   const scrollPos = JSON.parse(sessionStorage.getItem(url));
   if (scrollPos) {
-    window.scrollTo(scrollPos.x, scrollPos.y);
+    // Added delay to account for transitions
+    setTimeout(() => {
+      window.scrollTo(scrollPos.x, scrollPos.y);
+    }, 120);
   }
 }
 
