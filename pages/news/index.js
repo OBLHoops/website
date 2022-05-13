@@ -61,11 +61,21 @@ export default function News({ pageData, defaultMetaData }) {
         {pageData.data.pinnedNewsPost && (
           <div className={styles.pinnedPost}>
             <Link
-              href={`/news/${pageData.data.pinnedNewsPost.uid}`}
-              className={styles.link}
+              href={
+                pageData.data.pinnedNewsPost.data.externalLink?.link_type == "Web"
+                  ? pageData.data.pinnedNewsPost.data.externalLink.url
+                  : `/news/${pageData.data.pinnedNewsPost.slug}`
+              }
               scroll={false}
             >
-              <a>
+              <a
+                target={
+                  pageData.data.pinnedNewsPost.data.externalLink?.link_type == "Web"
+                    ? "_blank"
+                    : "_self"
+                }
+                className={styles.link}
+              >
                 <Picture image={pageData.data.pinnedNewsPost.data.coverImage} />
                 <div>
                   <p className={styles.label}>{pageData.data.pinnedNewsPost.data.source}</p>
