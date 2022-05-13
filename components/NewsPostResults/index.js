@@ -31,7 +31,7 @@ export default function NewsPostResults() {
       direction: "desc"
     },
     q: `[${Object.values(fetchQuery).join("")}]`,
-    pageSize: 1,
+    pageSize: 6,
     page: pagination.current
   });
 
