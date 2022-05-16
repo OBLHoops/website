@@ -1,10 +1,10 @@
 import Link from "next/link";
-// import { asDate } from "@prismicio/helpers";
+import { asDate } from "@prismicio/helpers";
 import Picture from "@components/Picture";
 import styles from "./locationPreview.module.scss";
 
 export default function LocationPreview({ slug, data }) {
-  // const options = { weekday: "long", month: "long", day: "numeric" };
+  const options = { weekday: "long", month: "long", day: "numeric" };
   return (
     <div className={styles.location}>
       <Link href={`/tournament/${slug}`} scroll={false}>
@@ -14,10 +14,9 @@ export default function LocationPreview({ slug, data }) {
           </div>
           <div className={styles.content}>
             <h3>{data.title}</h3>
-            {/* <p>
-              {asDate(data.startDateTime).toLocaleString(undefined, options)} -{" "}
-              {asDate(data.endDateTime).toLocaleString(undefined, options)}{" "}
-            </p> */}
+            <p>
+              {asDate(data.startDateTime)} - {asDate(data.endDateTime)}{" "}
+            </p>
           </div>
         </a>
       </Link>
