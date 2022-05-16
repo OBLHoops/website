@@ -15,7 +15,8 @@ export default function LocationPreview({ slug, data }) {
           <div className={styles.content}>
             <h3>{data.title}</h3>
             <p>
-              {asDate(data.startDateTime)} - {asDate(data.endDateTime)}{" "}
+              {asDate(data.startDateTime).toLocaleString()} -{" "}
+              {asDate(data.endDateTime).toLocaleString()}{" "}
             </p>
           </div>
         </a>
