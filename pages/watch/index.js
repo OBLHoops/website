@@ -16,7 +16,7 @@ import styles from "@styles/Watch.module.scss";
 const WatchPostResults = dynamic(() => import("@components/WatchPostResults"), { ssr: false });
 
 export default function Watch({ pageData, defaultMetaData }) {
-  const dateOptions = { month: "long", day: "numeric", year: "numeric" };
+  const [pinnedPostDate, setPinnedPostDate] = useState(null);
   const [postsPage, setPostsPage] = useState(1);
   const [totalPostPages, setTotalPostPages] = useState(0);
   const [filterBy, setFilterBy] = useState(null);
@@ -29,6 +29,13 @@ export default function Watch({ pageData, defaultMetaData }) {
       setPaginationActive(true);
     }
   }, [postsPage, totalPostPages]);
+
+  useEffect(() => {
+    const options = { month: "long", day: "numeric" };
+    setPinnedPostDate(
+      asDate(pageData?.data?.pinnedWatchPost?.data?.postDate).toLocaleString(undefined, options)
+    );
+  }, []);
 
   const handlePagination = () => {
     if (postsPage <= totalPostPages) {
@@ -63,12 +70,7 @@ export default function Watch({ pageData, defaultMetaData }) {
               <div>
                 <p className={styles.label}>{pageData?.data?.pinnedWatchPost?.data?.source}</p>
                 <h2>{pageData?.data?.pinnedWatchPost?.data?.title}</h2>
-                <p>
-                  {asDate(pageData?.data?.pinnedWatchPost?.data?.postDate).toLocaleString(
-                    undefined,
-                    dateOptions
-                  )}
-                </p>
+                {pinnedPostDate && <p>{pinnedPostDate}</p>}
               </div>
             </a>
           </div>

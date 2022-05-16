@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { createClient } from "@root/prismicio";
 import CustomHead from "@components/Head";
 import { PrismicRichText } from "@prismicio/react";
@@ -15,8 +16,17 @@ export default function Location({
   locationsData = {},
   defaultMetaData
 }) {
-  const options = { weekday: "long", month: "long", day: "numeric" };
-  const timeOptions = { timeStyle: "short" };
+  const [startDate, setStartDate] = useState(null);
+  const [endDate, setEndDate] = useState(null);
+  const [startTime, setStartTime] = useState(null);
+  useEffect(() => {
+    const options = { weekday: "long", month: "long", day: "numeric" };
+    setStartDate(asDate(pageData.data.startDateTime).toLocaleString(undefined, options));
+    setEndDate(asDate(pageData.data.endDateTime).toLocaleString(undefined, options));
+    setStartTime(
+      asDate(pageData.data.startDateTime).toLocaleString(undefined, { timeStyle: "short" })
+    );
+  }, []);
   if (pageData?.data) {
     const marqueeObj = {
       primary: {
@@ -39,13 +49,9 @@ export default function Location({
               <div>
                 <p className={styles.label}>When</p>
                 <h2>
-                  {asDate(pageData.data.startDateTime).toLocaleString(undefined, options)} -{" "}
-                  {asDate(pageData.data.endDateTime).toLocaleString(undefined, options)}{" "}
+                  {startDate} - {endDate}
                 </h2>
-                <p className={styles.startTime}>
-                  Starts @{" "}
-                  {asDate(pageData.data.startDateTime).toLocaleString(undefined, timeOptions)}
-                </p>
+                <p className={styles.startTime}>Starts @ {startTime}</p>
                 <p className={styles.label}>Location</p>
                 <h3>{pageData.data.venue[0].name}</h3>
                 <a

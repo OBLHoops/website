@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { createClient } from "@root/prismicio";
 import CustomHead from "@components/Head";
 import { SliceZone } from "@prismicio/react";
@@ -9,7 +10,11 @@ import { pageGraphQuery } from "@queries/index";
 import styles from "@styles/NewsPost.module.scss";
 
 export default function NewsPost({ pageData, defaultMetaData }) {
-  const options = { month: "long", day: "numeric", year: "numeric" };
+  const [postDate, setPostDate] = useState(null);
+  useEffect(() => {
+    const options = { month: "long", day: "numeric" };
+    setPostDate(asDate(pageData.data.postDate).toLocaleString(undefined, options));
+  }, []);
   if (pageData?.data) {
     return (
       <>
@@ -18,9 +23,7 @@ export default function NewsPost({ pageData, defaultMetaData }) {
           <ContentContainer>
             <p className={styles.label}>{pageData.data.source}</p>
             <h1>{pageData.data.title}</h1>
-            <p className={styles.date}>
-              {asDate(pageData.data.postDate).toLocaleString(undefined, options)}
-            </p>
+            {postDate && <p className={styles.date}>{postDate}</p>}
           </ContentContainer>
         </div>
         <SliceZone slices={pageData.data.slices} components={components} />

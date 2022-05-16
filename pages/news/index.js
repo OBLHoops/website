@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { createClient } from "@root/prismicio";
@@ -18,8 +18,7 @@ import styles from "@styles/News.module.scss";
 const NewsPostResults = dynamic(() => import("@components/NewsPostResults"), { ssr: false });
 
 export default function News({ pageData, defaultMetaData }) {
-  const dateOptions = { month: "long", day: "numeric", year: "numeric" };
-
+  const [pinnedPostDate, setPinnedPostDate] = useState(null);
   const [filterBy, setFilterBy] = useSharedState("filterBy", {
     current: "view all"
   });
@@ -51,6 +50,13 @@ export default function News({ pageData, defaultMetaData }) {
     }
   }, [pagination]);
 
+  useEffect(() => {
+    const options = { month: "long", day: "numeric" };
+    setPinnedPostDate(
+      asDate(pageData.data.pinnedNewsPost.data.postDate).toLocaleString(undefined, options)
+    );
+  }, []);
+
   return (
     <>
       <CustomHead defaultMetaData={defaultMetaData} pageMetaData={pageData.data} />
@@ -80,12 +86,7 @@ export default function News({ pageData, defaultMetaData }) {
                 <div>
                   <p className={styles.label}>{pageData.data.pinnedNewsPost.data.source}</p>
                   <h2>{pageData.data.pinnedNewsPost.data.title}</h2>
-                  <p>
-                    {asDate(pageData.data.pinnedNewsPost.data.postDate).toLocaleString(
-                      undefined,
-                      dateOptions
-                    )}
-                  </p>
+                  {pinnedPostDate && <p>{pinnedPostDate}</p>}
                 </div>
               </a>
             </Link>
