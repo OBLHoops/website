@@ -7,42 +7,54 @@
 }
 
 .pinnedPost {
-  margin: var(--spacing-section) 0;
+  margin: var(--spacing-section) 0 calc(var(--spacing-section) / 2);
   a {
     display: grid;
     align-items: center;
     column-gap: 0;
-    row-gap: 2rem;
+    row-gap: 32px;
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    @media (min-width: breakpoint.$sm) {
-      column-gap: 2rem;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-    @media (min-width: breakpoint.$md) {
-      column-gap: 4rem;
-    }
-    @media (min-width: breakpoint.$lg) {
-      column-gap: 8rem;
+    background-color: var(--white);
+    color: var(--black);
+    transition: color 150ms ease-out;
+    > div {
+      padding: 16px;
+      @media (min-width: breakpoint.$sm) {
+        padding: 0 64px 0 0;
+      }
     }
     h2 {
       overflow-wrap: unset;
       font-size: var(--font-size-h3);
+      margin-bottom: 1rem;
     }
-    transition: color 150ms ease-out;
-    &:hover,
-    &:focus {
-      @media (any-hover: hover) and (any-pointer: fine) {
-        color: var(--yellow);
+    .label {
+      @include mixins.sectionLabel();
+      color: var(--black);
+      transition: color 150ms ease-out;
+    }
+    @media (any-hover: hover) and (any-pointer: fine) {
+      &:hover,
+      &:focus {
+        color: var(--blue);
         .label {
-          color: var(--yellow);
+          color: var(--blue);
         }
       }
+    }
+    @media (min-width: breakpoint.$sm) {
+      column-gap: 32px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    @media (min-width: breakpoint.$md) {
+      column-gap: 64px;
     }
   }
 }
 
 .label {
   @include mixins.sectionLabel();
+  color: var(--black);
   transition: color 150ms ease-out;
 }
 

@@ -1,15 +1,22 @@
 {
-  "id": "d048acdc-df71-474c-aa97-5fda8de5d246",
-  "uid": "perferendis-reiciendis-et",
+  "id": "15f88fcb-6aae-4771-b9fe-582e022111d7",
+  "uid": "eius-ea-perferendis",
   "type": "news",
   "data": {
-    "title": "deliver real-time infrastructures",
+    "title": [
+      {
+        "type": "heading1",
+        "text": "Leverage virtual e-tailers",
+        "spans": []
+      }
+    ],
+    "titleVisibility": false,
     "pinnedNewsPost": {
       "link_type": "Web",
-      "url": "http://twitter.com"
+      "url": "https://prismic.io"
     },
-    "metaTitle": "recontextualize vertical communities",
-    "metaDescription": "facilitate rich communities",
+    "metaTitle": "orchestrate cross-platform mindshare",
+    "metaDescription": "orchestrate web-enabled content",
     "socialCard": [
       {
         "socialCardImage": {
@@ -19,10 +26,10 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=900&h=500&fit=crop"
         },
-        "socialCardTitle": "optimize web-enabled e-business",
-        "socialCardDescription": "disintermediate distributed content"
+        "socialCardTitle": "enhance cross-media experiences",
+        "socialCardDescription": "enhance cutting-edge deliverables"
       },
       {
         "socialCardImage": {
@@ -32,10 +39,10 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=900&h=500&fit=crop"
         },
-        "socialCardTitle": "implement end-to-end ROI",
-        "socialCardDescription": "evolve enterprise synergies"
+        "socialCardTitle": "recontextualize virtual users",
+        "socialCardDescription": "exploit sticky synergies"
       },
       {
         "socialCardImage": {
@@ -45,36 +52,10 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=900&h=500&fit=crop"
         },
-        "socialCardTitle": "harness cross-platform infrastructures",
-        "socialCardDescription": "innovate end-to-end ROI"
-      },
-      {
-        "socialCardImage": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=900&h=500&fit=crop"
-        },
-        "socialCardTitle": "matrix bleeding-edge models",
-        "socialCardDescription": "whiteboard strategic content"
-      },
-      {
-        "socialCardImage": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=900&h=500&fit=crop"
-        },
-        "socialCardTitle": "scale next-generation experiences",
-        "socialCardDescription": "matrix interactive architectures"
+        "socialCardTitle": "orchestrate ubiquitous communities",
+        "socialCardDescription": "repurpose ubiquitous blockchains"
       }
     ]
   }

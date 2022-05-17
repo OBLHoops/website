@@ -51,9 +51,11 @@ export default function Watch({ pageData, defaultMetaData }) {
   return (
     <>
       <CustomHead defaultMetaData={defaultMetaData} pageMetaData={pageData.data} />
-      <ContentContainer margin="top">
-        <PrismicRichText field={pageData.data.title} />
-      </ContentContainer>
+      {pageData?.data?.titleVisibility && (
+        <ContentContainer margin="top">
+          <PrismicRichText field={pageData.data.title} />
+        </ContentContainer>
+      )}
       <div className={styles.container}>
         {pageData.data.pinnedWatchPost && (
           <div className={styles.pinnedPost}>

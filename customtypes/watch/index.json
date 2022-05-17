@@ -15,6 +15,15 @@
           "labels": ["text-yellow", "handwritten"]
         }
       },
+      "titleVisibility": {
+        "type": "Boolean",
+        "config": {
+          "label": "Title Visibility",
+          "placeholder_false": "hidden",
+          "placeholder_true": "visibile",
+          "default_value": false
+        }
+      },
       "pinnedWatchPost": {
         "type": "Link",
         "config": {

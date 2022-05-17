@@ -12,7 +12,19 @@
           "placeholder": "Enter title...",
           "allowTargetBlank": false,
           "single": "heading1",
-          "labels": ["text-yellow", "handwritten"]
+          "labels": [
+            "text-yellow",
+            "handwritten"
+          ]
+        }
+      },
+      "titleVisibility": {
+        "type": "Boolean",
+        "config": {
+          "label": "Title Visibility",
+          "placeholder_false": "hidden",
+          "placeholder_true": "visibile",
+          "default_value": false
         }
       },
       "pinnedNewsPost": {
@@ -20,7 +32,9 @@
         "config": {
           "label": "Pinned News Post",
           "select": "document",
-          "customtypes": ["news-post"]
+          "customtypes": [
+            "news-post"
+          ]
         }
       }
     },

@@ -1,10 +1,9 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { createClient } from "@root/prismicio";
 import { usePrismicDocumentsByType } from "@prismicio/react";
 import NewsPostPreview from "@components/NewsPostPreview";
-import styles from "./watchPostsResults.module.scss";
 const client = createClient();
-const postPerPage = 1;
+const postsPerPage = 1;
 
 export default function WatchPostResults({ filterBy, resultsPage, updatePostPages }) {
   const [postResults, setPostResults] = useState([]);
@@ -22,7 +21,7 @@ export default function WatchPostResults({ filterBy, resultsPage, updatePostPage
       direction: "desc"
     },
     q: `[${Object.values(fetchQuery).join("")}]`,
-    pageSize: postPerPage,
+    pageSize: postsPerPage,
     page: resultsPage
   });
 
@@ -32,7 +31,7 @@ export default function WatchPostResults({ filterBy, resultsPage, updatePostPage
     }
     if (documents?.results && state === "loaded") {
       if (documents.results.length > 0) {
-        updatePostPages(documents?.total_results_size);
+        updatePostPages(Math.ceil(documents?.total_results_size / postsPerPage));
       } else {
         updatePostPages(-1);
       }

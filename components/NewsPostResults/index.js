@@ -4,6 +4,7 @@ import { usePrismicDocumentsByType } from "@prismicio/react";
 import { useSharedState } from "@lib/useSharedState";
 import NewsPostPreview from "@components/NewsPostPreview";
 const client = createClient();
+const postsPerPage = 6;
 
 export default function NewsPostResults() {
   const [postsData, setPostsData] = useSharedState("postsData", []);
@@ -31,7 +32,7 @@ export default function NewsPostResults() {
       direction: "desc"
     },
     q: `[${Object.values(fetchQuery).join("")}]`,
-    pageSize: 6,
+    pageSize: postsPerPage,
     page: pagination.current
   });
 
@@ -49,7 +50,10 @@ export default function NewsPostResults() {
 
   const handlePagination = (data) => {
     if (data?.results.length > 0) {
-      setPagination({ ...pagination, total: data?.total_results_size });
+      setPagination({
+        ...pagination,
+        total: Math.ceil(data?.total_results_size / postsPerPage)
+      });
     } else {
       setPagination({ ...pagination, total: -1 });
     }
