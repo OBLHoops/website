@@ -26,7 +26,15 @@
   p,
   ul,
   ol {
-    max-width: 48rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @media (min-width: breakpoint.$sm) {
+      max-width: 75%;
+    }
+    @media (min-width: breakpoint.$md) {
+      max-width: 66%;
+    }
   }
   .align-center & {
     margin: 0 auto;
