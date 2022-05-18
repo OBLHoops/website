@@ -60,38 +60,39 @@
               "config": {
                 "label": "Image",
                 "constraint": {
-                  "width": 640
+                  "width": 320,
+                  "height": 320
                 },
                 "thumbnails": [
                   {
                     "name": "xs",
                     "width": 320,
-                    "height": null
+                    "height": 320
                   },
                   {
                     "name": "sm",
                     "width": 640,
-                    "height": null
+                    "height": 640
                   },
                   {
                     "name": "md",
                     "width": 480,
-                    "height": null
+                    "height": 480
                   },
                   {
                     "name": "lg",
                     "width": 640,
-                    "height": null
+                    "height": 640
                   },
                   {
                     "name": "xl",
                     "width": 720,
-                    "height": null
+                    "height": 720
                   },
                   {
                     "name": "xxl",
                     "width": 960,
-                    "height": null
+                    "height": 960
                   }
                 ]
               }
