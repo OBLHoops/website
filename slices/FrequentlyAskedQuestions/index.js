@@ -44,23 +44,25 @@ const FrequentlyAskedQuestions = ({ slice }) => {
       </AccordionPanel>
     </AccordionItem>
   );
+  if (items[0]?.question && items[0]?.answer.length) {
+    return (
+      <section className={classNames([styles.faq])}>
+        <ContentContainer>
+          <PrismicRichText field={primary.title} />
+          <PrismicRichText field={primary.description} />
 
-  return (
-    <section className={classNames([styles.faq])}>
-      <ContentContainer>
-        <PrismicRichText field={primary.title} />
-        <PrismicRichText field={primary.description} />
-
-        {items && (
-          <Accordion collapsible>
-            {items.map((item) => (
-              <Item {...item} key={uuidv4()} />
-            ))}
-          </Accordion>
-        )}
-      </ContentContainer>
-    </section>
-  );
+          {items && (
+            <Accordion collapsible>
+              {items.map((item) => (
+                <Item {...item} key={uuidv4()} />
+              ))}
+            </Accordion>
+          )}
+        </ContentContainer>
+      </section>
+    );
+  }
+  return null;
 };
 
 export default FrequentlyAskedQuestions;

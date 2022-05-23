@@ -32,30 +32,32 @@ const Social = ({ slice }) => {
       <div className={styles.container}>
         <div className={styles.content}>
           <h2>{data.socialHandle}</h2>
-
-          <ul className={styles.socialLinks}>
-            {data?.socialLinks?.map((item, index) => (
-              <li key={index}>
-                <PrismicLink
-                  field={item.platformLink}
-                  className={styles.link}
-                  target={item.platformLink.link_type == "Web" ? "_blank" : "_self"}
-                >
-                  <img src={item.platformIcon.url} alt="" />
-                  <span>{item.platformName}</span>
-                </PrismicLink>
-              </li>
-            ))}
-          </ul>
+          {data?.socialLinks.length && (
+            <ul className={styles.socialLinks}>
+              {data?.socialLinks?.map((item, index) => (
+                <li key={index}>
+                  <PrismicLink
+                    field={item.platformLink}
+                    className={styles.link}
+                    target={item.platformLink.link_type == "Web" ? "_blank" : "_self"}
+                  >
+                    <img src={item.platformIcon.url} alt="" />
+                    <span>{item.platformName}</span>
+                  </PrismicLink>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
-
-        <div className={styles.images} aria-hidden="true">
-          {data?.images?.map((item, index) => {
-            if (index < 7) {
-              return <ParallaxImage data={item} key={uuidv4()} index={index} />;
-            }
-          })}
-        </div>
+        {data?.images.length && (
+          <div className={styles.images} aria-hidden="true">
+            {data?.images?.map((item, index) => {
+              if (index < 7) {
+                return <ParallaxImage data={item} key={uuidv4()} index={index} />;
+              }
+            })}
+          </div>
+        )}
       </div>
     </section>
   );

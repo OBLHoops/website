@@ -8,7 +8,7 @@ const TextAsset = ({ slice }) => {
   const variation = slice.variation;
   const { image, imagePosition, imageOverlap, text, label, title, theme } = slice.primary;
   const imageProps = {
-    ...(!image.alt && { "aria-hidden": "true" })
+    ...(!image?.alt && { "aria-hidden": "true" })
   };
   return (
     <section className={classNames([styles.textAsset, styles[`theme-${theme}`]])}>
@@ -27,7 +27,11 @@ const TextAsset = ({ slice }) => {
             ])}
           >
             <div>{text && <PrismicRichText field={text} />}</div>
-            <div {...imageProps}>{image && <Picture image={image} />}</div>
+            {image && (
+              <div {...imageProps}>
+                <Picture image={image} />
+              </div>
+            )}
           </div>
         </>
       </ContentContainer>

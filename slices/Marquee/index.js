@@ -44,27 +44,29 @@ const Marquee = ({ slice }) => {
       togglePause();
     }
   };
-
-  return (
-    <section
-      className={classNames([styles.marquee, styles[`theme-${slice.primary.theme}`]])}
-      onClick={togglePause}
-      onKeyDown={handleKeyDown}
-      ref={ref}
-      tabIndex="0"
-      /* eslint-disable-next-line */
-      role="button"
-      aria-label={isPaused ? "Play animation" : "Pause animation"}
-    >
-      <div className={styles.blocker} tabIndex="-1"></div>
-      <FastMarquee play={!isPaused} speed="80" gradient={false}>
-        {/* create 10x of the items so there's enough to fill the space */}
-        {[...Array(10)].map(() => (
-          <Items key={uuidv4()} data={[...slice.primary.marquee.data.items]} />
-        ))}
-      </FastMarquee>
-    </section>
-  );
+  if (slice.primary.marquee.data.items.length > 0) {
+    return (
+      <section
+        className={classNames([styles.marquee, styles[`theme-${slice.primary.theme}`]])}
+        onClick={togglePause}
+        onKeyDown={handleKeyDown}
+        ref={ref}
+        tabIndex="0"
+        /* eslint-disable-next-line */
+        role="button"
+        aria-label={isPaused ? "Play animation" : "Pause animation"}
+      >
+        <div className={styles.blocker} tabIndex="-1"></div>
+        <FastMarquee play={!isPaused} speed="80" gradient={false}>
+          {/* create 10x of the items so there's enough to fill the space */}
+          {[...Array(10)].map(() => (
+            <Items key={uuidv4()} data={[...slice.primary.marquee.data.items]} />
+          ))}
+        </FastMarquee>
+      </section>
+    );
+  }
+  return null;
 };
 
 export default Marquee;

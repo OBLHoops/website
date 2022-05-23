@@ -2,7 +2,7 @@ import { classNames } from "@lib/utilities";
 import styles from "./videoPlayerEmbed.module.scss";
 
 const VideoPlayerEmbed = ({ slice }) => {
-  if (slice.primary?.videoEmbedLink?.embed_url) {
+  if (slice.primary?.videoEmbedLink?.embed_url || slice.primary?.videoEmbedLink?.html) {
     const parsedUrl = new URL(slice.primary.videoEmbedLink.embed_url);
     const youTubeEmbedId = parsedUrl.searchParams.get("v");
     return (

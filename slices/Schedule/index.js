@@ -12,7 +12,7 @@ const Schedule = ({ slice }) => {
       <ContentContainer>
         <PrismicRichText field={primary?.title} />
         <PrismicRichText field={primary?.description} />
-        {items.length > 0 && (
+        {items.length && (
           <div className={styles.grid}>
             {items.map((item) => (
               <LocationPreview {...item.location} key={item.location.id} />

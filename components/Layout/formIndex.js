@@ -1,9 +1,5 @@
 import React from "react";
 import { useRouter } from "next/router";
-import { ParallaxProvider } from "react-scroll-parallax";
-import Header from "@components/Header";
-import Footer from "@components/Footer";
-import Banner from "@components/Banner";
 import Overlay from "@components/Overlay";
 
 export default function Layout({ children, preview }) {

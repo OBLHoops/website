@@ -76,7 +76,7 @@ export default function Menu({ toggle, navData }) {
     >
       <motion.div className={styles.container} variants={listVariant}>
         <ul className={classNames([styles.items])}>
-          {navData.data.links.map((item, index) => (
+          {navData.data?.links?.map((item, index) => (
             <motion.li variants={itemVariant} key={index}>
               <PrismicLink
                 field={item.link}
@@ -94,20 +94,23 @@ export default function Menu({ toggle, navData }) {
             </motion.li>
           ))}
         </ul>
-        <motion.div variants={itemVariant}>
-          <PrismicLink
-            field={navData.data.buttonLink}
-            className={classNames([styles.button, styles.fill])}
-            onClick={() => toggle(false)}
-            onKeyPress={() => toggle(false)}
-            target={navData.data.buttonLink.link_type == "Web" ? "_blank" : "_self"}
-          >
-            {navData.data.buttonLabel}
-            {navData.data.buttonLink.link_type == "Web" && (
-              <ExternalLink className={styles.externalLink} />
-            )}
-          </PrismicLink>
-        </motion.div>
+        {navData.data.buttonLink && (
+          <motion.div variants={itemVariant}>
+            <PrismicLink
+              field={navData.data.buttonLink}
+              className={classNames([styles.button, styles.fill])}
+              onClick={() => toggle(false)}
+              onKeyPress={() => toggle(false)}
+              target={navData.data.buttonLink.link_type == "Web" ? "_blank" : "_self"}
+            >
+              {navData.data.buttonLabel}
+              {navData.data.buttonLink.link_type == "Web" && (
+                <ExternalLink className={styles.externalLink} />
+              )}
+            </PrismicLink>
+          </motion.div>
+        )}
+
         <div className={styles.menuSpacer}></div>
       </motion.div>
     </motion.nav>

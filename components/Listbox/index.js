@@ -4,7 +4,7 @@ import { Listbox } from "@headlessui/react";
 import styles from "./listbox.module.scss";
 
 export default function CustomListbox({ onSelect, activeFilter, options }) {
-  const [selectedOption, setSelectedOption] = useState(options[0]);
+  const [selectedOption, setSelectedOption] = useState(null);
 
   useEffect(() => {
     activeFilter && setSelectedOption(activeFilter);
@@ -45,38 +45,41 @@ export default function CustomListbox({ onSelect, activeFilter, options }) {
     );
   };
 
-  return (
-    <div className={styles.filter}>
-      <Listbox value={selectedOption} onChange={handleChange}>
-        <Listbox.Button className={styles.listLabel}>
-          {selectedOption} <DownArrowIcon />
-        </Listbox.Button>
-        <Listbox.Options className={styles.listOptions}>
-          {options.map((option, index) => (
-            <Listbox.Option key={option} value={option} as={Fragment}>
-              {({ active }) => (
-                <li
-                  className={`${active ? styles.active : ""} ${
-                    selectedOption === option ? styles.selected : ""
-                  }`}
-                  aria-label={
-                    selectedOption === option
-                      ? `Currently filtering by ${option}`
-                      : `Filter by ${option}`
-                  }
-                >
-                  {selectedOption === option && (
-                    <span className={styles.icon}>
-                      <CheckIcon />
-                    </span>
-                  )}
-                  <span className={styles.label}>{option}</span>
-                </li>
-              )}
-            </Listbox.Option>
-          ))}
-        </Listbox.Options>
-      </Listbox>
-    </div>
-  );
+  if (selectedOption) {
+    return (
+      <div className={styles.filter}>
+        <Listbox value={selectedOption} onChange={handleChange}>
+          <Listbox.Button className={styles.listLabel}>
+            {selectedOption} <DownArrowIcon />
+          </Listbox.Button>
+          <Listbox.Options className={styles.listOptions}>
+            {options.map((option, index) => (
+              <Listbox.Option key={option} value={option} as={Fragment}>
+                {({ active }) => (
+                  <li
+                    className={`${active ? styles.active : ""} ${
+                      selectedOption === option ? styles.selected : ""
+                    }`}
+                    aria-label={
+                      selectedOption === option
+                        ? `Currently filtering by ${option}`
+                        : `Filter by ${option}`
+                    }
+                  >
+                    {selectedOption === option && (
+                      <span className={styles.icon}>
+                        <CheckIcon />
+                      </span>
+                    )}
+                    <span className={styles.label}>{option}</span>
+                  </li>
+                )}
+              </Listbox.Option>
+            ))}
+          </Listbox.Options>
+        </Listbox>
+      </div>
+    );
+  }
+  return null;
 }

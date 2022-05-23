@@ -31,7 +31,7 @@ const LatestNews = ({ slice }) => {
       <div className={styles.container}>
         <div className={styles.intro}>
           <div>
-            <h2>{slice.primary.label}</h2>
+            {slice.primary?.label && <h2>{slice.primary.label}</h2>}
             <PrismicRichText field={slice.primary.title} />
           </div>
           <div>
@@ -43,12 +43,13 @@ const LatestNews = ({ slice }) => {
           </div>
         </div>
 
-        <div className={styles.grid}>
-          {postsData?.results &&
-            postsData.results.map((item) => (
+        {postsData?.results && (
+          <div className={styles.grid}>
+            {postsData.results.map((item) => (
               <NewsPostPreview {...item} slug={item.uid} key={item.id} />
             ))}
-        </div>
+          </div>
+        )}
       </div>
     </section>
   );
