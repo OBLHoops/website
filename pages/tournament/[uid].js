@@ -77,7 +77,6 @@ export default function Location({
                 {locationsData.results.map((item) => (
                   <LocationPreview {...item} slug={item.uid} key={item.id} />
                 ))}
-                <div className={styles.blank}></div>
               </div>
             </ContentContainer>
           </div>

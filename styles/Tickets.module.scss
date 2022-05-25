@@ -64,14 +64,4 @@
   @media (min-width: breakpoint.$lg) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-
-  .blank {
-    display: none;
-    @media (min-width: breakpoint.$lg) {
-      display: block;
-      background-color: var(--black);
-      opacity: 0.1;
-      aspect-ratio: 1/1;
-    }
-  }
 }
