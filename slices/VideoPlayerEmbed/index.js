@@ -18,10 +18,11 @@ const VideoPlayerEmbed = ({ slice }) => {
               <iframe
                 width={slice.primary.videoEmbedLink.width}
                 height={slice.primary.videoEmbedLink.height}
-                src={`https://www.youtube.com/embed/${youTubeEmbedId}?disablekb=1`}
+                src={`https://www.youtube.com/embed/${youTubeEmbedId}?disablekb=1&rel=0&modestbranding=1`}
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
+                muted
                 title={slice.primary.videoEmbedLink.title}
               />
             ) : (
