@@ -18,12 +18,26 @@
             "placeholder": "Enter video embed link..."
           }
         },
+        "autoplay": {
+          "type": "Boolean",
+          "config": {
+            "label": "Autoplay",
+            "placeholder_false": "no",
+            "placeholder_true": "yes",
+            "default_value": false
+          }
+        },
         "spacing": {
           "type": "Select",
           "config": {
             "label": "Section spacing",
             "placeholder": "",
-            "options": ["default", "remove-top", "remove-bottom", "remove-all"],
+            "options": [
+              "default",
+              "remove-top",
+              "remove-bottom",
+              "remove-all"
+            ],
             "default_value": "default"
           }
         }
