@@ -3,6 +3,8 @@ import { createClient } from "@root/prismicio";
 import CustomHead from "@components/Head";
 import { PrismicRichText } from "@prismicio/react";
 import { asDate } from "@prismicio/helpers";
+import { SliceZone } from "@prismicio/react";
+import { components } from "@slices/index";
 import { getLayout } from "@components/Layout/PageLayout";
 import ContentContainer from "@components/ContentContainer";
 import Marquee from "@slices/Marquee";
@@ -37,37 +39,40 @@ export default function Location({
     return (
       <>
         <CustomHead defaultMetaData={defaultMetaData} pageMetaData={pageData.data} />
-        <div className={styles.location}>
-          <ContentContainer>
-            <div className={styles.title}>
-              <h1>{pageData.data.title}</h1>
-            </div>
-            <div className={styles.grid}>
-              <div className={styles.image}>
-                <Picture image={pageData.data.image} />
+        {pageData.data.showVenueDetails && (
+          <div className={styles.location}>
+            <ContentContainer>
+              <div className={styles.title}>
+                <h1>{pageData.data.title}</h1>
               </div>
-              <div>
-                <p className={styles.label}>When</p>
-                <h2>
-                  {startDate} - {endDate}
-                </h2>
-                <p className={styles.startTime}>Starts @ {startTime}</p>
-                <p className={styles.label}>Location</p>
-                <h3>{pageData.data.venue[0].name}</h3>
-                <a
-                  target="_blank"
-                  aria-describedby="new-window-2"
-                  rel="noopener noreferrer"
-                  href={` https://www.google.com/maps/search/?api=1&query=${pageData.data.venue[0].name}&query_place_id=${pageData.data.venue[0].placeId}`}
-                  className={styles.textLink}
-                >
-                  <PrismicRichText field={pageData.data.venue[0].address} />
-                </a>
-                <PrismicRichText field={pageData.data.venue[0].description} />
+              <div className={styles.grid}>
+                <div className={styles.image}>
+                  <Picture image={pageData.data.image} />
+                </div>
+                <div>
+                  <p className={styles.label}>When</p>
+                  <h2>
+                    {startDate} - {endDate}
+                  </h2>
+                  <p className={styles.startTime}>Starts @ {startTime}</p>
+                  <p className={styles.label}>Location</p>
+                  <h3>{pageData.data.venue[0].name}</h3>
+                  <a
+                    target="_blank"
+                    aria-describedby="new-window-2"
+                    rel="noopener noreferrer"
+                    href={` https://www.google.com/maps/search/?api=1&query=${pageData.data.venue[0].name}&query_place_id=${pageData.data.venue[0].placeId}`}
+                    className={styles.textLink}
+                  >
+                    <PrismicRichText field={pageData.data.venue[0].address} />
+                  </a>
+                  <PrismicRichText field={pageData.data.venue[0].description} />
+                </div>
               </div>
-            </div>
-          </ContentContainer>
-        </div>
+            </ContentContainer>
+          </div>
+        )}
+        <SliceZone slices={pageData.data.slices} components={components} />
         <Marquee slice={marqueeObj} />
         {locationsData?.results.length && (
           <div className={styles.schedule}>

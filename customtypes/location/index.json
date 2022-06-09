@@ -102,8 +102,40 @@
                 "placeholder": "Enter venue description...",
                 "label": "Description",
                 "multi": "paragraph,strong,em,hyperlink",
-                "labels": ["button-outline", "button-fill"]
+                "labels": [
+                  "button-outline",
+                  "button-fill"
+                ]
               }
+            }
+          }
+        }
+      },
+      "showVenueDetails": {
+        "type": "Boolean",
+        "config": {
+          "label": "Show Venue Details",
+          "placeholder_false": "no",
+          "placeholder_true": "yes",
+          "default_value": true
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "video_player_embed": {
+              "type": "SharedSlice"
+            },
+            "text_asset": {
+              "type": "SharedSlice"
+            },
+            "text": {
+              "type": "SharedSlice"
+            },
+            "image": {
+              "type": "SharedSlice"
             }
           }
         }

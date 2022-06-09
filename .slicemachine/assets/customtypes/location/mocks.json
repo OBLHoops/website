@@ -1,9 +1,9 @@
 {
-  "id": "d1e947b5-5ac0-4366-bd1b-fee7080db815",
-  "uid": "cupiditate-pariatur-fugit",
+  "id": "bdcf895d-c9ae-43f7-97d9-502c67a475eb",
+  "uid": "et-sit-aut",
   "type": "location",
   "data": {
-    "title": "disintermediate e-business e-markets",
+    "title": "architect compelling synergies",
     "image": {
       "dimensions": {
         "width": 320,
@@ -11,7 +11,7 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=320&h=500&fit=crop",
+      "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=320&h=500&fit=crop",
       "xs": {
         "dimensions": {
           "width": 320,
@@ -19,7 +19,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=320&h=null&fit=crop"
+        "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=320&h=null&fit=crop"
       },
       "sm": {
         "dimensions": {
@@ -28,7 +28,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=640&h=null&fit=crop"
+        "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=640&h=null&fit=crop"
       },
       "md": {
         "dimensions": {
@@ -37,7 +37,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=480&h=null&fit=crop"
+        "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=480&h=null&fit=crop"
       },
       "lg": {
         "dimensions": {
@@ -46,7 +46,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=640&h=null&fit=crop"
+        "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=640&h=null&fit=crop"
       },
       "xl": {
         "dimensions": {
@@ -55,7 +55,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=720&h=null&fit=crop"
+        "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=720&h=null&fit=crop"
       },
       "xxl": {
         "dimensions": {
@@ -64,51 +64,88 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=960&h=null&fit=crop"
+        "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=960&h=null&fit=crop"
       }
     },
-    "startDateTime": "2017-11-23T14:33:25.123Z",
-    "endDateTime": "2013-05-26T07:17:13.930Z",
+    "startDateTime": "2020-06-08T00:30:48.694Z",
+    "endDateTime": "2016-04-30T22:54:13.307Z",
+    "showVenueDetails": true,
     "venue": [
       {
-        "name": "deploy viral solutions",
+        "name": "recontextualize plug-and-play action-items",
         "address": [
           {
             "type": "paragraph",
-            "text": "Eiusmod eiusmod ut id in ut sint aute nulla magna consectetur enim ea cillum quis.",
+            "text": "Nisi reprehenderit nulla incididunt eiusmod.",
             "spans": []
           }
         ],
-        "placeId": "harness bricks-and-clicks solutions",
+        "placeId": "embrace real-time schemas",
         "description": [
           {
             "type": "paragraph",
-            "text": "Ut eu dolore ipsum amet ut tempor consequat magna labore amet quis do minim veniam. Minim sit ad qui proident minim. Enim et exercitation nostrud fugiat deserunt ipsum occaecat et reprehenderit dolor.",
+            "text": "Cupidatat tempor tempor deserunt est culpa. Nostrud incididunt aute esse aliquip aliqua consequat.",
             "spans": []
           }
         ]
       },
       {
-        "name": "deploy best-of-breed mindshare",
+        "name": "extend e-business web services",
         "address": [
           {
             "type": "paragraph",
-            "text": "Culpa do culpa quis non nisi velit qui dolor nisi fugiat consectetur eu do. Nulla do nostrud consectetur aute elit culpa pariatur amet deserunt veniam. Enim qui tempor aliquip anim eiusmod exercitation.",
+            "text": "Officia esse tempor exercitation amet ullamco ex ex id elit ea commodo tempor. Velit sint nostrud amet deserunt. Nulla veniam dolore ad culpa dolore officia elit consectetur Lorem tempor proident.",
             "spans": []
           }
         ],
-        "placeId": "harness innovative e-business",
+        "placeId": "redefine out-of-the-box functionalities",
         "description": [
           {
             "type": "paragraph",
-            "text": "Eu irure reprehenderit officia pariatur nostrud irure ullamco magna magna. Reprehenderit voluptate laboris non dolor pariatur.",
+            "text": "Nisi minim enim ut amet consectetur qui elit culpa non eu velit officia ut. Laboris sint minim pariatur magna aliqua officia fugiat et. Ex non esse eu exercitation aliquip cupidatat tempor aliqua anim sunt in enim nisi.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "name": "unleash best-of-breed ROI",
+        "address": [
+          {
+            "type": "paragraph",
+            "text": "Dolore sunt officia veniam officia veniam fugiat minim ex sit velit enim proident.",
+            "spans": []
+          }
+        ],
+        "placeId": "innovate revolutionary solutions",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Tempor aliqua nostrud cupidatat deserunt sit esse qui aliquip magna esse anim. Tempor dolor velit esse veniam nisi voluptate consectetur irure eu pariatur.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "name": "empower viral infomediaries",
+        "address": [
+          {
+            "type": "paragraph",
+            "text": "Laborum labore voluptate adipisicing ex mollit exercitation non irure sit minim veniam.",
+            "spans": []
+          }
+        ],
+        "placeId": "recontextualize rich models",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Minim duis occaecat do veniam pariatur aliquip laborum cillum in laboris anim qui. Dolore voluptate ut irure exercitation consequat occaecat officia.",
             "spans": []
           }
         ]
       }
     ],
-    "metaTitle": "benchmark virtual e-business",
-    "metaDescription": "optimize compelling ROI",
+    "metaTitle": "implement magnetic architectures",
+    "metaDescription": "target one-to-one platforms",
     "socialCard": [
       {
         "socialCardImage": {
@@ -118,10 +155,10 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a?w=900&h=500&fit=crop"
         },
-        "socialCardTitle": "harness back-end e-markets",
-        "socialCardDescription": "incubate 24/365 communities"
+        "socialCardTitle": "recontextualize granular interfaces",
+        "socialCardDescription": "disintermediate granular communities"
       },
       {
         "socialCardImage": {
@@ -131,10 +168,10 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=900&h=500&fit=crop"
         },
-        "socialCardTitle": "deploy compelling metrics",
-        "socialCardDescription": "harness magnetic infrastructures"
+        "socialCardTitle": "reintermediate collaborative content",
+        "socialCardDescription": "implement mission-critical networks"
       },
       {
         "socialCardImage": {
@@ -144,10 +181,10 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e?w=900&h=500&fit=crop"
         },
-        "socialCardTitle": "facilitate viral convergence",
-        "socialCardDescription": "scale collaborative eyeballs"
+        "socialCardTitle": "revolutionize integrated content",
+        "socialCardDescription": "facilitate e-business paradigms"
       },
       {
         "socialCardImage": {
@@ -157,10 +194,10 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=900&h=500&fit=crop"
         },
-        "socialCardTitle": "synergize global portals",
-        "socialCardDescription": "reinvent next-generation web-readiness"
+        "socialCardTitle": "incubate enterprise bandwidth",
+        "socialCardDescription": "orchestrate cross-media partnerships"
       },
       {
         "socialCardImage": {
@@ -170,36 +207,10 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=900&h=500&fit=crop"
         },
-        "socialCardTitle": "brand user-centric schemas",
-        "socialCardDescription": "incubate sticky users"
-      },
-      {
-        "socialCardImage": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=900&h=500&fit=crop"
-        },
-        "socialCardTitle": "productize wireless eyeballs",
-        "socialCardDescription": "engage integrated solutions"
-      },
-      {
-        "socialCardImage": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&h=500&fit=crop"
-        },
-        "socialCardTitle": "extend leading-edge e-tailers",
-        "socialCardDescription": "engage extensible infomediaries"
+        "socialCardTitle": "enable best-of-breed users",
+        "socialCardDescription": "scale dynamic portals"
       }
     ]
   }
