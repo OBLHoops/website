@@ -1,0 +1,59 @@
+{
+  "id": "60fc24a9-fada-47a8-baf5-422046e0f15b",
+  "uid": "adipisci-consequatur-eius",
+  "type": "players",
+  "data": {
+    "title": [
+      {
+        "type": "heading1",
+        "text": "Incentivize wireless e-markets",
+        "spans": []
+      }
+    ],
+    "test": "cultivate magnetic convergence",
+    "players": [
+      {
+        "player": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "player": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      }
+    ],
+    "metaTitle": "integrate sticky web services",
+    "metaDescription": "harness one-to-one schemas",
+    "socialCard": [
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "morph scalable synergies",
+        "socialCardDescription": "reintermediate interactive bandwidth"
+      },
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "incentivize mission-critical infomediaries",
+        "socialCardDescription": "e-enable value-added networks"
+      }
+    ]
+  }
+}

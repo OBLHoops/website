@@ -48,7 +48,18 @@
     "watch": {},
     "watch-post": {},
     "tickets": {},
-    "apply": {}
+    "apply": {},
+    "players": {
+      "players": {}
+    },
+    "player": {
+      "name": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      }
+    }
   },
   "slices": {
     "Text": {

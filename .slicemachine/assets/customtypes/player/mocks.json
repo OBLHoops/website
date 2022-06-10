@@ -1,0 +1,71 @@
+{
+  "id": "9a91512e-9322-4a67-96fe-0d7350cf5e4a",
+  "uid": "quia-sit-at",
+  "type": "player",
+  "data": {
+    "name": [
+      {
+        "type": "heading1",
+        "text": "Implement transparent blockchains",
+        "spans": []
+      }
+    ],
+    "test": "mesh global infrastructures",
+    "metaTitle": "aggregate plug-and-play blockchains",
+    "metaDescription": "harness web-enabled ROI",
+    "socialCard": [
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "iterate integrated paradigms",
+        "socialCardDescription": "utilize wireless technologies"
+      },
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "brand dynamic ROI",
+        "socialCardDescription": "synthesize strategic blockchains"
+      },
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "monetize intuitive metrics",
+        "socialCardDescription": "orchestrate magnetic e-tailers"
+      },
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "disintermediate world-class e-tailers",
+        "socialCardDescription": "expedite ubiquitous applications"
+      }
+    ]
+  }
+}

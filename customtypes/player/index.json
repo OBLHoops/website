@@ -1,0 +1,142 @@
+{
+  "id": "player",
+  "label": "Player",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "name": {
+        "type": "Text",
+        "config": {
+          "label": "Name",
+          "placeholder": "Enter name..."
+        }
+      },
+      "photo": {
+        "type": "Image",
+        "config": {
+          "label": "Photo",
+          "constraint": {
+            "width": 320,
+            "height": 320
+          },
+          "thumbnails": [
+            {
+              "name": "xs",
+              "width": 320,
+              "height": 320
+            },
+            {
+              "name": "sm",
+              "width": 640,
+              "height": 640
+            },
+            {
+              "name": "md",
+              "width": 480,
+              "height": 480
+            },
+            {
+              "name": "lg",
+              "width": 640,
+              "height": 640
+            },
+            {
+              "name": "xl",
+              "width": 720,
+              "height": 720
+            },
+            {
+              "name": "xxl",
+              "width": 960,
+              "height": 960
+            }
+          ]
+        }
+      },
+      "location": {
+        "type": "Text",
+        "config": {
+          "label": "Location",
+          "placeholder": ""
+        }
+      },
+      "wins": {
+        "type": "Number",
+        "config": {
+          "label": "Wins",
+          "placeholder": ""
+        }
+      },
+      "loses": {
+        "type": "Number",
+        "config": {
+          "label": "Loses",
+          "placeholder": ""
+        }
+      },
+      "cityChamp": {
+        "type": "Boolean",
+        "config": {
+          "label": "City Champ",
+          "placeholder_false": "no",
+          "placeholder_true": "yes",
+          "default_value": false
+        }
+      }
+    },
+    "SEO": {
+      "uid": {
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        },
+        "type": "UID"
+      },
+      "metaTitle": {
+        "config": {
+          "label": "Meta Title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "metaDescription": {
+        "config": {
+          "label": "Meta Description",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "socialCard": {
+        "config": {
+          "label": "Social Card",
+          "fields": {
+            "socialCardImage": {
+              "config": {
+                "label": "Social Card Image",
+                "constraint": {},
+                "thumbnails": []
+              },
+              "type": "Image"
+            },
+            "socialCardTitle": {
+              "config": {
+                "label": "Social Card Title",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "socialCardDescription": {
+              "config": {
+                "label": "Social Card Description",
+                "placeholder": ""
+              },
+              "type": "Text"
+            }
+          }
+        },
+        "type": "Group"
+      }
+    }
+  }
+}
