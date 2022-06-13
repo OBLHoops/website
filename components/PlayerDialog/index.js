@@ -1,7 +1,7 @@
 import { Dialog } from "@headlessui/react";
 import styles from "./playerDialog.module.scss";
 
-export function PlayerDialog({ children, isOpen, toggle }) {
+export default function PlayerDialog({ children, isOpen, toggle }) {
   return (
     <Dialog open={isOpen} onClose={() => toggle(false)} className={styles.dialog}>
       <div className={styles.backdrop} aria-hidden="true" />

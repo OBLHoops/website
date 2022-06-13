@@ -2,7 +2,7 @@ import { useState } from "react";
 import { PrismicRichText } from "@prismicio/react";
 import Picture from "@components/Picture";
 import Icon from "./Icon";
-import { PlayerDialog } from "@components/PlayerDialog";
+import PlayerDialog from "@components/PlayerDialog";
 import { v4 as uuidv4 } from "uuid";
 import styles from "./playerPreview.module.scss";
 
