@@ -8,7 +8,6 @@ import styles from "@styles/Players.module.scss";
 import PlayerPreview from "@components/PlayerPreview";
 
 export default function Players({ pageData, defaultMetaData }) {
-  console.log(pageData?.data);
   if (pageData?.data) {
     return (
       <>

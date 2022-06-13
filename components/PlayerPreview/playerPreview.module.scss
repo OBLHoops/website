@@ -3,7 +3,8 @@
 
 .preview {
   h3 {
-    margin: 0 0 1rem;
+    color: var(--white);
+    margin: 0;
     flex: 1 1;
     font-size: 2.5rem;
   }
@@ -20,6 +21,20 @@
         }
       }
     }
+  }
+}
+
+.bio {
+  display: block;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  text-decoration: underline;
+  color: var(--white);
+  transition: color 240ms ease-out 80ms;
+  &:hover,
+  &:focus {
+    color: var(--yellow);
+    transition: color 180ms ease-in;
   }
 }
 
@@ -42,6 +57,7 @@
 .stats {
   table-layout: auto;
   width: 100%;
+  margin-top: 1rem;
   margin-bottom: 0;
   p {
     margin: 0;
