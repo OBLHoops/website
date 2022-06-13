@@ -1,18 +1,167 @@
 {
-  "id": "9a91512e-9322-4a67-96fe-0d7350cf5e4a",
-  "uid": "quia-sit-at",
+  "id": "3658a7f4-a041-4543-ab0b-28be2c68ddfa",
+  "uid": "adipisci-accusantium-dolorum",
   "type": "player",
   "data": {
-    "name": [
+    "name": "facilitate 24/7 applications",
+    "bio": [
       {
-        "type": "heading1",
-        "text": "Implement transparent blockchains",
+        "type": "paragraph",
+        "text": "Incididunt et ullamco magna ipsum consectetur id nisi veniam sit magna aliquip consectetur culpa.",
         "spans": []
       }
     ],
-    "test": "mesh global infrastructures",
-    "metaTitle": "aggregate plug-and-play blockchains",
-    "metaDescription": "harness web-enabled ROI",
+    "photo": {
+      "dimensions": {
+        "width": 320,
+        "height": 320
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=320&h=320&fit=crop",
+      "xs": {
+        "dimensions": {
+          "width": 320,
+          "height": 320
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=320&h=320&fit=crop"
+      },
+      "sm": {
+        "dimensions": {
+          "width": 640,
+          "height": 640
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=640&h=640&fit=crop"
+      },
+      "md": {
+        "dimensions": {
+          "width": 480,
+          "height": 480
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=480&h=480&fit=crop"
+      },
+      "lg": {
+        "dimensions": {
+          "width": 640,
+          "height": 640
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=640&h=640&fit=crop"
+      },
+      "xl": {
+        "dimensions": {
+          "width": 720,
+          "height": 720
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=720&h=720&fit=crop"
+      },
+      "xxl": {
+        "dimensions": {
+          "width": 960,
+          "height": 960
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=960&h=960&fit=crop"
+      }
+    },
+    "cityChamp": true,
+    "location": "synergize open-source web-readiness",
+    "wins": 9188,
+    "loses": 9174,
+    "socialLinks": [
+      {
+        "platformName": "generate viral blockchains",
+        "platformLink": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        },
+        "platformIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
+        }
+      },
+      {
+        "platformName": "enhance out-of-the-box deliverables",
+        "platformLink": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        },
+        "platformIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=900&h=500&fit=crop"
+        }
+      },
+      {
+        "platformName": "envisioneer collaborative interfaces",
+        "platformLink": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        },
+        "platformIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da?w=900&h=500&fit=crop"
+        }
+      },
+      {
+        "platformName": "streamline intuitive architectures",
+        "platformLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "platformIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
+        }
+      },
+      {
+        "platformName": "whiteboard value-added mindshare",
+        "platformLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "platformIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?w=900&h=500&fit=crop"
+        }
+      }
+    ],
+    "metaTitle": "optimize bleeding-edge solutions",
+    "metaDescription": "engage magnetic convergence",
     "socialCard": [
       {
         "socialCardImage": {
@@ -22,10 +171,10 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613?w=900&h=500&fit=crop"
         },
-        "socialCardTitle": "iterate integrated paradigms",
-        "socialCardDescription": "utilize wireless technologies"
+        "socialCardTitle": "seize cutting-edge interfaces",
+        "socialCardDescription": "generate customized initiatives"
       },
       {
         "socialCardImage": {
@@ -35,10 +184,10 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa?w=900&h=500&fit=crop"
         },
-        "socialCardTitle": "brand dynamic ROI",
-        "socialCardDescription": "synthesize strategic blockchains"
+        "socialCardTitle": "reintermediate world-class paradigms",
+        "socialCardDescription": "transform cross-platform functionalities"
       },
       {
         "socialCardImage": {
@@ -48,10 +197,10 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=900&h=500&fit=crop"
         },
-        "socialCardTitle": "monetize intuitive metrics",
-        "socialCardDescription": "orchestrate magnetic e-tailers"
+        "socialCardTitle": "orchestrate 24/365 e-tailers",
+        "socialCardDescription": "envisioneer granular architectures"
       },
       {
         "socialCardImage": {
@@ -61,10 +210,10 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&h=500&fit=crop"
         },
-        "socialCardTitle": "disintermediate world-class e-tailers",
-        "socialCardDescription": "expedite ubiquitous applications"
+        "socialCardTitle": "morph frictionless systems",
+        "socialCardDescription": "incentivize scalable web services"
       }
     ]
   }

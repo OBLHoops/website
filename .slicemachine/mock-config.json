@@ -58,6 +58,12 @@
           "patternType": "HEADING",
           "blocks": 1
         }
+      },
+      "bio": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
       }
     }
   },

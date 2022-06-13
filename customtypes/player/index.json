@@ -12,6 +12,15 @@
           "placeholder": "Enter name..."
         }
       },
+      "bio": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Bio",
+          "placeholder": "Enter player bio...",
+          "allowTargetBlank": true,
+          "multi": "paragraph,strong,em,hyperlink,heading3"
+        }
+      },
       "photo": {
         "type": "Image",
         "config": {
@@ -54,6 +63,15 @@
           ]
         }
       },
+      "cityChamp": {
+        "type": "Boolean",
+        "config": {
+          "label": "City Champ",
+          "placeholder_false": "no",
+          "placeholder_true": "yes",
+          "default_value": false
+        }
+      },
       "location": {
         "type": "Text",
         "config": {
@@ -75,13 +93,35 @@
           "placeholder": ""
         }
       },
-      "cityChamp": {
-        "type": "Boolean",
+      "socialLinks": {
+        "type": "Group",
         "config": {
-          "label": "City Champ",
-          "placeholder_false": "no",
-          "placeholder_true": "yes",
-          "default_value": false
+          "label": "Social Links",
+          "fields": {
+            "platformName": {
+              "type": "Text",
+              "config": {
+                "label": "Platform Name",
+                "placeholder": "Enter platform name..."
+              }
+            },
+            "platformLink": {
+              "type": "Link",
+              "config": {
+                "label": "Platform Link",
+                "placeholder": "Enter platform link...",
+                "select": null
+              }
+            },
+            "platformIcon": {
+              "type": "Image",
+              "config": {
+                "label": "Platform Icon",
+                "constraint": {},
+                "thumbnails": []
+              }
+            }
+          }
         }
       }
     },

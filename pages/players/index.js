@@ -1,14 +1,14 @@
 import { createClient } from "@root/prismicio";
 import CustomHead from "@components/Head";
-import { SliceZone, PrismicRichText } from "@prismicio/react";
+import { PrismicRichText } from "@prismicio/react";
 import ContentContainer from "@components/ContentContainer";
-import { components } from "@slices/index";
 import { getLayout } from "@components/Layout/PageLayout";
 import { playersGraphQuery } from "@queries/index";
 import styles from "@styles/Players.module.scss";
 import PlayerPreview from "@components/PlayerPreview";
 
 export default function Players({ pageData, defaultMetaData }) {
+  console.log(pageData?.data);
   if (pageData?.data) {
     return (
       <>
