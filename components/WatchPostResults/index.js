@@ -3,7 +3,7 @@ import { createClient } from "@root/prismicio";
 import { usePrismicDocumentsByType } from "@prismicio/react";
 import NewsPostPreview from "@components/NewsPostPreview";
 const client = createClient();
-const postsPerPage = 1;
+const postsPerPage = 6;
 
 export default function WatchPostResults({ filterBy, resultsPage, updatePostPages }) {
   const [postResults, setPostResults] = useState([]);
