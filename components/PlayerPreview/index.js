@@ -3,6 +3,7 @@ import { PrismicRichText } from "@prismicio/react";
 import Picture from "@components/Picture";
 import Icon from "./Icon";
 import PlayerDialog from "@components/PlayerDialog";
+import VideoPlayer from "@components/VideoPlayer";
 import { v4 as uuidv4 } from "uuid";
 import styles from "./playerPreview.module.scss";
 
@@ -11,6 +12,7 @@ export default function PlayerPreview({ slug, data, rank }) {
   const handleClick = () => {
     setDialogActive(!dialogActive);
   };
+  console.log(data);
   if (data) {
     return (
       <div className={styles.preview}>
@@ -56,6 +58,7 @@ export default function PlayerPreview({ slug, data, rank }) {
           </ul>
         )}
         <PlayerDialog isOpen={dialogActive} toggle={handleClick}>
+          {data.video && <VideoPlayer video={data.video} />}
           <h4>{data.name}</h4>
           <PrismicRichText field={data.bio} />
         </PlayerDialog>

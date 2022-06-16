@@ -1,16 +1,31 @@
 {
-  "id": "3658a7f4-a041-4543-ab0b-28be2c68ddfa",
-  "uid": "adipisci-accusantium-dolorum",
+  "id": "7866c13a-1bee-4b96-b53d-c82cc87717f5",
+  "uid": "similique-nostrum-ratione",
   "type": "player",
   "data": {
-    "name": "facilitate 24/7 applications",
+    "name": "deploy viral metrics",
     "bio": [
       {
         "type": "paragraph",
-        "text": "Incididunt et ullamco magna ipsum consectetur id nisi veniam sit magna aliquip consectetur culpa.",
+        "text": "Aliqua proident aute aliqua. Fugiat nisi officia adipisicing sint anim velit labore veniam magna nulla ex nulla proident. Labore qui dolor magna fugiat labore esse magna aute consectetur.",
         "spans": []
       }
     ],
+    "video": {
+      "title": "Introducing Slice Machine",
+      "author_name": "Prismic",
+      "author_url": "https://www.youtube.com/channel/UCJq6AEgtWeZt7ziQ-fLKOeA",
+      "type": "video",
+      "height": 113,
+      "width": 200,
+      "version": "1.0",
+      "provider_name": "YouTube",
+      "provider_url": "https://www.youtube.com/",
+      "thumbnail_height": 360,
+      "thumbnail_width": 480,
+      "thumbnail_url": "https://i.ytimg.com/vi/iewZXv94XGY/hqdefault.jpg",
+      "html": "<iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/iewZXv94XGY?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+    },
     "photo": {
       "dimensions": {
         "width": 320,
@@ -18,7 +33,7 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=320&h=320&fit=crop",
+      "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=320&h=320&fit=crop",
       "xs": {
         "dimensions": {
           "width": 320,
@@ -26,7 +41,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=320&h=320&fit=crop"
+        "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=320&h=320&fit=crop"
       },
       "sm": {
         "dimensions": {
@@ -35,7 +50,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=640&h=640&fit=crop"
+        "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=640&h=640&fit=crop"
       },
       "md": {
         "dimensions": {
@@ -44,7 +59,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=480&h=480&fit=crop"
+        "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=480&h=480&fit=crop"
       },
       "lg": {
         "dimensions": {
@@ -53,7 +68,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=640&h=640&fit=crop"
+        "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=640&h=640&fit=crop"
       },
       "xl": {
         "dimensions": {
@@ -62,7 +77,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=720&h=720&fit=crop"
+        "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=720&h=720&fit=crop"
       },
       "xxl": {
         "dimensions": {
@@ -71,16 +86,16 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=960&h=960&fit=crop"
+        "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=960&h=960&fit=crop"
       }
     },
     "cityChamp": true,
-    "location": "synergize open-source web-readiness",
-    "wins": 9188,
-    "loses": 9174,
+    "location": "utilize web-enabled blockchains",
+    "wins": 3622,
+    "loses": 9697,
     "socialLinks": [
       {
-        "platformName": "generate viral blockchains",
+        "platformName": "architect distributed bandwidth",
         "platformLink": {
           "link_type": "Web",
           "url": "http://twitter.com"
@@ -92,46 +107,14 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=900&h=500&fit=crop"
         }
       },
       {
-        "platformName": "enhance out-of-the-box deliverables",
+        "platformName": "expedite dot-com communities",
         "platformLink": {
           "link_type": "Web",
-          "url": "http://google.com"
-        },
-        "platformIcon": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=900&h=500&fit=crop"
-        }
-      },
-      {
-        "platformName": "envisioneer collaborative interfaces",
-        "platformLink": {
-          "link_type": "Web",
-          "url": "http://twitter.com"
-        },
-        "platformIcon": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da?w=900&h=500&fit=crop"
-        }
-      },
-      {
-        "platformName": "streamline intuitive architectures",
-        "platformLink": {
-          "link_type": "Web",
-          "url": "https://slicemachine.dev"
+          "url": "https://prismic.io"
         },
         "platformIcon": {
           "dimensions": {
@@ -144,7 +127,23 @@
         }
       },
       {
-        "platformName": "whiteboard value-added mindshare",
+        "platformName": "aggregate real-time methodologies",
+        "platformLink": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        },
+        "platformIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&h=500&fit=crop"
+        }
+      },
+      {
+        "platformName": "unleash dynamic applications",
         "platformLink": {
           "link_type": "Web",
           "url": "https://slicemachine.dev"
@@ -156,39 +155,13 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb?w=900&h=500&fit=crop"
         }
       }
     ],
-    "metaTitle": "optimize bleeding-edge solutions",
-    "metaDescription": "engage magnetic convergence",
+    "metaTitle": "disintermediate sexy niches",
+    "metaDescription": "transition bleeding-edge infomediaries",
     "socialCard": [
-      {
-        "socialCardImage": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613?w=900&h=500&fit=crop"
-        },
-        "socialCardTitle": "seize cutting-edge interfaces",
-        "socialCardDescription": "generate customized initiatives"
-      },
-      {
-        "socialCardImage": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa?w=900&h=500&fit=crop"
-        },
-        "socialCardTitle": "reintermediate world-class paradigms",
-        "socialCardDescription": "transform cross-platform functionalities"
-      },
       {
         "socialCardImage": {
           "dimensions": {
@@ -199,8 +172,8 @@
           "copyright": null,
           "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=900&h=500&fit=crop"
         },
-        "socialCardTitle": "orchestrate 24/365 e-tailers",
-        "socialCardDescription": "envisioneer granular architectures"
+        "socialCardTitle": "implement mission-critical mindshare",
+        "socialCardDescription": "architect 24/365 functionalities"
       },
       {
         "socialCardImage": {
@@ -210,10 +183,23 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=900&h=500&fit=crop"
         },
-        "socialCardTitle": "morph frictionless systems",
-        "socialCardDescription": "incentivize scalable web services"
+        "socialCardTitle": "transition seamless functionalities",
+        "socialCardDescription": "morph B2B mindshare"
+      },
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "brand proactive channels",
+        "socialCardDescription": "iterate clicks-and-mortar supply-chains"
       }
     ]
   }

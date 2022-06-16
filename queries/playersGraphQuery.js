@@ -5,6 +5,7 @@ export const playersGraphQuery = `{
       player {
         name
         bio
+        video
         photo
         location
         wins

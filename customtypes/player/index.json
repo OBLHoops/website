@@ -21,6 +21,13 @@
           "multi": "paragraph,strong,em,hyperlink,heading3"
         }
       },
+      "video": {
+        "type": "Embed",
+        "config": {
+          "label": "Video",
+          "placeholder": "Enter video embed link..."
+        }
+      },
       "photo": {
         "type": "Image",
         "config": {
