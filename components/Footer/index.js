@@ -14,7 +14,7 @@ export default function Footer({ footerData }) {
                 &copy;{new Date().getFullYear()} {footerData.data.copyright}
               </p>
             )}
-            {footerData.data?.links.length && (
+            {footerData.data?.links.length > 0 && (
               <ul>
                 {footerData.data.links.map((item) => (
                   <li key={uuidv4()}>
