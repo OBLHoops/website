@@ -3,11 +3,9 @@
 
 .nav {
   display: none;
-
-  @media (min-width: breakpoint.$md) {
+  @media (min-width: breakpoint.$lg) {
     display: flex;
     justify-content: center;
-
     align-items: center;
     width: 100%;
   }
@@ -89,7 +87,7 @@
   border-width: 0;
   transform: translateY(1px);
   color: var(--white);
-  @media (min-width: breakpoint.$md) {
+  @media (min-width: breakpoint.$lg) {
     display: none;
   }
 }

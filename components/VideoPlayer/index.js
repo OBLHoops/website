@@ -1,7 +1,6 @@
 import { classNames } from "@lib/utilities";
 import styles from "./videoPlayer.module.scss";
 export default function VideoPlayer({ video }) {
-  console.log("video: ", video.embed_url);
   if (video.embed_url || video.html) {
     const parsedUrl = new URL(video.embed_url);
     const youTubeEmbedId = parsedUrl.searchParams.get("v");

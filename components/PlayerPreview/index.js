@@ -12,7 +12,6 @@ export default function PlayerPreview({ slug, data, rank }) {
   const handleClick = () => {
     setDialogActive(!dialogActive);
   };
-  console.log(data);
   if (data) {
     return (
       <div className={styles.preview}>
