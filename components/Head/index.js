@@ -37,7 +37,8 @@ const CustomHead = ({ defaultMetaData, pageMetaData = fallbackMetaData }) => {
     pageMetaDescription ||
     globalSocialCard[0]?.socialCardDescription ||
     globalMetaDescription;
-  const socialImage = pageSocialCard[0]?.socialCardImage || globalSocialCard[0]?.socialCardImage;
+  const socialImage =
+    pageSocialCard[0]?.socialCardImage?.url || globalSocialCard[0]?.socialCardImage?.url;
 
   return (
     <Head>
@@ -62,7 +63,7 @@ const CustomHead = ({ defaultMetaData, pageMetaData = fallbackMetaData }) => {
       <meta property="og:type" content="website" />
       {socialTitle && <meta property="og:title" content={`${socialTitle} – ${defaultTitle}`} />}
       {socialDescription && <meta property="og:description" content={socialDescription} />}
-      {socialImage && <meta name="og:image" content={socialImage?.url} />}
+      {socialImage && <meta name="og:image" content={socialImage} />}
 
       {/* Twitter Meta Tags */}
       <meta name="twitter:card" content="summary_large_image" />
@@ -70,7 +71,7 @@ const CustomHead = ({ defaultMetaData, pageMetaData = fallbackMetaData }) => {
       <meta property="twitter:url" content="https://oblhoops.com/" />
       {socialTitle && <meta name="twitter:title" content={`${socialTitle} - ${defaultTitle}`} />}
       {socialDescription && <meta name="twitter:description" content={socialDescription} />}
-      {socialImage && <meta name="twitter:image" content={socialImage?.url} />}
+      {socialImage && <meta name="twitter:image" content={socialImage} />}
     </Head>
   );
 };
