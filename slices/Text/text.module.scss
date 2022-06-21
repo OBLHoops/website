@@ -20,6 +20,10 @@
     color: var(--yellow);
     font-family: var(--font-handwritten);
   }
+  h1 {
+    max-width: 15ch;
+    margin-bottom: 0;
+  }
 }
 
 .wrapper {

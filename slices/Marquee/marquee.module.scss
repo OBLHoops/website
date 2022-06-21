@@ -25,23 +25,16 @@
   }
   &:focus,
   &.focus-visible {
-    // outline-color: red;
-    // outline-offset: 0.25rem;
-    // outline: 0.25rem;
-    // outline-style: auto;
-
     outline-width: 2px;
     outline-offset: 2px;
     outline-style: solid;
     outline-color: var(--blue);
   }
-}
 
-.item {
-  &.even {
+  :global(.marquee) > div {
     color: var(--marquee-item-even);
   }
-  &.odd {
+  :global(.marquee) > div:nth-child(odd) {
     color: var(--marquee-item-odd);
   }
 }

@@ -73,7 +73,9 @@ export default function Watch({ pageData, defaultMetaData }) {
                 <Picture image={pageData.data.pinnedWatchPost.data.coverImage} />
               )}
               <div>
-                <p className={styles.label}>{pageData?.data?.pinnedWatchPost?.data?.source}</p>
+                {pageData?.data?.pinnedWatchPost?.data?.source && (
+                  <p className={styles.label}>{pageData?.data?.pinnedWatchPost?.data?.source}</p>
+                )}
                 <h2>{pageData?.data?.pinnedWatchPost?.data?.title}</h2>
                 {pinnedPostDate && <p>{pinnedPostDate}</p>}
               </div>

@@ -23,7 +23,7 @@ const Marquee = ({ slice }) => {
       <>
         {itemsArray.map((item, index) => (
           <div
-            className={classNames([styles.item, index % 2 === 1 ? styles.even : styles.odd])}
+            className={classNames([styles.item, index % 2 === 0 ? styles.even : styles.odd])}
             key={uuidv4()}
           >
             <span className={styles.text}>{item.item}</span>
