@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { ParallaxProvider } from "react-scroll-parallax";
+import { AnimatePresence } from "framer-motion";
 import Header from "@components/Header";
 import Footer from "@components/Footer";
 import Banner from "@components/Banner";
 import Overlay from "@components/Overlay";
+import Splash from "@components/Splash";
 
 export default function Layout({ children, preview }) {
   const router = useRouter();
@@ -17,6 +19,15 @@ export default function Layout({ children, preview }) {
       preview: child?.props?.preview
     };
   });
+  const [splashActive, setSplashActive] = useState(true);
+  useEffect(() => {
+    const splashTimer = setTimeout(() => {
+      setSplashActive(false);
+    }, 1000);
+    return () => {
+      clearTimeout(splashTimer);
+    };
+  }, []);
   return (
     <ParallaxProvider>
       {childProps && <Banner bannerData={childProps[0].bannerData} />}
@@ -26,6 +37,7 @@ export default function Layout({ children, preview }) {
       <div>
         <Overlay key={route} />
       </div>
+      <AnimatePresence>{splashActive && <Splash />}</AnimatePresence>
       <div hidden>
         <span id="new-window-0">Opens in a new window</span>
         <span id="new-window-1">Opens an external site</span>
