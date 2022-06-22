@@ -7,23 +7,46 @@ import LocationPreview from "@components/LocationPreview";
 import styles from "@styles/Tickets.module.scss";
 
 export default function Tickets({ pageData, locationsData, defaultMetaData }) {
+  const timeElapsed = Date.now();
+  const today = new Date(timeElapsed);
+
+  const upcomingEvents = locationsData.results.filter((item) => {
+    const now = today.getTime();
+    const endDateTime = new Date(item.data.endDateTime);
+    return endDateTime > now && item.data.endDateTime;
+  });
+
+  console.log();
+
   if (pageData?.data) {
     return (
       <>
         <CustomHead defaultMetaData={defaultMetaData} pageMetaData={pageData.data} />
-        <ContentContainer margin="top">
-          <PrismicRichText field={pageData.data.title} />
-        </ContentContainer>
-        {locationsData?.results.length && (
-          <div className={styles.schedule}>
-            <ContentContainer>
-              <div className={styles.grid}>
-                {locationsData.results.map((item) => (
-                  <LocationPreview {...item} slug={item.uid} key={item.id} />
-                ))}
-              </div>
+
+        {upcomingEvents.length > 0 ? (
+          <>
+            <ContentContainer margin="top">
+              <PrismicRichText field={pageData.data.title} />
             </ContentContainer>
-          </div>
+            <div className={styles.schedule}>
+              <ContentContainer>
+                <div className={styles.grid}>
+                  {upcomingEvents.map((item) => (
+                    <LocationPreview {...item} slug={item.uid} key={item.id} />
+                  ))}
+                </div>
+              </ContentContainer>
+            </div>
+          </>
+        ) : (
+          <>
+            <ContentContainer margin="top">
+              <h1>That's it for the season!</h1>
+            </ContentContainer>
+            <ContentContainer margin="bottom">
+              <p>Check back with us for details on the 2023 tournaments.</p>
+            </ContentContainer>
+          </>
         )}
       </>
     );
