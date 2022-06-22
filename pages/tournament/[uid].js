@@ -56,15 +56,17 @@ export default function Location({
                   </h2>
                   <p className={styles.label}>Location</p>
                   <h3>{pageData.data.venue[0].name}</h3>
-                  <a
-                    target="_blank"
-                    aria-describedby="new-window-2"
-                    rel="noopener noreferrer"
-                    href={` https://www.google.com/maps/search/?api=1&query=${pageData.data.venue[0].name}&query_place_id=${pageData.data.venue[0].placeId}`}
-                    className={styles.textLink}
-                  >
-                    <PrismicRichText field={pageData.data.venue[0].address} />
-                  </a>
+                  {pageData.data.venue[0].address[0].text.length > 0 && (
+                    <a
+                      target="_blank"
+                      aria-describedby="new-window-2"
+                      rel="noopener noreferrer"
+                      href={` https://www.google.com/maps/search/?api=1&query=${pageData.data.venue[0].name}&query_place_id=${pageData.data.venue[0].placeId}`}
+                      className={styles.textLink}
+                    >
+                      <PrismicRichText field={pageData.data.venue[0].address} />
+                    </a>
+                  )}
                   <PrismicRichText field={pageData.data.venue[0].description} />
                 </div>
               </div>
