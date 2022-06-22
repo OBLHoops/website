@@ -7,16 +7,33 @@
   width: 100%;
   overflow: hidden;
   background-color: var(--yellow);
+}
 
-  p {
-    font-size: var(--font-size-smaller);
-    font-weight: var(--font-bold);
+.bannerLink {
+  display: flex;
+  align-items: center;
+  &:hover,
+  &:focus {
+    span {
+      text-decoration: underline;
+    }
+  }
+  span {
+    font-family: var(--font-body-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    line-height: 1.1;
     display: flex;
     align-items: center;
     text-align: center;
     color: var(--black);
     margin: 0;
   }
+}
+
+.arrow {
+  fill: var(--black);
+  width: 20px;
 }
 
 .container {

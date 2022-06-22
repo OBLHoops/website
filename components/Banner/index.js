@@ -17,8 +17,21 @@ export default function Banner({ bannerData }) {
           <PrismicLink
             field={bannerData?.data.link}
             target={bannerData?.data.link.link_type == "Web" ? "_blank" : "_self"}
+            className={styles.bannerLink}
           >
-            <p>{bannerData.data.text}</p>
+            <span>{bannerData.data.text} </span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className={styles.arrow}
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fillRule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clipRule="evenodd"
+              />
+            </svg>
           </PrismicLink>
         </div>
       </div>
