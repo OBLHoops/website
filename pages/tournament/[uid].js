@@ -117,15 +117,12 @@ export async function getStaticProps({ previewData, params }) {
   const client = createClient({ previewData });
   const pageData = await client.getByUID("location", params.uid);
   const marqueeData = await client.getByID("Yl7sHxcAAGfZF6rO");
-  // const locationsData = await client.getAllByType("location");
-
   const locationsData = await client.getByType("location", {
     orderings: {
       field: "my.location.startDateTime",
-      direction: "asc"
+      direction: "desc"
     }
   });
-
   const navData = await client.getByUID("navigation", "navigation");
   const footerData = await client.getByUID("footer", "footer");
   const bannerData = await client.getByUID("banner", "banner");

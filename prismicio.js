@@ -22,6 +22,8 @@ export function linkResolver(doc) {
       return `/${doc.uid}`;
     case "apply":
       return `/${doc.uid}`;
+    case "location":
+      return `/tournament/${doc.uid}`;
     default:
       return null;
   }

@@ -37,7 +37,7 @@ export async function getStaticProps({ previewData, params }) {
   const locationsData = await client.getByType("location", {
     orderings: {
       field: "my.location.startDateTime",
-      direction: "asc"
+      direction: "desc"
     }
   });
   const navData = await client.getByUID("navigation", "navigation");
