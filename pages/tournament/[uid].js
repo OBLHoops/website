@@ -54,7 +54,6 @@ export default function Location({
                   <h2>
                     {startDate} - {endDate}
                   </h2>
-                  <p className={styles.startTime}>Starts @ {startTime}</p>
                   <p className={styles.label}>Location</p>
                   <h3>{pageData.data.venue[0].name}</h3>
                   <a
