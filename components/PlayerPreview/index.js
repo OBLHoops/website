@@ -2,6 +2,7 @@ import { useState } from "react";
 import { PrismicRichText } from "@prismicio/react";
 import Picture from "@components/Picture";
 import Icon from "./Icon";
+import Crown from "./Crown";
 import PlayerDialog from "@components/PlayerDialog";
 import VideoPlayer from "@components/VideoPlayer";
 import { v4 as uuidv4 } from "uuid";
@@ -16,12 +17,17 @@ export default function PlayerPreview({ slug, data, rank }) {
     return (
       <div className={styles.preview}>
         <div className={styles.image} aria-hidden="true">
-          {data.photo.url && <Picture image={data.photo} />}
+          {data.photo?.url && <Picture image={data.photo} />}
           <div className={styles.playerRank}>{rank + 1}</div>
+          {data.cityChamp && (
+            <div className={styles.cityChamp}>
+              <Crown />
+            </div>
+          )}
         </div>
         <div className={styles.content}>
-          {data.name && <h3>{data.name}</h3>}
-          {data.bio[0].text && (
+          {data?.name && <h3>{data.name}</h3>}
+          {data?.bio && data?.bio[0].text && (
             <button onClick={handleClick} className={styles.bio}>
               Player bio
             </button>
