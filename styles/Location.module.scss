@@ -2,9 +2,7 @@
 @use "@styles/mixins";
 
 .location {
-  // padding: calc(var(--spacing-section) / 2) 0 var(--spacing-section);
   h2 {
-    // line-height: 0.9;
     font-size: var(--font-size-h4);
   }
   h3 {
