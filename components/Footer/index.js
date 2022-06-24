@@ -40,7 +40,7 @@ export default function Footer({ footerData }) {
                     aria-label={link.platformName}
                     href={link.platformLink.url}
                   >
-                    <Icon url={link.platformIcon.url} />
+                    <img src={link.platformIcon.url} alt="" />
                   </a>
                 </li>
               ))}
