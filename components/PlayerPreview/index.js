@@ -13,6 +13,7 @@ export default function PlayerPreview({ slug, data, rank }) {
   const handleClick = () => {
     setDialogActive(!dialogActive);
   };
+  console.log(data?.bio);
   if (data) {
     return (
       <div className={styles.preview}>
@@ -27,6 +28,7 @@ export default function PlayerPreview({ slug, data, rank }) {
         </div>
         <div className={styles.content}>
           {data?.name && <h3>{data.name}</h3>}
+          {data?.location && <p className={styles.location}>{data.location}</p>}
           {data?.bio && data?.bio[0].text && (
             <button onClick={handleClick} className={styles.bio}>
               Player bio
@@ -65,6 +67,7 @@ export default function PlayerPreview({ slug, data, rank }) {
         <PlayerDialog isOpen={dialogActive} toggle={handleClick}>
           {data.video && <VideoPlayer video={data.video} />}
           <h4>{data.name}</h4>
+          {data?.location && <p>{data.location}</p>}
           <PrismicRichText field={data.bio} />
         </PlayerDialog>
       </div>
