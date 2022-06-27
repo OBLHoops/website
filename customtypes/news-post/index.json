@@ -15,8 +15,8 @@
       "source": {
         "type": "Text",
         "config": {
-          "label": "Source",
-          "placeholder": ""
+          "label": "Publisher",
+          "placeholder": "Enter the publisher of the video..."
         }
       },
       "coverImage": {

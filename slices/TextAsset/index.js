@@ -6,7 +6,7 @@ import styles from "./textAsset.module.scss";
 
 const TextAsset = ({ slice }) => {
   const variation = slice.variation;
-  const { image, imagePosition, imageOverlap, text, label, title, theme } = slice.primary;
+  const { image, imagePosition, text, label, title, theme } = slice.primary;
   const imageProps = {
     ...(!image?.alt && { "aria-hidden": "true" })
   };
