@@ -16,8 +16,6 @@ export default function Tickets({ pageData, locationsData, defaultMetaData }) {
     return endDateTime > now && item.data.endDateTime;
   });
 
-  console.log();
-
   if (pageData?.data) {
     return (
       <>
