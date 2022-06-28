@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import { PrismicProvider } from "@prismicio/react";
 import { PrismicPreview } from "@prismicio/next";
@@ -9,24 +8,6 @@ import { BannerProvider } from "@contexts/bannerSize";
 import { classNames } from "@lib/utilities";
 import "focus-visible";
 import "@styles/globals.scss";
-
-const isServerSideRendered = () => {
-  return typeof window === "undefined";
-};
-
-if (process.env.NODE_ENV !== "production" && !isServerSideRendered()) {
-  const config = {
-    runOnly: {
-      type: "tag",
-      values: ["wcag2a", "wcag2aa"]
-    }
-  };
-  import("react-dom").then((ReactDOM) => {
-    import("@axe-core/react").then((axe) => {
-      axe.default(React, ReactDOM, 1000, config);
-    });
-  });
-}
 
 export default function CustomApp({ Component, pageProps, router }) {
   useScrollRestoration(router);
