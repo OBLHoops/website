@@ -38,7 +38,6 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "@axe-core/react": "^4.4.3",
     "eslint": "8.18.0",
     "eslint-config-next": "12.1.6",
     "eslint-plugin-jsx-a11y": "^6.6.0",
