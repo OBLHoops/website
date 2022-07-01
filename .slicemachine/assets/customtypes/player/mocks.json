@@ -1,30 +1,28 @@
 {
-  "id": "7866c13a-1bee-4b96-b53d-c82cc87717f5",
-  "uid": "similique-nostrum-ratione",
+  "id": "c584e2a1-7508-48a2-87dd-6ea46353a402",
+  "uid": "expedita-itaque-repellat",
   "type": "player",
   "data": {
-    "name": "deploy viral metrics",
+    "name": "exploit impactful networks",
     "bio": [
       {
         "type": "paragraph",
-        "text": "Aliqua proident aute aliqua. Fugiat nisi officia adipisicing sint anim velit labore veniam magna nulla ex nulla proident. Labore qui dolor magna fugiat labore esse magna aute consectetur.",
+        "text": "Nulla consectetur minim magna veniam labore nulla eiusmod cillum dolor voluptate cillum.",
         "spans": []
       }
     ],
     "video": {
-      "title": "Introducing Slice Machine",
+      "url": "https://twitter.com/prismicio/status/1356293316158095361",
       "author_name": "Prismic",
-      "author_url": "https://www.youtube.com/channel/UCJq6AEgtWeZt7ziQ-fLKOeA",
-      "type": "video",
-      "height": 113,
-      "width": 200,
-      "version": "1.0",
-      "provider_name": "YouTube",
-      "provider_url": "https://www.youtube.com/",
-      "thumbnail_height": 360,
-      "thumbnail_width": 480,
-      "thumbnail_url": "https://i.ytimg.com/vi/iewZXv94XGY/hqdefault.jpg",
-      "html": "<iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/iewZXv94XGY?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+      "author_url": "https://twitter.com/prismicio",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Gatsby is a popular choice for Prismic users and we work hard on delivering a CMS that plays to its strengths.<br><br>But, what makes <a href=\"https://twitter.com/GatsbyJS?ref_src=twsrc%5Etfw\">@GatsbyJS</a> so popular?<br><br>Here are some of <a href=\"https://twitter.com/mxstbr?ref_src=twsrc%5Etfw\">@mxstbr</a>&#39;s thoughts on Gatsby&#39;s success and how they&#39;re improving developer experience.<a href=\"https://t.co/ZjCPvsWWUD\">https://t.co/ZjCPvsWWUD</a> <a href=\"https://t.co/EQqzJpeNKl\">pic.twitter.com/EQqzJpeNKl</a></p>&mdash; Prismic (@prismicio) <a href=\"https://twitter.com/prismicio/status/1356293316158095361?ref_src=twsrc%5Etfw\">February 1, 2021</a></blockquote>\n<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\n",
+      "width": 550,
+      "height": null,
+      "type": "rich",
+      "cache_age": "3153600000",
+      "provider_name": "Twitter",
+      "provider_url": "http://www.twitter.com/",
+      "version": "1.0"
     },
     "photo": {
       "dimensions": {
@@ -33,7 +31,7 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=320&h=320&fit=crop",
+      "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=320&h=320&fit=crop",
       "xs": {
         "dimensions": {
           "width": 320,
@@ -41,7 +39,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=320&h=320&fit=crop"
+        "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=320&h=320&fit=crop"
       },
       "sm": {
         "dimensions": {
@@ -50,7 +48,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=640&h=640&fit=crop"
+        "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=640&h=640&fit=crop"
       },
       "md": {
         "dimensions": {
@@ -59,7 +57,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=480&h=480&fit=crop"
+        "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=480&h=480&fit=crop"
       },
       "lg": {
         "dimensions": {
@@ -68,7 +66,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=640&h=640&fit=crop"
+        "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=640&h=640&fit=crop"
       },
       "xl": {
         "dimensions": {
@@ -77,7 +75,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=720&h=720&fit=crop"
+        "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=720&h=720&fit=crop"
       },
       "xxl": {
         "dimensions": {
@@ -86,64 +84,17 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=960&h=960&fit=crop"
+        "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=960&h=960&fit=crop"
       }
     },
     "cityChamp": true,
-    "location": "utilize web-enabled blockchains",
-    "wins": 3622,
-    "loses": 9697,
+    "cityChampOf": "leverage visionary e-markets",
+    "location": "cultivate interactive platforms",
+    "wins": 6960,
+    "loses": 1859,
     "socialLinks": [
       {
-        "platformName": "architect distributed bandwidth",
-        "platformLink": {
-          "link_type": "Web",
-          "url": "http://twitter.com"
-        },
-        "platformIcon": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=900&h=500&fit=crop"
-        }
-      },
-      {
-        "platformName": "expedite dot-com communities",
-        "platformLink": {
-          "link_type": "Web",
-          "url": "https://prismic.io"
-        },
-        "platformIcon": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
-        }
-      },
-      {
-        "platformName": "aggregate real-time methodologies",
-        "platformLink": {
-          "link_type": "Web",
-          "url": "https://prismic.io"
-        },
-        "platformIcon": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&h=500&fit=crop"
-        }
-      },
-      {
-        "platformName": "unleash dynamic applications",
+        "platformName": "extend bleeding-edge platforms",
         "platformLink": {
           "link_type": "Web",
           "url": "https://slicemachine.dev"
@@ -155,39 +106,61 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=900&h=500&fit=crop"
+        }
+      },
+      {
+        "platformName": "extend out-of-the-box e-tailers",
+        "platformLink": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        },
+        "platformIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=900&h=500&fit=crop"
+        }
+      },
+      {
+        "platformName": "transition 24/7 web services",
+        "platformLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "platformIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=900&h=500&fit=crop"
+        }
+      },
+      {
+        "platformName": "integrate sticky e-tailers",
+        "platformLink": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        },
+        "platformIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=900&h=500&fit=crop"
         }
       }
     ],
-    "metaTitle": "disintermediate sexy niches",
-    "metaDescription": "transition bleeding-edge infomediaries",
+    "metaTitle": "drive viral experiences",
+    "metaDescription": "utilize end-to-end deliverables",
     "socialCard": [
-      {
-        "socialCardImage": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=900&h=500&fit=crop"
-        },
-        "socialCardTitle": "implement mission-critical mindshare",
-        "socialCardDescription": "architect 24/365 functionalities"
-      },
-      {
-        "socialCardImage": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=900&h=500&fit=crop"
-        },
-        "socialCardTitle": "transition seamless functionalities",
-        "socialCardDescription": "morph B2B mindshare"
-      },
       {
         "socialCardImage": {
           "dimensions": {
@@ -198,8 +171,21 @@
           "copyright": null,
           "url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=900&h=500&fit=crop"
         },
-        "socialCardTitle": "brand proactive channels",
-        "socialCardDescription": "iterate clicks-and-mortar supply-chains"
+        "socialCardTitle": "productize clicks-and-mortar e-services",
+        "socialCardDescription": "redefine strategic niches"
+      },
+      {
+        "socialCardImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=900&h=500&fit=crop"
+        },
+        "socialCardTitle": "whiteboard web-enabled web services",
+        "socialCardDescription": "target synergistic methodologies"
       }
     ]
   }

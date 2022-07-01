@@ -101,6 +101,12 @@
   top: -25px;
   left: -25px;
   width: 60px;
+  p {
+    text-align: center;
+    color: var(--yellow);
+    white-space: nowrap;
+    font-family: var(--font-handwritten);
+  }
 }
 
 ul.socialLinks {
