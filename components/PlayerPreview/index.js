@@ -18,7 +18,7 @@ export default function PlayerPreview({ slug, data, rank }) {
       <div className={styles.preview}>
         <div className={styles.image} aria-hidden="true">
           {data.photo?.url && <Picture image={data.photo} />}
-          <div className={styles.playerRank}>{"WC"}</div>
+          <div className={styles.playerRank}>{rank + 1 < 19 ? rank + 1 : "WC"}</div>
           {data.cityChamp && (
             <div className={styles.cityChamp}>
               <Crown />
