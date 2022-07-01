@@ -11,6 +11,7 @@ export const playersGraphQuery = `{
         wins
         loses
         cityChamp
+        cityChampOf
         socialLinks {
           platformName
           platformLink

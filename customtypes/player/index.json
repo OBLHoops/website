@@ -79,6 +79,13 @@
           "default_value": false
         }
       },
+      "cityChampOf": {
+        "type": "Text",
+        "config": {
+          "label": "City Champ Of",
+          "placeholder": "City Player was the Champ of"
+        }
+      },
       "location": {
         "type": "Text",
         "config": {
