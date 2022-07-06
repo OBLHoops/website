@@ -18,15 +18,18 @@ export default function PlayerPreview({ slug, data, rank }) {
       <div className={styles.preview}>
         <div className={styles.image} aria-hidden="true">
           {data.photo?.url && <Picture image={data.photo} />}
-          <div className={styles.playerRank}>{rank + 1 < 19 ? rank + 1 : "WC"}</div>
           {data.cityChamp && (
             <div className={styles.cityChamp}>
+              <p>{data?.cityChampOf} Champ</p>
               <Crown />
             </div>
           )}
         </div>
         <div className={styles.content}>
-          {data?.name && <h3>{data.name}</h3>}
+          <div className={styles.playerTitle}>
+            <div className={styles.playerRank}>{rank + 1 < 19 ? rank + 1 : "WC"}</div>
+            {data?.name && <h3>{data.name}</h3>}
+          </div>
           {data?.location && <p className={styles.location}>{data.location}</p>}
           {data?.bio && data?.bio[0].text && (
             <button onClick={handleClick} className={styles.bio}>
