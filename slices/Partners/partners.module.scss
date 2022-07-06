@@ -21,6 +21,10 @@
   align-items: center;
   @media (min-width: breakpoint.$sm) {
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media (min-width: breakpoint.$lg) {
+    flex-wrap: nowrap;
   }
   img {
     display: block;
@@ -28,6 +32,9 @@
     height: auto;
     @media (min-width: breakpoint.$sm) {
       width: 25%;
+    }
+    @media (min-width: breakpoint.$lg) {
+      width: 20%;
     }
   }
 }
