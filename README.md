@@ -8,13 +8,15 @@ The website utilizes [Prismic Slice Machine](https://prismic.io/docs/core-concep
 
 ## Run locally
 
-First, install the package dependencies:
+First, change name of `_env.local` to `.env.local` in the root of the project
+
+Then, install the package dependencies:
 
 ```bash
 npm i
 ```
 
-Them, run the development server
+Then, run the development server
 
 ```bash
 npm run dev
